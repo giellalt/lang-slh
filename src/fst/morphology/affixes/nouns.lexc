@@ -1,0 +1,169 @@
+!! Noun inflection
+!  ---------------
+!! The Southern Puget Sound Salish language nouns inflect in time person aspect.
+! s%<ɬalil%>tu%>b%>s%>əxʷ
+! VNoun+come.ashore+V+Caus+Mid+Px3+Now
+! np+come·ashore+[caus]+[md]+3s+now
+! %>tu ~ %>t
+! %>əb ~ %>b
+
+
+LEXICON Cases
+ +N+Sg+Nom:0   #     ;
+ +N+Pl+Nom:i   #     ;
+ +N+Sg+Acc:at  #     ;
+ +N+Pl+Acc:iat #     ;
+ +N+Sg+Loc:as  #     ;
+ +N+Pl+Loc:ias #     ;
+  #:0   Nouns ; ! Normally going via a R lexicon adding compound tags.
+
+
+LEXICON N_with-PL_RED1_qelb
+!: DIM_CV1toCV2C ; What should this be?
+: SG-SUF ;
+: PL_RED1_qelb ;
+
+
+
+LEXICON N_with_PL_RED2_Dial/-SL
++Dial/-SL: N_with_PL_RED2 ;
+LEXICON N_with_PL_RED2_Dial/-NL
++Dial/-NL: N_with_PL_RED2 ;
+LEXICON N_with_PL_RED2
+: DIM_CV1toCV2C ;
+: SG-SUF ;
+: PL_RED2 ;
+
+LEXICON N_with_PL_RED130
+!%^RedPL130130
+: SG-SUF ;
+@D.PossPx@+Pl:@D.PossPx@%^RedPL130130 PRE-POSS_01 ;
++Pl:%^RedPL130130	PRE-POSS_01 ;
+
+
+LEXICON N_with_Distr_12323_RED5 !Der/Red5_12323
+!%^Red12323
+!: DIM_CV1toCV2C ;
+: SG-SUF ;
+: PL_RED5 ;
+
+LEXICON N-FEM_with-PL_RED2
++Fem: DIM_CV1toCV2C ;
++Fem: SG-SUF ;
++Fem: PL_RED2 ;
+
+LEXICON N-MSC_with-PL_RED2
++Msc: DIM_CV1toCV2C ;
++Msc: SG-SUF ;
++Msc: PL_RED2 ;
+
+! Derivation
+LEXICON DIM_CV1toCV2C
+@D.PossPx@+Der+Der/Dimin_1i13+N:@D.PossPx@%^Red1i13 SG-SUF ; !+Der/Red1_1i13
+@R.PossPx@+Der+Der/Dimin_1i13+N:@R.PossPx@%^Red1i13 SG-SUF ; !+Der/Red1_1i13
+@D.PossPx@+Err/Orth+Der+Der/Dimin_1iq13+N:@D.PossPx@%^Red1iq13 SG-SUF ; !+Der/Red1_1iq13
+@R.PossPx@+Err/Orth+Der+Der/Dimin_1iq13+N:@R.PossPx@%^Red1iq13 SG-SUF ; !+Der/Red1_1iq13
+
+@D.PossPx@+Err/Orth+Der+Der/Dimin_1iq123+N:@D.PossPx@%^Red1iq123 SG-SUF ; !+Der/Red1_1iq123
+@R.PossPx@+Err/Orth+Der+Der/Dimin_1iq123+N:@R.PossPx@%^Red1iq123 SG-SUF ; !+Der/Red1_1iq123
+
+@D.PossPx@+Err/Orth+Der+Der/Dimin_1i123+N:@D.PossPx@%^Red1i123 SG-SUF ; !+Der/Red1_1i123
+@R.PossPx@+Err/Orth+Der+Der/Dimin_1i123+N:@R.PossPx@%^Red1i123 SG-SUF ; !+Der/Red1_1i123
+@D.PossPx@+Err/Orth+Der+Der/Dimin_12123+N:@D.PossPx@%^Red12123 SG-SUF ; !+Der/Red1_12123
+@R.PossPx@+Err/Orth+Der+Der/Dimin_12123+N:@R.PossPx@%^Red12123 SG-SUF ; !+Der/Red1_12123
+
+@D.PossPx@+Der+Der/Dimin_1i1i13+N+Pl:@D.PossPx@%^RedPL1i1i13 PRE-POSS_01 ;! +Der/Red1_1i13_Distr_1212
+@R.PossPx@+Der+Der/Dimin_1i1i13+N+Pl:@R.PossPx@%^RedPL1i1i13 PRE-POSS_01 ;! +Der/Red1_1i13_Distr_1212
+
+LEXICON N_DIM_with_PL_12123 !bibədaʔ, bibibədaʔ
++Dimin: SG-SUF ;
++Dimin+Pl:%^Red12123 PRE-POSS_01 ;
+
+! Declension
+LEXICON SG-SUF
+!@D.PossPx@+Sg:@D.PossPx@ # ; !CHECKME 2021-07
++Sg: PRE-POSS_01 ;
+
+
+LEXICON PL_RED1_qelb
+@D.PossPx@+Pl:@D.PossPx@%^Red1i123   # ;
++Pl:%^Red2CV2CiCV        PRE-POSS_01 ;
+!! qəlb+N+Pl: **rain showers**
+!!€ %{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qəlb%^Red1i123
+!!€ 00qi0qəlb0
+
+LEXICON PL_RED2
+@D.PossPx@+Pl:@D.PossPx@%^RedPL123123 PRE-POSS_01 ;
+!@D.PossPx@+Pl:@D.PossPx@%^RedPL123123 # ;
++Pl:%^RedPL123123	PRE-POSS_01 ;
+!! bəlups+N+Pl
+!!€ %{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlups%^RedPL123123
+!!€ 00bəlbəlups0
+!!$ %{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlups%^RedPL123123
+!!$ 00000bəlups0
+!! k̓ʷəčədiʔ+N+Pl: __rabbit/jänis__
+!!€ %{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ʷəčədiʔ%^RedPL123123
+!!€ 00k̓ʷəčk̓ʷəčədiʔ0
+!!$ k̓ʷəčədiʔ: k̓ʷəčədiʔ+N+Pl
+
+LEXICON PL_RED5
+!ʔaciɬtalbixʷ:ʔacaciɬtalbixʷ
+@D.PossPx@+Pl:@D.PossPx@%^Red12323 PRE-POSS_01 ;
+@R.PossPx@+Pl:@R.PossPx@%^Red12323	PRE-POSS_01 ;
+
+LEXICON PRE-POSS_01
+@R.TAM-SUBJ.SUBJ@+Mod/Subj:@R.TAM-SUBJ.SUBJ@ PRE-POSS_02 ;
+@D.TAM-SUBJ@ PRE-POSS_02 ;
+
+LEXICON PRE-POSS_02
+@R.TAM-HAB.HAB@+Hab:@R.TAM-HAB.HAB@ PRE-POSS_03 ;
+@R.TAM-HAB.IRR@+Irr:@R.TAM-HAB.IRR@ PRE-POSS_03 ;
+@D.TAM-HAB@ PRE-POSS_03 ;
+
+LEXICON PRE-POSS_03
+@R.TAM-RE.RE@+Anew:@R.TAM-RE.RE@ PRE-POSS_04 ;
+@D.TAM-RE.RE@ PRE-POSS_04 ;
+
+LEXICON PRE-POSS_04
+@R.TAM-T.REM@+RemPst:@R.TAM-T.REM@ PRE-POSS_05 ;
+@D.TAM-T@ PRE-POSS_05 ;
+
+LEXICON PRE-POSS_05
+@R.TAM-A.STAT@+Asp/Stat:@R.TAM-A.STAT@ PRE-POSS_06 ;
+@R.TAM-A.PROG@+Asp/Prog:@R.TAM-A.PROG@ PRE-POSS_06 ;
+@R.TAM-A.PROGSTAT@+Asp/ProgStat:@R.TAM-A.PROGSTAT@ PRE-POSS_06 ;
+@R.TAM-A.PFV@+Asp/Pfv:@R.TAM-A.PFV@ PRE-POSS_06 ;
+@D.TAM-A@ PRE-POSS_06 ;
+
+LEXICON PRE-POSS_06
+@R.NMZ.V2N@+Der/s+N+Sg:@R.NMZ.V2N@ POSS ;
+@R.NMZ.V2A@+Ptc:@R.NMZ.V2A@ POSS ;
+@D.NMZ@ POSS ;
+
+LEXICON POSS
+@D.PossPx@:@D.PossPx@ K ;
+@R.PossPx.Sg1@ PXSG1 ;
+@R.PossPx.Sg2@ PXSG2 ;
+@D.PossPx@ PXSP3 ;
+@D.PossPx@ PXPL1 ;
+@D.PossPx@ PXPL2 ;
+
+LEXICON PXSG1
++PxSg1: K ;
+
+LEXICON PXSG2
++PxSg2: K ;
+
+LEXICON PXSP3
++PxSP3:%>s K ;
+
+LEXICON PXPL1
++PxPl1:%>čəɬ K ;
+
+LEXICON PXPL2
++PxPl2:%>ləp K ;
++PxPl2:%>lap K ;
+
+
+! vim: set ft=xfst-lexc:
+

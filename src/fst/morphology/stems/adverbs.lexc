@@ -1,0 +1,56 @@
+!! Adverbs
+!  --------
+!! Adverbs in the Southern Puget Sound Salish language are words that express time, place, degree, mode.
+
+LEXICON Adverbs
+
+bək̓ʷ+Adv:bək̓ʷ ADV_TOT "" ;
+cay+Adv:cay ADV_DEGREE "" ;
+cick̓ʷ+Adv:cick̓ʷ ADV_DEGREE "" ;
+ck̓ʷaqid+Adv:ck̓ʷaqid ADV_TEMP "" ;
+cugʷ+Adv:cugʷ ADV_DEGREE "" ;
+cukʷ+Adv:cukʷ ADV_DEGREE "" ;
+cəɬul̕+Adv:cəɬul̕ ADV_TEMP "" ;
+daw̓+Adv:daw̓ ADV_TEMP "" ;
+day̓+Adv:day̓ ADV_DEGREE "" ;
+daʔxʷ+Adv:daʔxʷ ADV_TEMP "" ;
+diʔəʔ+Adv:diʔəʔ ADV_SPAT "" ;
+dxʷq̓ixʷ+Adv:dxʷq̓ixʷ ADV_SPAT "" ;
+dxʷt̕aq̓t+Adv:dxʷt̕aq̓t ADV_SPAT "" ;
+gʷaʔxʷ+Adv:gʷaʔxʷ ADV_TEMP "" ;
+gʷəhaw̓ə+Adv:gʷəhaw̓ə ADV_PARENTHETIC "" ;
+hagʷ+Adv:hagʷ ADV_TEMP "" ;
+haʔkʷ+Adv:haʔkʷ ADV_TEMP "" ;
+hikʷ+Adv:hikʷ ADV_DEGREE "" ;
+hiqab+Adv:hiqab ADV_DEGREE "" ;
+huy+Adv:huy ADV_TEMP "" ;
+həlaʔab+Adv:həlaʔab ADV_ "" ;
+laʔab+Adv:laʔab ADV_ "" ;
+put+Adv:put ADV_ "" ;
+qa+Adv:qa ADV_QNT "" ;
+q̓ixʷ+Adv:q̓íxʷ ADV_ "" ;
+siʔ+Adv:siʔ ADV_SPAT "" ;
+tiiləb+Adv:tiiləb ADV_SPAT "" ;
+til+Adv:til ADV_TEMP "" ;
+tiləb+v1+Adv:tiləb ADV_SPAT "" ;
+tiləb+v1+Adv:tiləb ADV_TEMP "" ;
+tudiʔ+Adv:tudiʔ ADV_SPAT "" ;
+tudukʷəɬdat+Adv:tudukʷəɬdat ADV_TEMP "" ;
+tul̕al+Adv:tul̕al ADV_INTERR "" ;
+tul̕čad+Adv:tul̕%^√čád ADV_INTERR "" ;
+tul̕ʔal+Adv:tul̕ʔal ADV_SPAT "" ;
+tux̌ʷ+Adv:tux̌ʷ ADV_PARENTHETIC "" ;
+t̕aq̓t+Adv:t̕aq̓t ADV_SPAT "" ;
+xʷuʔələʔ+Adv:xʷuʔələʔ ADV_PARENTHETIC "" ;
+xʷɬub+Adv:xʷɬub ADV_PARENTHETIC "" ;
+x̌ʷul̕+Adv:x̌ʷul̕ ADV_ "" ;
+yaw̓+Adv:yaw̓ ADV_TEMP "" ;
+čad+Adv:čad ADV_INTERR "" ;
+ƛ̕al̕+Adv:ƛ̕al̕ ADV_ "" ;
+ɬixʷdat+Adv:ɬixʷdat ADV_TEMP "" ;
+ɬudukʷəɬdat+Adv:ɬudukʷəɬdat ADV_TEMP "" ;
+ʔaɬ+Adv:ʔáɬ ADV_ "" ;
+ʔəsx̌id+Adv:ʔəsx̌id ADV_INTERR "" ;
+ʔəsčal+Adv:ʔəsčal ADV_INTERR "" ;
+
+! vim: set ft=xfst-lexc:

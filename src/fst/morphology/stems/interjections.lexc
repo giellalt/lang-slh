@@ -1,0 +1,15 @@
+!! Interjections
+!  ----------
+!! Interjections in the Southern Puget Sound Salish language 
+
+LEXICON Interjections
+
+ʔah+Interj:ʔah # "ah" ;
+hay+Interj:hay # "now, well" ;
+huy̓+Interj:huy̓ # "good-bye" ;
+wiʔaac+Interj:wiʔaac # "hello" ;
+habuʔ+v1+Interj:habuʔ # "(I'm listening)" ;
+habuʔ+v2+Interj:habu # "(I'm listening)" ;
+həmuʔ+Interj:həmuʔ # "(I'm listening)" ;
+
+! vim: set ft=xfst-lexc:

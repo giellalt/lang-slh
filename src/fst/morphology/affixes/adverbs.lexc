@@ -1,0 +1,32 @@
+!! Adjective inflection
+!  --------------------
+!! The Southern Puget Sound Salish language adverbs
+
+LEXICON ADV_
+:        K   ;
+
+LEXICON ADV_DEGREE
++Deg:        K   ;
+
+LEXICON ADV_INTERR
++Interr:        K   ;
+
+
+LEXICON ADV_PARENTHETIC
++Parenthetic:        K   ;
+
+LEXICON ADV_QNT
++Qnt: K ;
+
+LEXICON ADV_SPAT
++Spat:        K   ;
+
+LEXICON ADV_TEMP
++Temp:        K   ;
+
+LEXICON ADV_TOT
++Tot: K ;
+
+
+! vim: set ft=xfst-lexc:
+

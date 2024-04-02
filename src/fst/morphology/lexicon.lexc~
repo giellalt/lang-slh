@@ -1,0 +1,2233 @@
+! automatically generated combined lexc file!!!
+! Divvun & Giellatekno - open source grammars for Southern Puget Sound Salish language
+! Copyright © 2015 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@uit.no or feedback@divvun.no
+
+! ========================================================================== !
+! !!            !!!Southern Puget Sound Salish morphological analyser                      !
+! ========================================================================== !
+!! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Southern Puget Sound Salish LANGUAGE.
+ 
+
+Multichar_Symbols  !!≈ # Definitions for @CODE@
+!! ## Letters
+b̓   !!= @CODE@ 
+c̓   !!= @CODE@ 
+č    !!= @CODE@ 
+č̓   !!= @CODE@ 
+dᶻ   !!= @CODE@ 
+gʷ   !!= @CODE@ 
+ǰ    !!= @CODE@ 
+
+k̓   !!= @CODE@ 
+kʷ   !!= @CODE@ 
+k̓ʷ  !!= @CODE@ 
+
+l̕   !!= @CODE@ 
+ƛ̕   !!= @CODE@ 
+
+m̓   !!= @CODE@ 
+n̓   !!= @CODE@ 
+
+p̓   !!= @CODE@ 
+
+q̓   !!= @CODE@ 
+qʷ   !!= @CODE@ 
+q̓ʷ  !!= @CODE@ 
+
+t̕   !!= @CODE@ 
+w̓   !!= @CODE@ 
+y̓   !!= @CODE@ 
+
+x̌   !!= @CODE@ 
+xʷ   !!= @CODE@ 
+x̌ʷ  !!= @CODE@ 
+
+y̓   !!= @CODE@ 
+
+ə́   !!= @CODE@ used in coding of dictionary
+ə̀  !!= @CODE@ used in coding of dictionary
+
+
+!! ## Analysis symbols
+!  ----------------
+!! The morphological analyses of wordforms for the Southern Puget Sound Salish
+!! language are presented in this system in terms of the following symbols.
+!! (It is highly suggested to follow existing standards when adding new tags).
+
+!! The parts-of-speech are:
+ +N +A +Adv +V                                 !!≈
+ +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
+ +Det
+
+!! The parts of speech are further split up into:
+ +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
+
+ +Aux +Cop  !!= * @CODE@
+ +Pass  !!= * @CODE@ -t-əb
+ +Prox +Dist +Rem +Distr +Random
+
+!! Types of adverbs also include
+ +Deg        !!= * @CODE@ this is degree
+ +Manner     !!= * @CODE@ with reference to type of adverb
+ +Parenthetic !!= * @CODE@ parenthetic
+ +Qnt	     !!= * @CODE@ quantifier
+ +Spat	     !!= * @CODE@ spatial
+ +Temp	     !!= * @CODE@ temporal
+ +Tot	     !!= * @CODE@ total, universal quantifiers
+
+!! The Usage extents are marked using following tags:
+ +Err/Orth   
+ +Use/-Spell 
+ +Use/TTS          !!≈ * **@CODE@** – **only** retained in the HFST Text-To-Speech disambiguation tokeniser
+ +Use/-TTS         !!≈ * **@CODE@** – **never** retained in the HFST Text-To-Speech disambiguation tokeniser
+
+!! Dialect tags:
+
+ +Dial/-NL  !!≈ * **@CODE@** not north Lushootseed
+ +Dial/-SL  !!≈ * **@CODE@** not south Lushootseed
+
+!! The nominals are inflected in the following Case and Number
+ +Sg +Du +Pl
+ +Ess +Nom +Gen +Acc +Ill +Loc +Com 
+
+!! Possession is marked as follows:
+ +PxSg1 !!= * @CODE@ first person singular
+ +PxSg2 !!= * @CODE@ second person singular
+ +PxSP3 !!= * @CODE@ third person singular or plural
+ +PxPl1 !!= * @CODE@ first person plural
+ +PxPl2 !!= * @CODE@ third person plural
+
+!! The comparative forms are:
+ +Comp +Superl
+
+!! Numerals are classified under:
+ +Attr +Card
+ +Ord 
+
+!! Verb moods are:
+ +Ind +Prs +Prt +Pot +Cond +Imprt
++Mod/Subj +Des
++Anew    !!= * @CODE@ * bə%<
++Ptc
+
+!! Verb/Predicate tenses and aspect are:
+ +Fut !!= * @CODE@ * future 
+ +Prs +Prt !!= * @CODE@
+ +Hab 	 !!= * @CODE@ * habitual ƛ̕u%<
+ +Irr    !!= * @CODE@ * Irrealis (future) ɬu%<
+ +RemPst !!= * @CODE@ * remote past tu%<
++Asp/Pfv !!= * @CODE@ * perfective aspect ʔu%< , (Beck) punctual
++Asp/Prog !!= * @CODE@ * progressive aspect lə%<
++Asp/Stat !!= * @CODE@ * stative aspect ʔəs%< , (beck: as%<)
++Asp/ProgStat !!= * @CODE@ * progressive stative aspect lə%<ʔəs%<
++Asp/Cont !!= * @CODE@ * ləcu 
+
++Dat 	  !!= * @CODE@ * verbal derivation -yid/šid
++Der/Dat
+
+!dəxʷ%< VNoun
+ +LOC !!= * @CODE@ * lack of control %>dxʷ
+ +Imprt !!= * @CODE@ = %>ɬi
+
++Surprise !!= * @CODE@ * surprise %>əw̓ə
+ +Top !!= * @CODE@ * topic marker 
+ +Now !!= * @CODE@ * focus? %>əxʷ
++Qst         !!= * @CODE@ *   Question Particle: ʔu
+
+!! Verb personal forms are:
+ +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
+
+!! Other verb forms are
+ +Inf +Ger +ConNeg +ConNegII +Neg +ImprtII +PrsPrc +PrfPrc +Sup +VGen +VAbess
+
+! Abbreviated words are classified with:
+ +ABBR +ACR 
++Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
+
+!! Special symbols are classified with:
++CLB +PUNCT +LEFT +RIGHT
+
+!! The verbs are syntactically split according to transitivity:
+ +TV +IV
+
+!! Special multiword units are analysed with:
+ +Multi
+
+!! Non-dictionary words can be recognised with:
+ +Guess
+
+!! Question and Focus particles:
+ +Qst +Foc
+
+!! Gender
++Msc +Fem !!= * @CODE@ 
+
+!! Semantics are classified with
+ +Mal 
+ +Fem 
+ +Sur 
+ +Plc 
+ +Org
+ +Obj
+ +Ani
+ +Hum
+ +Plant
+ +Group
+ +Time 
+ +Txt
+ +Route
+ +Measr 
+ +Wthr
+ +Build 
+ +Edu
+ +Veh
+ +Clth
+
+
+!! Derivations are classified under the morphophonetic form of the suffix, the
+!! source and target part-of-speech.
+ +V→N +V→V +V→A
+ +Der
+ +Der/xxx
+ +Der/Dimin !!= * @CODE@ * diminutive
+ +Der/Dimin_12123 !!= * @CODE@ * diminutive pa-pasted ^Red12123
+ +Der/Dimin_1i123 !!= * @CODE@ * diminutive bi-bəlups; qi-qəlb 
+ +Der/Dimin_12q123 !!= * @CODE@ * diminutive 
+ +Der/Dimin_1iq123 !!= * @CODE@ * diminutive 
+ +Der/Dimin_1213 !!= * @CODE@ * diminutive pišpiš > pi-pšpiš;  sbádil:sbábdil
+ +Der/Dimin_1i13 !!= * @CODE@ * diminutive %^Red1i13 
+ +Der/Dimin_12q13 !!= * @CODE@ * diminutive
+ +Der/Dimin_1iq13 !!= * @CODE@ * diminutive
+ 
+ +Der/Dimin_121e3 !!= * @CODE@ * diminutive sbádil:sbábədil
+ +Der/Dimin_1i1e3 !!= * @CODE@ * diminutive
+ +Der/Dimin_12q1e3 !!= * @CODE@ * diminutive
+ +Der/Dimin_1iq1e3 !!= * @CODE@ * diminutive
+ 
+ +Der/Dimin_1i1i13 !!= * @CODE@ * diminutive with plural ^RedPL1i1i13
+
+ +Der/Distr	   !!= * @CODE@ * distributive
+ +Der/Distr_123123 !!= * @CODE@ * distributive
+
+ 
+ +Der/s !!= * @CODE@ * Noun derivation
+ +Vnoun !!= * @CODE@ * Deverbal Noun etc.
+
+!! Reduplication in Lushootseed is associated with a three-letter reduplication segment.
+!! 
+!! reduplication type 1 envolves the first two letters of the three-letter reduplication segment
+ +Der/Red1_12123 !!= * @CODE@ * This is Red1, associated with Dimin pa-pasted
+ +Der/Red1_1i123 !!= * @CODE@ * This is Red1, associated with Dimin
+ +Der/Red1_12ʔ123 !!= * @CODE@ * This is Red1, associated with Dimin
+ +Der/Red1_1iʔ123 !!= * @CODE@ * This is Red1, associated with Dimin
+ +Der/Red1_1213 !!= * @CODE@ * This is Red1, associated with Dimin pišpiš > pi-pšpiš; pa-pstəd
+ +Der/Red1_1i13 !!= * @CODE@ * This is Red1, associated with Dimin
+ +Der/Red1_12ʔ13 !!= * @CODE@ * This is Red1, associated with Dimin
+ +Der/Red1_1iʔ13 !!= * @CODE@ * This is Red1, associated with Dimin
+ +Der/Red1_121ə3 !!= * @CODE@ * This is Red1, associated with Dimin
+ +Der/Red1_1i1ə3 !!= * @CODE@ * This is Red1, associated with Dimin
+ +Der/Red1_12ʔ1ə3 !!= * @CODE@ * This is Red1, associated with Dimin
+ +Der/Red1_1iʔ1ə3 !!= * @CODE@ * This is Red1, associated with Dimin
+
+ +Der/Red1_1i13_Distr_1212 !!= * @CODE@ * This is Red1, associated with Dimin ^RedPL1i1i13
+!! reduplication type 2 involves the all three letters of the three-letter reduplication segment
+
++Der/Red2_3L !!= * @CODE@ * This is Red2 (Red2CVC=R2-123123), usually distributive, it is a reduplication where the first three letters are reduplicated as is pastəd > pas-pastəd
+
+!! reduplication type 3 involves the last two letters of the three-letter reduplication segment
+
++Der/Red3_12323 !!= * @CODE@ * This is Red3 this is random verbal
+ +Der/Red5_12323 !!= * @CODE@ * This is Red5 This is isolating, individuating cəliɬ:cədədiɬ 'he alone'
+
+!! reduplication type 6 involves the all three letters of the three-letter reduplication segment with a double vowel
+
++Der/Red6_122123 !!= * @CODE@ * This is Red6 
+ +Der/Red6_1aa1ə3 !!= * @CODE@ * This is Red6 sɬaaɬədəyʔ < sɬadəyʔ
+ 
++Clt !!= * @CODE@ %>əxʷ
+
+!! ### Tags distinguishing different versions of the same lemma (before POS)
++v1   !!≈ * @CODE@
++v2   !!≈ * @CODE@
++v3   !!≈ * @CODE@
++v4   !!≈ * @CODE@
++v5   !!≈ * @CODE@
++v6   !!≈ * @CODE@
++v7   !!≈ * @CODE@
++v8   !!≈ * @CODE@
++v9   !!≈ * @CODE@
++v10  !!≈ * @CODE@
++v11  !!≈ * @CODE@
++v12  !!≈ * @CODE@
++v13  !!≈ * @CODE@
++v14  !!≈ * @CODE@
++v15  !!≈ * @CODE@
++v16  !!≈ * @CODE@
++v17  !!≈ * @CODE@
++v18  !!≈ * @CODE@
++v19  !!≈ * @CODE@
++v20  !!≈ * @CODE@
++v21  !!≈ * @CODE@
++v22  !!≈ * @CODE@
++v23  !!≈ * @CODE@
++v24  !!≈ * @CODE@
+
+!! Note: These high +v... number are in use for one word only:
+
+
+
+        !! ## Symbols that need to be escaped on the lower side (towards twolc):
+ »7     !!≈ * **@CODE@**:  Literal »
+ «7     !!≈ * **@CODE@**:  Literal «
+        !! ```
+ %[%>%] !!= @CODE@ - Literal >
+ %[%<%] !!= @CODE@ - Literal <
+        !! ```
+
+%- !!≈ * **@CODE@**:  hyphen
+%^√ !!≈ * **@CODE@**:  commence root
+%< !!≈ * **@CODE@**: prefix
+
+
+
+!! Morphophonology
+!  ---------------
+!! To represent phonologic variations in word forms we use the following
+!! symbols in the lexicon files:
+ {aä} {oö} {uü}
+
+!! place holders
+%{pØ%} !!= * @CODE@ 
+%{p1%} !!= * @CODE@ 
+%{p2%} !!= * @CODE@ 
+%{p3%} !!= * @CODE@ 
+%{p4%} !!= * @CODE@ 
+%{p5%} !!= * @CODE@ 
+%{p6%} !!= * @CODE@ 
+%{p7%} !!= * @CODE@ 
+
+!! And following triggers to control variation
+ {front} {back}
+
+%^Red1i123 !!= * @CODE@ qəlb: qiqəlb *rain showers*
+%^Red1i13 !!= * @CODE@ 2-segment to 3-segments with vowel change sčətxʷəd:sčičtxʷəd Der/Red1_1i13
+%^Red12q13 !!= * @CODE@ 
+%^Red1213 !!= * @CODE@
+%^Red1iq13 !!= * @CODE@ iʔ
+%^Red1iq123 !!= * @CODE@ iʔ   biʔbədəʔs
+%^Red12123 !!= * @CODE@ papastəd
+%^RedPL1i1i13 !!= * @CODE@ 2-segment to 3-segments with vowel change Distr sčətxʷəd:sčičičtxʷəd Der/Red1_1i13_Distr_1212 
+%^RedPL123123 !!= * @CODE@ 3-segment preposed reduplication CVC-to-CVCCVC bəlups:bəlbəlups 
+%^Red12323 !!= * @CODE@ should work for Red3 and Red5
+%^RedPL130130 !!= * @CODE@ ƛ̕xʷay: ƛ̕xʷaƛ̕xʷay 
+
+%^Pen !!= * @CODE@ this combines with subsequent RmVow or perhaps RmCns
+%^RmVOW !!= * @CODE@ this removes previous vowel or with Pen the penultimate vowel
+%^d2t !!= * @CODE@ this devoices d to t specifically
+
+
+!! ## Flag diacritics
+!! We have manually optimised the structure of our lexicon using following
+!! flag diacritics to restrict morhpological combinatorics - only allow compounds
+!! with verbs if the verb is further derived into a noun again:
+ @P.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
+ @D.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
+ @C.NeedNoun@       !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
+!! 
+!! For languages that allow compounding, the following flag diacritics are needed
+!! to control position-based compounding restrictions for nominals. Their use is
+!! handled automatically if combined with +CmpN/xxx tags. If not used, they will
+!! do no harm.
+ @P.CmpFrst.FALSE@ !!≈ |  @CODE@ | Require that words tagged as such only appear first
+ @D.CmpPref.TRUE@  !!≈ |  @CODE@ | Block such words from entering ENDLEX
+ @P.CmpPref.FALSE@ !!≈ |  @CODE@ | Block these words from making further compounds
+ @D.CmpLast.TRUE@  !!≈ |  @CODE@ | Block such words from entering R
+ @D.CmpNone.TRUE@  !!≈ |  @CODE@ | Combines with the next tag to prohibit compounding
+ @U.CmpNone.FALSE@ !!≈ |  @CODE@ | Combines with the prev tag to prohibit compounding
+ @P.CmpOnly.TRUE@  !!≈ |  @CODE@ | Sets a flag to indicate that the word has passed R
+ @D.CmpOnly.FALSE@ !!≈ |  @CODE@ | Disallow words coming directly from root.
+!! 
+!! Use the following flag diacritics to control downcasing of derived proper
+!! nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
+!! these flags. There exists a ready-made regex that will do the actual down-casing
+!! given the proper use of these flags.
+ @U.Cap.Obl@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
+ @U.Cap.Opt@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
+
+!! ### SPELLRELAX
+@R.SpellRlx.ON@
+@D.SpellRlx.ON@
+@C.SpellRlx@
+
+!! ###  NOUNS
+
+@U.PossPx.SP3@ !!= * @CODE@ 
+@U.PossPx.Sg1@ !!= * @CODE@ 
+@U.PossPx.Sg2@ !!= * @CODE@ 
+@U.PossPx.Sg3@ !!= * @CODE@ 
+@U.PossPx.Pl1@ !!= * @CODE@ 
+@U.PossPx.Pl2@ !!= * @CODE@ 
+@U.PossPx.Pl3@ !!= * @CODE@ 
+
+@R.PossPx.Sg1@ !!= * @CODE@ 
+@R.PossPx.Sg2@ !!= * @CODE@ 
+@R.PossPx@	   !!= * @CODE@ 
+@D.PossPx@	   !!= * @CODE@ 
+@C.PossPx@	   !!= * @CODE@ 
+
+!! ### VERBS
+@U.TAM-SUBJ.SUBJ@ !!= * @CODE@ gʷə%<
+@R.TAM-SUBJ.SUBJ@ !!= * @CODE@ gʷə%<
+@D.TAM-SUBJ@ !!= * @CODE@ gʷə%<
+
+@U.TAM-HAB.IRR@	 !!= * @CODE@ ɬu%< also FUT
+@R.TAM-HAB.IRR@	 !!= * @CODE@ ɬu%< also FUT
+@U.TAM-HAB.HAB@	 !!= * @CODE@ ƛ̕u%<
+@R.TAM-HAB.HAB@	 !!= * @CODE@ ƛ̕u%<
+@D.TAM-HAB@	 !!= * @CODE@ ƛ̕u%<
+
+@U.TAM-RE.RE@  !!= * @CODE@ bə
+@R.TAM-RE.RE@  !!= * @CODE@ bə Anew, re-
+@D.TAM-RE.RE@  !!= * @CODE@ bə
+
+@U.NMZ.V2N@  !!= * @CODE@ s%^√
+@R.NMZ.V2N@  !!= * @CODE@ s%^√
+@U.NMZ.V2A@  !!= * @CODE@ dəxʷ
+@R.NMZ.V2A@  !!= * @CODE@ dəxʷ
+@D.NMZ@      !!= * @CODE@ s%^√ dəxʷ
+
+@U.TAM-T.REM@	 !!= * @CODE@ tu%<
+@R.TAM-T.REM@	 !!= * @CODE@ tu%<
+@D.TAM-T@	 !!= * @CODE@ tu%<
+
+@D.TAM-A@	 !!= * @CODE@ ʔu%<
+@U.TAM-A.PFV@	 !!= * @CODE@ ʔu%<
+@R.TAM-A.PFV@	 !!= * @CODE@ ʔu%<
+@U.TAM-A.CONT@	 !!= * @CODE@ ləcu%<
+@R.TAM-A.CONT@	 !!= * @CODE@ ləcu%<
+@U.TAM-A.PROGSTAT@ !!= * @CODE@ ləs%<
+@R.TAM-A.PROGSTAT@ !!= * @CODE@ ləs%<
+@U.TAM-A.PROG@	 !!= * @CODE@ progressive lə%<
+@R.TAM-A.PROG@	 !!= * @CODE@ progressive lə%<
+@U.TAM-A.STAT@ !!= * @CODE@ ʔəs%<
+@R.TAM-A.STAT@ !!= * @CODE@ ʔəs%<
+@U.TAM.NO@ !!= * @CODE@ 
+@R.TAM.NO@ !!= * @CODE@ 
+
+
+@U.OBJ.1@	 !!= * @CODE@ 
+@U.OBJ.2@	 !!= * @CODE@ 
+
+@D.OBJ.1@	 !!= * @CODE@ 
+@D.OBJ.2@	 !!= * @CODE@ 
+
+@R.TAM@		 !!= * @CODE@ 
+@D.TAM@		 !!= * @CODE@ 
+@C.TAM@		 !!= * @CODE@ 
+
+
+LEXICON Root
+!! The word forms in Southern Puget Sound Salish language start from the lexeme roots of basic
+!! word classes, or optionally from prefixes:
+! Nouns       ; This is fed entirely by Prefixes
+! Verbs       ; This is fed entirely by Prefixes
+ Adjectives  ;
+ Adpositions   ;
+ Adverbs       ;
+ Conjunctors   ;
+ Interjection  ;
+ Pronouns    ;
+ Numerals    ;
+ Prefixes    ;
+ Punctuation ;
+ Symbols     ;
+
+LEXICON PCLE_
+ K ;
+LEXICON NUM_
+ K ;
+
+LEXICON K !!= * **@CODE@** Clitic lexicon
++Clt+Dial/-NL:%>əxʷ ENDLEX "now" ;
++Clt+Dial/-SL:%>áxʷ ENDLEX "now" ;
+ENDLEX ; 
+
+LEXICON ENDLEX !!= * **@CODE@**
+ # ;
+
+! vim: set ft=xfst-lexc:
+!! Adjective inflection
+!  --------------------
+!! The Southern Puget Sound Salish language adjectives are inflected in much the same way as nouns and verbs.
+
+LEXICON Comparisons
++A+Pos:0        Cases   ;
++A+Comp:er       Cases   ;
++A+Superl:est      Cases   ;
+
+
+LEXICON A_with-PL_RED2
+: DIM_CV1toCV2C ;
+: SG-SUF ;
+: PL_RED2 ;
+
+!LEXICON A_
+!!: K ; CHECKME 2021-07-10
+!PRE-POSS_01 ;
+
+!LEXICON DET_
+!: K ;
+
+LEXICON DET-NEUTRAL-MSC_
+K ;
+LEXICON DET-NEUTRAL-FEM_
+K ;
+
+! vim: set ft=xfst-lexc:
+
+
+! vim: set ft=xfst-lexc:
+
+!! Adjective inflection
+!  --------------------
+!! The Southern Puget Sound Salish language adverbs
+
+LEXICON ADV_
+:        K   ;
+
+LEXICON ADV_DEGREE
++Deg:        K   ;
+
+LEXICON ADV_INTERR
++Interr:        K   ;
+
+
+LEXICON ADV_PARENTHETIC
++Parenthetic:        K   ;
+
+LEXICON ADV_QNT
++Qnt: K ;
+
+LEXICON ADV_SPAT
++Spat:        K   ;
+
+LEXICON ADV_TEMP
++Temp:        K   ;
+
+LEXICON ADV_TOT
++Tot: K ;
+
+
+! vim: set ft=xfst-lexc:
+
+!! Noun inflection
+!  ---------------
+!! The Southern Puget Sound Salish language nouns inflect in time person aspect.
+! s%<ɬalil%>tu%>b%>s%>əxʷ
+! VNoun+come.ashore+V+Caus+Mid+Px3+Now
+! np+come·ashore+[caus]+[md]+3s+now
+! %>tu ~ %>t
+! %>əb ~ %>b
+
+
+LEXICON Cases
+ +N+Sg+Nom:0   #     ;
+ +N+Pl+Nom:i   #     ;
+ +N+Sg+Acc:at  #     ;
+ +N+Pl+Acc:iat #     ;
+ +N+Sg+Loc:as  #     ;
+ +N+Pl+Loc:ias #     ;
+  #:0   Nouns ; ! Normally going via a R lexicon adding compound tags.
+
+
+LEXICON N_with-PL_RED1_qelb
+!: DIM_CV1toCV2C ; What should this be?
+: SG-SUF ;
+: PL_RED1_qelb ;
+
+
+
+LEXICON N_with_PL_RED2_Dial/-SL
++Dial/-SL: N_with_PL_RED2 ;
+LEXICON N_with_PL_RED2_Dial/-NL
++Dial/-NL: N_with_PL_RED2 ;
+LEXICON N_with_PL_RED2
+: DIM_CV1toCV2C ;
+: SG-SUF ;
+: PL_RED2 ;
+
+LEXICON N_with_PL_RED130
+!%^RedPL130130
+: SG-SUF ;
+@D.PossPx@+Pl:@D.PossPx@%^RedPL130130 PRE-POSS_01 ;
++Pl:%^RedPL130130	PRE-POSS_01 ;
+
+
+LEXICON N_with_Distr_12323_RED5 !Der/Red5_12323
+!%^Red12323
+!: DIM_CV1toCV2C ;
+: SG-SUF ;
+: PL_RED5 ;
+
+LEXICON N-FEM_with-PL_RED2
++Fem: DIM_CV1toCV2C ;
++Fem: SG-SUF ;
++Fem: PL_RED2 ;
+
+LEXICON N-MSC_with-PL_RED2
++Msc: DIM_CV1toCV2C ;
++Msc: SG-SUF ;
++Msc: PL_RED2 ;
+
+! Derivation
+LEXICON DIM_CV1toCV2C
+@D.PossPx@+Der+Der/Dimin_1i13+N:@D.PossPx@%^Red1i13 SG-SUF ; !+Der/Red1_1i13
+@R.PossPx@+Der+Der/Dimin_1i13+N:@R.PossPx@%^Red1i13 SG-SUF ; !+Der/Red1_1i13
+@D.PossPx@+Err/Orth+Der+Der/Dimin_1iq13+N:@D.PossPx@%^Red1iq13 SG-SUF ; !+Der/Red1_1iq13
+@R.PossPx@+Err/Orth+Der+Der/Dimin_1iq13+N:@R.PossPx@%^Red1iq13 SG-SUF ; !+Der/Red1_1iq13
+
+@D.PossPx@+Err/Orth+Der+Der/Dimin_1iq123+N:@D.PossPx@%^Red1iq123 SG-SUF ; !+Der/Red1_1iq123
+@R.PossPx@+Err/Orth+Der+Der/Dimin_1iq123+N:@R.PossPx@%^Red1iq123 SG-SUF ; !+Der/Red1_1iq123
+
+@D.PossPx@+Err/Orth+Der+Der/Dimin_1i123+N:@D.PossPx@%^Red1i123 SG-SUF ; !+Der/Red1_1i123
+@R.PossPx@+Err/Orth+Der+Der/Dimin_1i123+N:@R.PossPx@%^Red1i123 SG-SUF ; !+Der/Red1_1i123
+@D.PossPx@+Err/Orth+Der+Der/Dimin_12123+N:@D.PossPx@%^Red12123 SG-SUF ; !+Der/Red1_12123
+@R.PossPx@+Err/Orth+Der+Der/Dimin_12123+N:@R.PossPx@%^Red12123 SG-SUF ; !+Der/Red1_12123
+
+@D.PossPx@+Der+Der/Dimin_1i1i13+N+Pl:@D.PossPx@%^RedPL1i1i13 PRE-POSS_01 ;! +Der/Red1_1i13_Distr_1212
+@R.PossPx@+Der+Der/Dimin_1i1i13+N+Pl:@R.PossPx@%^RedPL1i1i13 PRE-POSS_01 ;! +Der/Red1_1i13_Distr_1212
+
+LEXICON N_DIM_with_PL_12123 !bibədaʔ, bibibədaʔ
++Dimin: SG-SUF ;
++Dimin+Pl:%^Red12123 PRE-POSS_01 ;
+
+! Declension
+LEXICON SG-SUF
+!@D.PossPx@+Sg:@D.PossPx@ # ; !CHECKME 2021-07
++Sg: PRE-POSS_01 ;
+
+
+LEXICON PL_RED1_qelb
+@D.PossPx@+Pl:@D.PossPx@%^Red1i123   # ;
++Pl:%^Red2CV2CiCV        PRE-POSS_01 ;
+!! qəlb+N+Pl: **rain showers**
+!!€ %{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qəlb%^Red1i123
+!!€ 00qi0qəlb0
+
+LEXICON PL_RED2
+@D.PossPx@+Pl:@D.PossPx@%^RedPL123123 PRE-POSS_01 ;
+!@D.PossPx@+Pl:@D.PossPx@%^RedPL123123 # ;
++Pl:%^RedPL123123	PRE-POSS_01 ;
+!! bəlups+N+Pl
+!!€ %{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlups%^RedPL123123
+!!€ 00bəlbəlups0
+!!$ %{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlups%^RedPL123123
+!!$ 00000bəlups0
+!! k̓ʷəčədiʔ+N+Pl: __rabbit/jänis__
+!!€ %{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ʷəčədiʔ%^RedPL123123
+!!€ 00k̓ʷəčk̓ʷəčədiʔ0
+!!$ k̓ʷəčədiʔ: k̓ʷəčədiʔ+N+Pl
+
+LEXICON PL_RED5
+!ʔaciɬtalbixʷ:ʔacaciɬtalbixʷ
+@D.PossPx@+Pl:@D.PossPx@%^Red12323 PRE-POSS_01 ;
+@R.PossPx@+Pl:@R.PossPx@%^Red12323	PRE-POSS_01 ;
+
+LEXICON PRE-POSS_01
+@R.TAM-SUBJ.SUBJ@+Mod/Subj:@R.TAM-SUBJ.SUBJ@ PRE-POSS_02 ;
+@D.TAM-SUBJ@ PRE-POSS_02 ;
+
+LEXICON PRE-POSS_02
+@R.TAM-HAB.HAB@+Hab:@R.TAM-HAB.HAB@ PRE-POSS_03 ;
+@R.TAM-HAB.IRR@+Irr:@R.TAM-HAB.IRR@ PRE-POSS_03 ;
+@D.TAM-HAB@ PRE-POSS_03 ;
+
+LEXICON PRE-POSS_03
+@R.TAM-RE.RE@+Anew:@R.TAM-RE.RE@ PRE-POSS_04 ;
+@D.TAM-RE.RE@ PRE-POSS_04 ;
+
+LEXICON PRE-POSS_04
+@R.TAM-T.REM@+RemPst:@R.TAM-T.REM@ PRE-POSS_05 ;
+@D.TAM-T@ PRE-POSS_05 ;
+
+LEXICON PRE-POSS_05
+@R.TAM-A.STAT@+Asp/Stat:@R.TAM-A.STAT@ PRE-POSS_06 ;
+@R.TAM-A.PROG@+Asp/Prog:@R.TAM-A.PROG@ PRE-POSS_06 ;
+@R.TAM-A.PROGSTAT@+Asp/ProgStat:@R.TAM-A.PROGSTAT@ PRE-POSS_06 ;
+@R.TAM-A.PFV@+Asp/Pfv:@R.TAM-A.PFV@ PRE-POSS_06 ;
+@D.TAM-A@ PRE-POSS_06 ;
+
+LEXICON PRE-POSS_06
+@R.NMZ.V2N@+Der/s+N+Sg:@R.NMZ.V2N@ POSS ;
+@R.NMZ.V2A@+Ptc:@R.NMZ.V2A@ POSS ;
+@D.NMZ@ POSS ;
+
+LEXICON POSS
+@D.PossPx@:@D.PossPx@ K ;
+@R.PossPx.Sg1@ PXSG1 ;
+@R.PossPx.Sg2@ PXSG2 ;
+@D.PossPx@ PXSP3 ;
+@D.PossPx@ PXPL1 ;
+@D.PossPx@ PXPL2 ;
+
+LEXICON PXSG1
++PxSg1: K ;
+
+LEXICON PXSG2
++PxSg2: K ;
+
+LEXICON PXSP3
++PxSP3:%>s K ;
+
+LEXICON PXPL1
++PxPl1:%>čəɬ K ;
+
+LEXICON PXPL2
++PxPl2:%>ləp K ;
++PxPl2:%>lap K ;
+
+
+! vim: set ft=xfst-lexc:
+
+!! Prefixes
+!  --------
+!! Prefixes in the Southern Puget Sound Salish language are attached to the beginning of other words.
+
+!! Beck, David 2018: Aspectual Affixation in Lushootseed: A minor reanalysis
+!! ordering
+!! Tense/mood | Poss.subj | nominalizers | Aspect | Stem | Object/voice | others
+!! gʷə%<, ƛ̕u%<, tu%<, ɬu%<, bə%< | d%<, ad%< |s%<, dəxʷ%< | ʔu, ʔəs, lə, ləs, ləcu| X |%>s/%>bš, %>sut/%>ut, %>agʷəl, %>b |%>ləp, %>s, %>əxʷ
+
+!! -1/-4?(lə=bə=ʔas-q̓ʷəl-il) proclitic Asp/Prog+:lə%<
+!!-4  @U.TAM-SUBJ.SUBJ@:@U.TAM-SUBJ.SUBJ@gʷə%< (+Sbj)
+!!    @U.TAM-HAB.HAB@:@U.TAM-HAB.HAB@ƛ̕u%<  (+Hab)
+!!    @U.TAM-T.REM@:@U.TAM-T.REM@tu%<   (TM/Past+)
+!!    @U.TAM-HAB.IRR@:@U.TAM-HAB.IRR@ɬu%<  (+Fut)
+!!    @U.TAM-RE.RE@:@U.TAM-RE.RE@bə%<  (+Add)
+!!-3  d%<, PxSg2+:ad%< ?| Add+:bə%< 
+!!-2  NM+:s%<, dəxʷ%<
+!! -1 aspect
+!!   @U.TAM-A.PROG@:@U.TAM-A.PROG@lə%<  (non-circumscribed, progressive)
+!! @U.TAM-A.STAT@:@U.TAM-A.STAT@ʔəs%<  (ongoing state: Asp/Stat)
+!! @U.TAM-A.STAT@:@U.TAM-A.STAT@ʔas%<  (ongoing state: Asp/Stat)variant
+!!   @U.TAM-A.PROGSTAT@:@U.TAM-A.PROGSTAT@ləs%< (Asp/ProgStat)
+!! @U.TAM-A.PFV@:@U.TAM-A.PFV@ʔu%<  (Asp/Pfv)
+!! -1 Asp/Cont+:ləcu%< (?Asp/Prog+:lə%< + Asp/Pfv+:ʔu%<) Skagit
+!! -1 Asp/Stat:ʔə{sØ}{dØ}xʷ%< (Asp/Stat+:ʔəs%< + dxʷ%<)
+!! 
+!! X
+!! 1 %>s/%>bš, %>sut/%>ut, %>agʷəl, %>b, +Inch:%>il
+!! 2 %>ləp, +Px3:%>s, %>əxʷ
+!! lə<bə<ləcu<gʷaadgʷad
+
+LEXICON Prefixes
+Prefixes_01 ;
+@U.TAM-SUBJ.SUBJ@:@U.TAM-SUBJ.SUBJ@gʷə%< Prefixes_01 ; !sbj = subjunctive
+@U.TAM-HAB.IRR@:@U.TAM-HAB.IRR@ɬu%< Prefixes_01 ; ! qəlb 'rain': ɬuqəlb 'rain in the future' is this a noun, too? _intention to_
+
+!Lonsdale 2001:211-212
+!ɬubələskʷaxʷyildutəxʷčəɬ
+!ɬu<bə<ləs<kʷaxʷ>y>il>d>ut>əxʷ>čəɬ
+!Fut+ANEW+PgrSttv+help+YI+il+Trx+Rfx+Inc+our
+@U.TAM-HAB.IRR@@U.TAM-RE.RE@@U.TAM-A.PROGSTAT@:@U.TAM-HAB.IRR@@U.TAM-RE.RE@@U.TAM-A.PROGSTAT@ɬu%<bə%<ləs%< VERBS_OR_NOUNS ;
+@U.TAM-HAB.IRR@@U.TAM-RE.RE@@U.TAM-A.PROGSTAT@:@U.TAM-HAB.IRR@@U.TAM-RE.RE@@U.TAM-A.PROGSTAT@ɬu%<bə%<las%< VERBS_OR_NOUNS ;
+@U.TAM-HAB.IRR@@U.TAM-RE.RE@:@U.TAM-HAB.IRR@@U.TAM-RE.RE@ɬu%<bə%< DVNouns   ; ! direct to PxSg1
+!gʷə%<ƛ̕u%<ʔas– Sbj+Hab+Stat
+@U.TAM-SUBJ.SUBJ@@U.TAM-HAB.HAB@@U.TAM-A.STAT@:@U.TAM-SUBJ.SUBJ@@U.TAM-HAB.HAB@@U.TAM-A.STAT@gʷə%<ƛ̕u%<ʔəs%< VERBS_OR_NOUNS ;
+@U.TAM-SUBJ.SUBJ@@U.TAM-HAB.HAB@@U.TAM-A.STAT@:@U.TAM-SUBJ.SUBJ@@U.TAM-HAB.HAB@@U.TAM-A.STAT@gʷə%<ƛ̕u%<ʔas%< VERBS_OR_NOUNS ;
+@U.TAM-SUBJ.SUBJ@@U.TAM-HAB.HAB@:@U.TAM-SUBJ.SUBJ@@U.TAM-HAB.HAB@gʷə%<ƛ̕u%< DVNouns   ; ! direct to PxSg1
+!ƛ̕u%<ʔas– Hab+Stat
+@U.TAM-HAB.HAB@@U.TAM-A.STAT@:@U.TAM-HAB.HAB@@U.TAM-A.STAT@ƛ̕u%<ʔəs%< VERBS_OR_NOUNS ;
+@U.TAM-HAB.HAB@@U.TAM-A.STAT@:@U.TAM-HAB.HAB@@U.TAM-A.STAT@ƛ̕u%<ʔas%< VERBS_OR_NOUNS ;
+!ʔəsq̓iʔq̓aƛ̕əb _partly cloudy_ ɬasq̓iʔq̓aƛ̕əb __partly cloudy in the future__
+!ʔəsgiʔgəqəb __partly sunny__ ɬasgiʔgəqəb __partly sunny in the future__
+!ʔiɬgəqil __mostly sunny__ ɬasʔiɬgəqil __mostly sunny in the future__
+!ʔəsgəqəb __sunny__ ɬasgəqil __sunny in the future__
+@U.TAM-HAB.IRR@@U.TAM-A.STAT@:@U.TAM-HAB.IRR@@U.TAM-A.STAT@ɬəs%<  VERBS_OR_NOUNS ;
+@U.TAM-HAB.IRR@@U.TAM-A.STAT@:@U.TAM-HAB.IRR@@U.TAM-A.STAT@ɬas%<  VERBS_OR_NOUNS ;
+!ƛ̕u=bə= Hab+Add (check ordering)
+@U.TAM-HAB.HAB@@U.TAM-RE.RE@:@U.TAM-HAB.HAB@@U.TAM-RE.RE@ƛ̕u%<bə%< DVNouns   ; ! direct to PxSg1
+!bə%<ƛ̕u%< Add+Hab (check ordering)
+@U.TAM-RE.RE@@U.TAM-HAB.HAB@:@U.TAM-RE.RE@@U.TAM-HAB.HAB@bə%<ƛ̕u%< DVNouns   ; ! direct to PxSg1
+!gʷə%<tu%< Sbj+Rem
+@U.TAM-SUBJ.SUBJ@@U.TAM-T.REM@:@U.TAM-SUBJ.SUBJ@@U.TAM-T.REM@gʷə%<tu%< DVNouns   ; ! direct to PxSg1
+!ƛ̕u%<ʔu%< Hab+Pfv
+@U.TAM-HAB.HAB@@U.TAM-A.PFV@:@U.TAM-HAB.HAB@@U.TAM-A.PFV@ƛ̕u%<ʔu%< VERBS_OR_NOUNS ;
+!ƛ̕u%<tu%<lə%< Hab+Rem+Prog
+@U.TAM-HAB.HAB@@U.TAM-T.REM@@U.TAM-A.PROG@:@U.TAM-HAB.HAB@@U.TAM-T.REM@@U.TAM-A.PROG@ƛ̕u%<tu%<lə%< VERBS_OR_NOUNS ;
+!ƛ̕u%<0%<lə%< Hab+Prog
+@U.TAM-HAB.HAB@@U.TAM-A.PROG@:@U.TAM-HAB.HAB@@U.TAM-A.PROG@ƛ̕u%<lə%< VERBS_OR_NOUNS ;
+
+
+
+LEXICON Prefixes_01
+Prefixes_01a ;
+@U.TAM-RE.RE@:@U.TAM-RE.RE@bə%< Prefixes_01a ;
+
+LEXICON Prefixes_01a
+Prefixes_01b ;
+@U.TAM-HAB.HAB@:@U.TAM-HAB.HAB@ƛ̕u%< Prefixes_01b ;
+@U.TAM-A.PROG@:@U.TAM-A.PROG@lə%< Prefixes_01b ;
+!bələhuy: __again/also it is done__
+
+LEXICON Prefixes_01b
+Prefixes_01c ;
+!@U.PossPx.Sg1@:@U.PossPx.Sg1@d%<     Prefixes_01c   ;
+!@U.PossPx.Sg2@:@U.PossPx.Sg2@ad%<    Prefixes_01c   ;
+ DVNouns_01 ;
+
+LEXICON Prefixes_01c
+ Nouns ;
+! These are the first Northern Lushootseed
+ N_NEWWORDS ;
+ DVNouns   ;
+
+
+LEXICON DVNouns
+!@U.NMZ.V2N@:@U.NMZ.V2N@s%< DVNouns_01 ; !Need to mark this with flags 2021-06-30
+!@U.NMZ.V2A@:@U.NMZ.V2A@dəxʷ%< DVNouns_01 ; !2022-12-25 moved to DVNouns_02-02
+ DVNouns_01 ; !
+ 
+!ƛ̕u=s=ʔəs Hab+Nmz+Stat
+
+!ɬu=d=s=ʔaʔ Irr+PxSg1+Nmlz+be.there
+
+LEXICON DVNouns_01
+! followed by PX
+@U.TAM-T.REM@:@U.TAM-T.REM@tu%< DVNouns_02-1 ; !remote past, any predicate
+DVNouns_02-1 ;
+
+LEXICON DVNouns_02-1
+!@U.PossPx.Sg1@:@U.PossPx.Sg1@d%<     Prefixes_01c   ;!CHECKME2022
+!@U.PossPx.Sg2@:@U.PossPx.Sg2@ad%<    Prefixes_01c   ;
+@U.PossPx.Sg1@:@U.PossPx.Sg1@d%<     DVNouns_02-2   ;!CHECKME2022
+@U.PossPx.Sg2@:@U.PossPx.Sg2@ad%<    DVNouns_02-2   ;
+DVNouns_02-2 ;
+
+LEXICON DVNouns_02-2
+@U.NMZ.V2N@:@U.NMZ.V2N@s%< DVNouns_02-3 ; !Need to mark this with flags 2021-06-30
+@U.NMZ.V2A@:@U.NMZ.V2A@dəxʷ%< DVNouns_02-3 ; !
+DVNouns_02-3 ;
+
+LEXICON DVNouns_02-3
+!@U.TAM.NO@:@U.TAM.NO@ Verbs ; 
+!verbprefix-     Verbs   ;
+ VERBS_OR_NOUNS ;
+@U.TAM-A.PROG@:@U.TAM-A.PROG@lə%< VERBS_OR_NOUNS ;!non-circumscribed, progressive
+@U.TAM-A.STAT@:@U.TAM-A.STAT@ʔəs%< VERBS_OR_NOUNS ; !ongoing state
+@U.TAM-A.STAT@:@U.TAM-A.STAT@ʔas%< VERBS_OR_NOUNS ; !ongoing state
+@U.TAM-A.PROGSTAT@:@U.TAM-A.PROGSTAT@ləs%< VERBS_OR_NOUNS ;
+@U.TAM-A.PFV@:@U.TAM-A.PFV@ʔu%< VERBS_OR_NOUNS ; ! qəlb 'rain': ʔuqəlb 'raining' doesn't sound perfect to me
+@U.TAM-A.CONT@:@U.TAM-A.CONT@ləcu%< VERBS_OR_NOUNS ;
+
+
+
+
+LEXICON VERBS_OR_NOUNS
+:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}  Verbs ;
+ N_NEWWORDS ;
+ Nouns ;
+ Adjectives ;
+ 
+! vim: set ft=xfst-lexc:
+
+
+! vim: set ft=xfst-lexc:
+!! Proper noun inflection
+!  ----------------------
+!! The Southern Puget Sound Salish language proper nouns inflect in the same cases as regular
+!! nouns, but perhaps with a colon (':') as separator.
+
+LEXICON ProperNounCases
++N+Prop:%:   Cases  ;
++N+Prop:%:   Cases  ;
++N+Prop:%:   Cases  ;
++N+Prop:%:   Cases  ;
++N+Prop:%:   Cases  ;
++N+Prop:%:   Cases  ;
+        -    Nouns  ; ! perhaps compounding
+
+! vim: set ft=xfst-lexc:
+
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@uit.no or feedback@divvun.no
+
+!! # Symbol affixes
+
+LEXICON Noun_symbols_possibly_inflected
+ +N+Symbol: SYMBOL_connector ;
+
+LEXICON Noun_symbols_never_inflected
+ +N+Symbol: # ;
+
+LEXICON SYMBOL_connector
+               SYMBOL_NO_suff ; ! §
+          :%:  SYMBOL_suff    ; ! §:sne
+ +Err/Orth:    SYMBOL_suff    ; ! §esne
+ +Err/Orth:%-e SYMBOL_suff    ; ! §-esne
+ +Err/Orth:%'e SYMBOL_suff    ; ! §'esne
+
+LEXICON SYMBOL_NO_suff
+ +Sg+Nom: # ;
+
+LEXICON SYMBOL_suff
+ +Sg+Gen:n       # ;
+ +Sg+Acc:m       # ;
+ +Sg+Ill:se      # ;
+ +Sg+Ine:sne     # ;
+ +Sg+Ela:ste     # ;
+ +Sg+Com:ine     # ;
+    +Ess:ine     # ;
+ +Pl+Nom:h       # ;
+ +Pl+Gen:ij      # ;
+ +Pl+Acc:ide     # ;
+ +Pl+Ill:ide     # ;
+ +Pl+Ine:ine     # ;
+ +Pl+Ela:jste    # ;
+ +Pl+Com:jgujmie # ;
+!! Verb inflection
+!  ---------------
+!! The Southern Puget Sound Salish language verbs inflect time, person and aspect.
+! (cf. Hagiwara :7)
+! +OcSg1:%>c
+! +OcSg2:%>cid
+! +OcPl1:%>ubuɬ
+! +OcPl2:%>ubuɬəd
+! +Oc3:%>d
+! +Refl:%>cut
+! +Recip:%>agʷəl
+! +Mid:%>əb
+!
+
+LEXICON Persons
++V+Inf:0    #   ;
++V+Sg1:en   #   ;
++V+Sg2:et   #   ;
++V+Sg3:e    #   ;
++V+Pl1:ien  #   ;
++V+Pl2:iet  #   ;
++V+Pl3:iet  #   ;
+
+
+!LEXICON COP_
+!+Cop:	# ;
+
+!LEXICON TV_BECHDUB
+!+TV: 0V_BECHDUB ;
+LEXICON V_BECHDUB
+ 0V_BECHDUB ;
+LEXICON 0V_BECHDUB
+!! bəčdub:bəčd
++Der/Red2_3L:%^Red123123 0V_BECHDUB_01 ;
+ 0V_BECHDUB_01 ;
+LEXICON 0V_BECHDUB_01
+!! bəčdub:bəčd
+@R.TAM-SUBJ.SUBJ@+Mod/Subj:@R.TAM-SUBJ.SUBJ@ 0V_BECHDUB_02 ;
+@D.TAM-SUBJ@ 0V_BECHDUB_02 ;
+
+LEXICON 0V_BECHDUB_02
+@R.TAM-HAB.HAB@+Hab:@R.TAM-HAB.HAB@ 0V_BECHDUB_03 ;
+@R.TAM-HAB.IRR@+Irr:@R.TAM-HAB.IRR@ 0V_BECHDUB_03 ;
+@D.TAM-HAB@ 0V_BECHDUB_03 ;
+
+LEXICON 0V_BECHDUB_03
+@R.TAM-RE.RE@+Anew:@R.TAM-RE.RE@ 0V_BECHDUB_04 ;
+@D.TAM-RE.RE@ 0V_BECHDUB_04 ;
+
+LEXICON 0V_BECHDUB_04
+@R.TAM-T.REM@+RemPst:@R.TAM-T.REM@ 0V_BECHDUB_05 ;
+@D.TAM-T@ 0V_BECHDUB_05 ;
+
+LEXICON 0V_BECHDUB_05
+@R.TAM-A.STAT@+Asp/Stat:@R.TAM-A.STAT@ 0V_BECHDUB_06 ;
+@R.TAM-A.PROG@+Asp/Prog:@R.TAM-A.PROG@ 0V_BECHDUB_06 ;
+@R.TAM-A.PROGSTAT@+Asp/ProgStat:@R.TAM-A.PROGSTAT@ 0V_BECHDUB_06 ;
+@R.TAM-A.PFV@+Asp/Pfv:@R.TAM-A.PFV@ 0V_BECHDUB_06 ;
+@D.TAM-A@ 0V_BECHDUB_06 ;
+
+LEXICON 0V_BECHDUB_06
+@R.NMZ.V2N@+Vnoun:@R.NMZ.V2N@ OC1/2_š_OR_OCSP3_OR_DVN-POSS ;
+@R.NMZ.V2A@+Ptc:@R.NMZ.V2A@ OC1/2_š_OR_OCSP3_OR_DVN-POSS ;
+@D.NMZ@ OC1/2_š_OR_OCSP3_OR_DVN-POSS ;
+
+LEXICON TV_HUYTXW
+ V_HUYTXW ;
+LEXICON V_HUYTXW !CHECKME 2024-01-23
+ V_BECHDUB ;
+:xʷ 0V_KWEDAD ;
+
+LEXICON V_HUY !CHECKME 2024-02-24
+: 0V_KWEDAD ;
+
+LEXICON V_KWEDYID_Dial/-NL
++Dial/-NL: V_KWEDYID ;
+LEXICON V_KWEDYID ! kʷədyid+V:kʷədyíd
++Dat: V_KWEDAD ;
+
+LEXICON V_CUTEB_Dial/-NL
++Dial/-NL: V_CUTEB ;
+LEXICON V_CUTEB !CHECKME 2024-01-24
+: 0V_KWEDAD ;
+
+LEXICON TV_SELPED !səlpəd:səlpəd
+: 0V_KWEDAD ;
+
+LEXICON V_SELPED !səlpəd:səlpəd
+: 0V_KWEDAD ;
+
+LEXICON V_KWEDAD_Dial/-NL
++Dial/-NL: V_KWEDAD ;
+!LEXICON TV_KWEDAD
+!+TV: 0V_KWEDAD ;
+LEXICON V_KWEDAD
+: 0V_KWEDAD ;
+
+
+LEXICON 0V_KWEDAD
+!! kʷədad:kʷədad
++Der/Red2_3L:%^RedPL123123 0V_KWEDAD_01a ;
++Der/Dimin_12123:%^Red12123 0V_KWEDAD_01a ;
++Der/Dimin_1i123:%^Red1i123 0V_KWEDAD_01a ;
++Der/Dimin_12q123:%^Red12q123 0V_KWEDAD_01a ;
++Der/Dimin_1iq123:%^Red1iq123 0V_KWEDAD_01a ;
++Der/Dimin_1213:%^Red1213 0V_KWEDAD_01a ;
++Der/Dimin_1i13:%^Red1i13 0V_KWEDAD_01a ;
++Der/Dimin_12q13:%^Red12q13 0V_KWEDAD_01a ;
++Der/Dimin_1iq13:%^Red1iq13 0V_KWEDAD_01a ;
+0V_KWEDAD_01a ;
+LEXICON 0V_KWEDAD_01a
+ 0V_KWEDAD_01b ;
++Pass:%^Pen%^RmVOW%^d2t%>əb 0V_HELHED_01b ;
+
+LEXICON 0V_KWEDAD_01b
+!! kʷədad:kʷədad
+! @U.TAM-A.PRF@
+@R.TAM-SUBJ.SUBJ@+Mod/Subj:@R.TAM-SUBJ.SUBJ@ 0V_KWEDAD_02 ;
+@D.TAM-SUBJ@ 0V_KWEDAD_02 ;
+
+LEXICON 0V_KWEDAD_02
+@R.TAM-HAB.HAB@+Hab:@R.TAM-HAB.HAB@ 0V_KWEDAD_03 ;
+@R.TAM-HAB.IRR@+Irr:@R.TAM-HAB.IRR@ 0V_KWEDAD_03 ;
+@D.TAM-HAB@ 0V_KWEDAD_03 ;
+
+LEXICON 0V_KWEDAD_03
+@R.TAM-RE.RE@+Anew:@R.TAM-RE.RE@ 0V_KWEDAD_04 ;
+@D.TAM-RE.RE@ 0V_KWEDAD_04 ;
+
+LEXICON 0V_KWEDAD_04
+@R.TAM-T.REM@+RemPst:@R.TAM-T.REM@ 0V_KWEDAD_05 ;
+@D.TAM-T@ 0V_KWEDAD_05 ;
+
+LEXICON 0V_KWEDAD_05
+@R.TAM-A.STAT@+Asp/Stat:@R.TAM-A.STAT@ 0V_KWEDAD_06 ;
+@R.TAM-A.PROG@+Asp/Prog:@R.TAM-A.PROG@ 0V_KWEDAD_06 ;
+@R.TAM-A.PROGSTAT@+Asp/ProgStat:@R.TAM-A.PROGSTAT@ 0V_KWEDAD_06 ;
+@R.TAM-A.PFV@+Asp/Pfv:@R.TAM-A.PFV@ 0V_KWEDAD_06 ;
+@R.TAM-A.CONT@+Asp/Cont:@R.TAM-A.CONT@ 0V_KWEDAD_06 ;
+@D.TAM-A@ 0V_KWEDAD_06 ;
+
+LEXICON 0V_KWEDAD_06
+@R.NMZ.V2N@+Vnoun:@R.NMZ.V2N@ OC1/2_s_OR_OCSP3_OR_DVN-POSS ;
+@R.NMZ.V2A@+Ptc:@R.NMZ.V2A@ OC1/2_s_OR_OCSP3_OR_DVN-POSS ;
+@D.NMZ@ OC1/2_s_OR_OCSP3_OR_DVN-POSS ;
+
+
+LEXICON IV_HELHED
+!! q̓ʷuʔ "gather"
+!!! ʔəɬəd+V:ʔəɬəd
+!! @U.TAM-A.PRF@
++IV: 0V_HELHED ;
+
+LEXICON V_HELHED
+!! ʔəɬəd+V:ʔəɬəd
+! @U.TAM-A.PRF@
+: 0V_HELHED ;
+
+LEXICON 0V_HELHED
++Der/Red2_3L:%^Red123123 0V_HELHED_01a ;
+ 0V_HELHED_01a ;
+LEXICON 0V_HELHED_01a
+ 0V_HELHED_01b ;
+LEXICON 0V_HELHED_01b
+@R.TAM-SUBJ.SUBJ@+Mod/Subj:@R.TAM-SUBJ.SUBJ@ 0V_HELHED_02 ;
+@D.TAM-SUBJ@ 0V_HELHED_02 ;
+
+LEXICON 0V_HELHED_02
+@R.TAM-HAB.HAB@+Hab:@R.TAM-HAB.HAB@ 0V_HELHED_03 ;
+@R.TAM-HAB.IRR@+Irr:@R.TAM-HAB.IRR@ 0V_HELHED_03 ;
+@D.TAM-HAB@ 0V_HELHED_03 ;
+
+LEXICON 0V_HELHED_03
+@R.TAM-RE.RE@+Anew:@R.TAM-RE.RE@ 0V_HELHED_04 ;
+@D.TAM-RE.RE@ 0V_HELHED_04 ;
+
+LEXICON 0V_HELHED_04
+@R.TAM-T.REM@+RemPst:@R.TAM-T.REM@ 0V_HELHED_05 ;
+@D.TAM-T@ 0V_HELHED_05 ;
+
+LEXICON 0V_HELHED_05
+@R.TAM-A.STAT@+Asp/Stat:@R.TAM-A.STAT@ 0V_HELHED_06 ;
+@R.TAM-A.PROG@+Asp/Prog:@R.TAM-A.PROG@ 0V_HELHED_06 ;
+@R.TAM-A.PROGSTAT@+Asp/ProgStat:@R.TAM-A.PROGSTAT@ 0V_HELHED_06 ;
+@R.TAM-A.PFV@+Asp/Pfv:@R.TAM-A.PFV@ 0V_HELHED_06 ;
+@R.TAM-A.CONT@+Asp/Cont:@R.TAM-A.CONT@ 0V_HELHED_06 ;
+@D.TAM-A@ 0V_HELHED_06 ;
+
+LEXICON 0V_HELHED_06
+@R.NMZ.V2N@+Vnoun:@R.NMZ.V2N@ DVN-POSS ;
+@R.NMZ.V2A@+Ptc:@R.NMZ.V2A@ DVN-POSS ;
+@D.NMZ@ DVN-POSS ;
+
+
+LEXICON OC1/2_š_OR_OCSP3_OR_DVN-POSS
+ DVN-POSS ;
+ OC1/2_š_OR_OCSP3 ;
+
+LEXICON OC1/2_š_OR_OCSP3
+:ub OC1/2_š ;
+ INDOCSP3 ;
+
+LEXICON OC1/2_s_OR_OCSP3_OR_DVN-POSS
+ DVN-POSS ;
+ OC1/2_s_OR_OCSP3 ;
+
+LEXICON OC1/2_s_OR_OCSP3
+ OC1/2_s ;
+ INDOCSP3 ;
+
+LEXICON OC1/2_š
+ OCSG1_š ;
+ OCSG2_icid ;
+ OCPL1 ;
+ OCPL2 ;
+ OCSP3 ;
+ 
+LEXICON OC1/2_s
+ OCSG1_c ;
+ OCSG2_cid ;
+:ub OCPL1 ;!CHECKME ub twice?
+:ub OCPL2 ;
+ OCSP3 ;
+
+
+LEXICON OCSG1_š
+@U.OBJ.1@+OcSg1:@U.OBJ.1@%>š DVN-POSS ;
+
+LEXICON OCSG1_c ! this has a -d counter part as in Hungarian Sg3 
+@U.OBJ.1@+OcSg1:@U.OBJ.1@%>c DVN-POSS ;
+
+LEXICON OCSG2_icid
+@U.OBJ.2@+OcSg2:@U.OBJ.2@%>icid DVN-POSS ;
+
+LEXICON OCSG2_cid
+@U.OBJ.2@+OcSg2:@U.OBJ.2@%>cid DVN-POSS ;
+
+LEXICON OCSP3
++OcSP3: DVN-POSS ;
+
+LEXICON INDOCSP3
++OcSP3:%>xʷ DVN-POSS ;
+
+LEXICON OCPL1
+@U.OBJ.1@+OcPl1:@U.OBJ.1@%>uɬ DVN-POSS ;
+
+LEXICON OCPL2
+@U.OBJ.2@+OcPl2:@U.OBJ.2@%>uɬəd DVN-POSS ;
+
+!+ScSg1:%>əd
+!+ScSg2:%>əxʷ
+!+ScSP3:%>əs
+!+ScPl1:%>aɬi
+
+LEXICON DVN-POSS
+!@R.TAM@ K ;
+@D.PossPx@ K ;!CHECK 2021-07-10
+@R.PossPx.Sg1@@D.OBJ.1@+Der/s+N+Sg:@R.PossPx.Sg1@@D.OBJ.1@ PXSG1 ;
+@R.PossPx.Sg2@@D.OBJ.2@+Der/s+N+Sg:@R.PossPx.Sg2@@D.OBJ.2@ PXSG2 ;
+@U.PossPx.SP3@+Der/s+N+Sg:@U.PossPx.SP3@ PXSP3 ;
+@U.PossPx.Pl1@@D.OBJ.1@+Der/s+N+Sg:@U.PossPx.Pl1@@D.OBJ.1@0 PXPL1 ;
+@U.PossPx.Pl2@@D.OBJ.2@+Der/s+N+Sg:@U.PossPx.Pl2@@D.OBJ.2@0 PXPL2 ;
+
+
+
+
+
+! vim: set ft=xfst-lexc:
+
+
+! vim: set ft=xfst-lexc:
+
+!! Adjectives
+!  ----------
+!! Adjectives in the Southern Puget Sound Salish language describe the entities nouns refer to.
+
+LEXICON Adjectives
+adjective    Comparisons   ;
+
+bəsad+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəsad A_with-PL_RED2 "" ;
+bəɬ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəɬ A_with-PL_RED2 "" ;
+cək̓ʷ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}cək̓ʷ A_with-PL_RED2 "" ;
+cəwəɬ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}cəwəɬ A_with-PL_RED2 "" ;
+dᶻixʷ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}dᶻixʷ A_with-PL_RED2 "" ;
+haʔɬ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}haʔɬ A_with-PL_RED2 "" ;
+hikʷ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}hikʷ A_with-PL_RED2 "" ;
+kay̓kay̓alus+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kay̓kay̓alus A_with-PL_RED2 "" ;
+miʔman̓+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}miʔman̓ A_with-PL_RED2 "" ;
+q̓ič+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓ič A_with-PL_RED2 "" ;
+stabaɬ+A:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tabaɬ A_with-PL_RED2 "" ;
+tagʷəxʷ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tagʷəxʷ A_with-PL_RED2 "" ;
+taqʷuʔ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}taqʷuʔ A_with-PL_RED2 "" ;
+təɬ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}təɬ A_with-PL_RED2 "" ;
+wix̌ʷ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}wix̌ʷ A_with-PL_RED2 "" ;
+wələx̌ʷ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}wələx̌ʷ A_with-PL_RED2 "" ;
+xʷəxʷaʔxʷəʔ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}xʷəxʷaʔxʷəʔ A_with-PL_RED2 "" ;
+x̌ax̌aʔ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ax̌aʔ A_with-PL_RED2 "" ;
+x̌ibəč̓+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ibəč̓ A_with-PL_RED2 "" ;
+x̌icil+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌icil A_with-PL_RED2 "" ;
+x̌ičəc+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ičəc A_with-PL_RED2 "" ;
+x̌əɬ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌əɬ A_with-PL_RED2 "" ;
+x̌əɬəɬx̌əč+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌əɬəɬx̌əč A_with-PL_RED2 "" ;
+x̌ʷiqʷac+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ʷiqʷac A_with-PL_RED2 "" ;
+x̌ʷiqʷəq̓ʷ+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ʷiqʷəq̓ʷ A_with-PL_RED2 "" ;
+č̓uɬəyʔalus+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓uɬəyʔalus A_with-PL_RED2 "" ;
+šəq+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}šəq A_with-PL_RED2 "" ;
+ɬaw̓t+A:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬaw̓t A_with-PL_RED2 "" ;
+
+! vim: set ft=xfst-lexc:
+!! Adpositions
+!  ----------
+!! Adpositions in the LUSHOOTSEED language 
+
+LEXICON Adpositions
+ʔə+Pr:ʔə PR_ "of" ;
+dxʷʔal+Pr:dxʷʔal PR_ "for, to, toward" ;
+txʷəl+Pr:txʷəl PR_ "for, to, toward" ;
+ʔal+Pr:ʔal PR_ "to" ;
+
+
+! vim: set ft=xfst-lexc:
+!! Adverbs
+!  --------
+!! Pronouns in the Southern Puget Sound Salish language are words that express time, place, degree, mode.
+
+LEXICON Adverbs
+pronoun    Cases   ;
+
+bək̓ʷ+Adv:bək̓ʷ ADV_TOT "" ;
+cay+Adv:cay ADV_DEGREE "" ;
+cick̓ʷ+Adv:cick̓ʷ ADV_DEGREE "" ;
+ck̓ʷaqid+Adv:ck̓ʷaqid ADV_TEMP "" ;
+cugʷ+Adv:cugʷ ADV_DEGREE "" ;
+cukʷ+Adv:cukʷ ADV_DEGREE "" ;
+cəɬul̕+Adv:cəɬul̕ ADV_TEMP "" ;
+daw̓+Adv:daw̓ ADV_TEMP "" ;
+day̓+Adv:day̓ ADV_DEGREE "" ;
+daʔxʷ+Adv:daʔxʷ ADV_TEMP "" ;
+diʔəʔ+Adv:diʔəʔ ADV_SPAT "" ;
+dxʷq̓ixʷ+Adv:dxʷq̓ixʷ ADV_SPAT "" ;
+dxʷt̕aq̓t+Adv:dxʷt̕aq̓t ADV_SPAT "" ;
+gʷaʔxʷ+Adv:gʷaʔxʷ ADV_TEMP "" ;
+gʷəhaw̓ə+Adv:gʷəhaw̓ə ADV_PARENTHETIC "" ;
+hagʷ+Adv:hagʷ ADV_TEMP "" ;
+haʔkʷ+Adv:haʔkʷ ADV_TEMP "" ;
+hikʷ+Adv:hikʷ ADV_DEGREE "" ;
+hiqab+Adv:hiqab ADV_DEGREE "" ;
+huy+Adv:huy ADV_TEMP "" ;
+həlaʔab+Adv:həlaʔab ADV_ "" ;
+laʔab+Adv:laʔab ADV_ "" ;
+put+Adv:put ADV_ "" ;
+qa+Adv:qa ADV_QNT "" ;
+q̓ixʷ+Adv:q̓íxʷ ADV_ "" ;
+siʔ+Adv:siʔ ADV_SPAT "" ;
+tiiləb+Adv:tiiləb ADV_SPAT "" ;
+til+Adv:til ADV_TEMP "" ;
+tiləb+v1+Adv:tiləb ADV_SPAT "" ;
+tiləb+v1+Adv:tiləb ADV_TEMP "" ;
+tudiʔ+Adv:tudiʔ ADV_SPAT "" ;
+tudukʷəɬdat+Adv:tudukʷəɬdat ADV_TEMP "" ;
+tul̕al+Adv:tul̕al ADV_INTERR "" ;
+tul̕čad+Adv:tul̕%^√čád ADV_INTERR "" ;
+tul̕ʔal+Adv:tul̕ʔal ADV_SPAT "" ;
+tux̌ʷ+Adv:tux̌ʷ ADV_PARENTHETIC "" ;
+t̕aq̓t+Adv:t̕aq̓t ADV_SPAT "" ;
+xʷuʔələʔ+Adv:xʷuʔələʔ ADV_PARENTHETIC "" ;
+xʷɬub+Adv:xʷɬub ADV_PARENTHETIC "" ;
+x̌ʷul̕+Adv:x̌ʷul̕ ADV_ "" ;
+yaw̓+Adv:yaw̓ ADV_TEMP "" ;
+čad+Adv:čad ADV_INTERR "" ;
+ƛ̕al̕+Adv:ƛ̕al̕ ADV_ "" ;
+ɬixʷdat+Adv:ɬixʷdat ADV_TEMP "" ;
+ɬudukʷəɬdat+Adv:ɬudukʷəɬdat ADV_TEMP "" ;
+ʔaɬ+Adv:ʔáɬ ADV_ "" ;
+ʔəsx̌id+Adv:ʔəsx̌id ADV_INTERR "" ;
+ʔəsčal+Adv:ʔəsčal ADV_INTERR "" ;
+
+! vim: set ft=xfst-lexc:
+!! Conjunctors
+!  ----------
+!! Conjunctors in the LUSHOOTSEED language 
+
+LEXICON Conjunctors
+
+ʔi+CC:ʔi # "and" ;
+gʷəl+CC:gʷəl # "and" ;
+gʷələ+CC:gʷələ # "and" ;
+yəxʷ+CC:yəxʷ # "and" ;
+ʔabil̕+CS:ʔabil̕ # "if" ;
+
+! vim: set ft=xfst-lexc:
+!! Interjections
+!  ----------
+!! Interjections in the LUSHOOTSEED language 
+
+LEXICON Interjections
+
+ʔah+Interj:ʔah # "ah" ;
+hay+Interj:hay # "now, well" ;
+huy̓+Interj:huy̓ # "good-bye" ;
+wiʔaac+Interj:wiʔaac # "hello" ;
+habuʔ+v1+Interj:habuʔ # "(I'm listening)" ;
+habuʔ+v2+Interj:habu # "(I'm listening)" ;
+həmuʔ+Interj:həmuʔ # "(I'm listening)" ;
+
+! vim: set ft=xfst-lexc:
+!! Nouns
+!  -----
+!! Nouns in the Southern Puget Sound Salish language refer to objects or sets of objects, qualities, states or ideas.
+
+LEXICON Nouns
+noun+N:noun    Cases   ;
+bad+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bad N_with-PL_RED2 "" ;
+bayac+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bayac N_with_PL_RED2_Dial/-NL "" ;
+bešč̓əd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bešč̓əd N_with-PL_RED2 "" ;
+bibədaʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bibədaʔ N_DIM_with_PL_12123 "" ;
+bidᶻ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bidᶻ N_with_PL_RED2 "" ;
+bubx̌əd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bubx̌əd N-MSC_with-PL_RED2 "" ;
+buusi+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}buusi N_with_PL_RED2_Dial/-NL "" ;
+buʔqʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}buʔqʷ N_with_PL_RED2 "" ;
+bəc̓ac+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəc̓ac N_with_PL_RED2 "" ;
+bədəʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bə́dəʔ N_with_PL_RED2_Dial/-NL "" ;
+bəlagʷəʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlagʷəʔ N_with_PL_RED2 "" ;
+bəlubs+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlubs N_with_PL_RED2 "" ;
+bəlups+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlups N_with_PL_RED2 "" ;
+bəqsəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəqsəd N_with_PL_RED2 "" ;
+bəqəlšuɬ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəqəlšuɬ SG-SUF "" ;
+bəshikʷigʷilc+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəshikʷigʷilc SG-SUF "" ;
+bəsqʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəsqʷ N_with_PL_RED2 "" ;
+bəsq̓ayxʷayxʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəsq̓ayxʷayxʷ SG-SUF "" ;
+bəsq̓ixʷixʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəsq̓ixʷixʷ SG-SUF "" ;
+bətə+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bətə N_with_PL_RED2 "" ;
+bəščəb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəščəb N_with_PL_RED2 "" ;
+cqapsəb+N:c%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qapsəb N_with_PL_RED2 "" ;
+cubəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}cubəd N_with_PL_RED2 "" ;
+cəlaci+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}cəlaci N_with_PL_RED2_Dial/-NL "" ;
+cəq̓disbad+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}cəq̓disbad N_with_PL_RED2 "" ;
+cəq̓disəbəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}cəq̓disəbəd N_with_PL_RED2 "" ;
+c̓akʷdisbəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓akʷdisbəd N_with_PL_RED2 "" ;
+c̓awqʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓awqʷ SG-SUF "" ;
+c̓ic̓al+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓ic̓al N_with_PL_RED2 "" ;
+c̓ix̌+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓ix̌ N_with_PL_RED2 "" ;
+c̓ix̌c̓ix̌+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓ix̌c̓ix̌ N_with_PL_RED2 "" ;
+c̓ubc̓ub+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓ubc̓ub N_with_PL_RED2 "" ;
+c̓uk̓ʷəb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓uk̓ʷəb N_with_PL_RED2 "" ;
+dayəsqidəb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}dayəsqidəb SG-SUF "" ;
+duqʷəčabš+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}duqʷəčabš SG-SUF "" ;
+dxʷc̓agʷusəb+N:dxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓agʷusəb N_with-PL_RED2 "" ;
+dxʷdaʔəb+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}daʔəb N_with_PL_RED2 "" ;
+dxʷduʔabš+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}dxʷduʔabš SG-SUF "" ;
+dxʷləbiʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}dxʷləbiʔ SG-SUF "" ;
+dxʷləšucid+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}dxʷləšucid SG-SUF "" ;
+dxʷləšucidəladxʷ+N:dxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ləšucidəladxʷ N_with_PL_RED2 "" ;
+dxʷsdᶻixʷqs+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}dᶻixʷqs N_with_PL_RED2 "" ;
+dxʷshədalqʷuʔ+N:dxʷs%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}hədalqʷuʔ N_with_PL_RED2 "" ;
+dxʷskʷaxʷad+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kʷaxʷad N_with_PL_RED2 "" ;
+dxʷskʷukʷcut+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kʷukʷcut N_with_PL_RED2 "" ;
+dxʷsqiq̓alikʷ+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qiq̓alikʷ N_with_PL_RED2 "" ;
+dxʷssp̓ayəq+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}sp̓ayəq N_with_PL_RED2 "" ;
+dxʷstsulčalikʷ+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tsulčalikʷ N_with_PL_RED2 "" ;
+dxʷstəlawiltxʷ+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}təlawiltxʷ N_with_PL_RED2 "" ;
+dxʷst̕ilib+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕ilib N_with_PL_RED2 "" ;
+dxʷsxʷiʔxʷiʔ+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}xʷiʔxʷiʔ N_with_PL_RED2 "" ;
+dxʷsx̌əƛ̕alap+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌əƛ̕alap N_with_PL_RED2 "" ;
+dxʷsx̌ʷiw̓xʷiw̓əd+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ʷiw̓xʷiw̓əd N_with_PL_RED2 "" ;
+dxʷsƛ̕alb+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕alb SG-SUF "" ;
+dxʷsƛ̕əladiʔəb+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕əladiʔəb N_with_PL_RED2 "" ;
+dxʷsɬač̓alikʷ+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬač̓alikʷ N_with_PL_RED2 "" ;
+dxʷsɬiʔɬdahəb+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬiʔɬdahəb N_with_PL_RED2 "" ;
+dxʷsʔugʷusalikʷ+N:dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔugʷusalikʷ N_with_PL_RED2 "" ;
+dxʷšiʔšɬbəd+N:dxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}šiʔšɬbəd N_with_PL_RED2 "" ;
+dxʷʔaha+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}dxʷʔaha SG-SUF "" ;
+dəxʷp̓aʔ+N:dəxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}p̓aʔ N_with_PL_RED2 "" ;
+dəxʷtulalikʷ+N:dəxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tulalikʷ N_with_PL_RED2 "" ;
+dᶻədis+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}dᶻədis N_with_PL_RED2 "" ;
+dᶻəgʷaʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}dᶻəgʷaʔ N_with_PL_RED2 "" ;
+dᶻəgʷəʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}dᶻəgʷəʔ N_with_PL_RED2 "" ;
+dᶻəɬigʷəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}dᶻəɬigʷəd SG-SUF "" ;
+gəlk̓ic̓aʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}gəlk̓ic̓aʔ N_with_PL_RED2 "" ;
+gʷidəq+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}gʷidəq N_with_PL_RED2 "" ;
+gʷədbixʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}gʷədbixʷ N_with_PL_RED2 "" ;
+gʷədᶻadad+N:gʷədᶻadad N_with_PL_RED2 "" ;
+gʷədᶻalʔtxʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}gʷədᶻalʔtxʷ N_with_PL_RED2 "" ;
+haʔkʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}haʔkʷ N_with_PL_RED2 "" ;
+haʔəc+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}haʔəc N_with_PL_RED2 "" ;
+hihudali+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}hihudali N_with_PL_RED2 "" ;
+hiʔhaʔəc+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}hiʔhaʔəc N_with_PL_RED2 "" ;
+hud+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}hud N_with_PL_RED2 "" ;
+hudali+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}hudali N_with_PL_RED2 "" ;
+huhudali+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}huhudali N_with_PL_RED2 "" ;
+huygʷas+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}huygʷas N_with_PL_RED2 "" ;
+həduʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}həduʔ N_with_PL_RED2 "" ;
+kawič+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kawič N_with_PL_RED2 "" ;
+kaw̓x̌ʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kaw̓x̌ʷ N_with_PL_RED2 "" ;
+kayə+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kayə N-FEM_with-PL_RED2 "" ;
+kay̓kay̓+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kay̓kay̓ N_with_PL_RED2 "" ;
+kikiyalus+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kikiyalus SG-SUF "" ;
+kiyuuqʷs+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kiyuuqʷs N_with_PL_RED2 "" ;
+kiʔkawič+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kiʔkawič N_with_PL_RED2 "" ;
+kupi+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kupi N_with_PL_RED2 "" ;
+kəlapx̌ʷəlč+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kəlapx̌ʷəlč N_with_PL_RED2 "" ;
+kəšu+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kəšu N_with_PL_RED2 "" ;
+kʷagʷičəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kʷágʷičəd N_with_PL_RED2 "" ;
+kʷukʷcutali+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kʷukʷcutali N_with_PL_RED2 "" ;
+k̓aʔk̓aʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓aʔk̓aʔ N_with_PL_RED2 "" ;
+k̓ʷat̕aq+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ʷat̕aq N_with_PL_RED2 "" ;
+k̓ʷiyəx̌+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ʷiyəx̌ N_with_PL_RED2 "" ;
+k̓ʷič̓k̓ʷič̓lax̌ədxʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ʷič̓k̓ʷič̓lax̌ədxʷ N_with_PL_RED2 "" ;
+k̓ʷəčədiʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ʷəčədiʔ N_with-PL_RED2 "" ;
+labatu+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}labatú N_with_PL_RED2 "" ;
+lax̌ad+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}lax̌ad N_with_PL_RED2 "" ;
+lipli+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}lipli N_with_PL_RED2 "" ;
+luƛ̕+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}luƛ̕ N_with_PL_RED2 "" ;
+ləsisu+N:lə%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}sisu N_with_PL_RED2 "" ;
+ləx̌šad+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ləx̌šad N_with_PL_RED2 "" ;
+pišpiš+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}píšpiš N_with_PL_RED2 "" ;
+pus+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pus N_with_PL_RED2_Dial/-NL "" ;
+puʔps+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}puʔps N_with_PL_RED2 "" ;
+puʔtəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}puʔtəd N_with_PL_RED2 "" ;
+pədgʷədbixʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pədgʷədbixʷ N_with_PL_RED2 "" ;
+pədkʷəxʷic+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pədkʷəxʷic N_with_PL_RED2 "" ;
+pədstəgʷəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pədstəgʷəd N_with_PL_RED2 "" ;
+pədt̕aqa+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pədt̕aqa N_with_PL_RED2 "" ;
+pədt̕əs+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pədt̕əs N_with_PL_RED2 "" ;
+pədxʷit̕xʷit̕il+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pədxʷit̕xʷit̕il N_with_PL_RED2 "" ;
+pədxʷič̕ib+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pədxʷič̕ib N_with_PL_RED2 "" ;
+pədx̌ax̌aʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pədx̌ax̌aʔ N_with_PL_RED2_Dial/-NL "" ;
+pədč̓aʔəb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pədč̓aʔəb N_with_PL_RED2 "" ;
+pədƛ̕xʷayʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pədƛ̕xʷayʔ N_with_PL_RED2 "" ;
+pəpə+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pəpə N_with_PL_RED2 "" ;
+p̓ayəqəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}p̓ayəqəd N_with_PL_RED2 "" ;
+p̓ilic̓a+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}p̓ilic̓a N_with_PL_RED2 "" ;
+p̓ilic̓aʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}p̓ilic̓aʔ N_with_PL_RED2 "" ;
+p̓uwəyʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}p̓úwəyʔ N_with_PL_RED2_Dial/-NL "" ;
+p̓əɬq̓ʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}p̓əɬq̓ʷ N_with_PL_RED2 "" ;
+p̓əɬq̓ʷabac+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}p̓əɬq̓ʷabac N_with_PL_RED2 "" ;
+p̓əɬq̓ʷačiʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}p̓əɬq̓ʷačiʔ N_with_PL_RED2 "" ;
+qal̕qaləx̌ič+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qal̕qaləx̌ič N_with_PL_RED2 "" ;
+qawq̓s+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qawq̓s N_with_PL_RED2 "" ;
+qaw̓qs+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qaw̓qs N_with_PL_RED2 "" ;
+qayuqʷatx̌+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qayuqʷatx̌ SG-SUF "" ;
+qiw̓x̌+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qiw̓x̌ N_with_PL_RED2 "" ;
+qədxʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qədxʷ N_with_PL_RED2 "" ;
+qəlb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qəlb N_with-PL_RED1_qelb "" ;
+qəlub+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qəlub N_with_PL_RED2 "" ;
+qəluʔb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qəluʔb N_with_PL_RED2 "" ;
+qəsiʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qəsiʔ N_with_PL_RED2 "" ;
+qətqtač+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qətqtač N_with_PL_RED2 "" ;
+qʷagʷəbalqʷuʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷagʷəbalqʷuʔ N_with_PL_RED2 "" ;
+qʷist+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷist N_with_PL_RED2 "" ;
+qʷistaɬc̓iʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷistaɬc̓iʔ N_with_PL_RED2 "" ;
+qʷiʔqʷəʔad+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷiʔqʷəʔad N_with-PL_RED2 "" ;
+qʷuʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷuʔ N_with_PL_RED2 "" ;
+qʷəq̓ʷal̕+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷəq̓ʷal̕ N_with_PL_RED2 "" ;
+q̓ilbid+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓ilbid N_with_PL_RED2 "" ;
+q̓il̕bid+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓il̕bid N_with_PL_RED2 "" ;
+q̓iq̓ax̌ad+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓iq̓ax̌ad N_with_PL_RED2 "" ;
+q̓ʷuʔəlƛ̕əl+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓ʷuʔəlƛ̕əl SG-SUF "" ;
+q̓ʷəladiʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓ʷəladiʔ N_with_PL_RED2 "" ;
+q̓ʷəlastəb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓ʷəlastəb N_with_PL_RED2 "" ;
+q̓ʷəlačiʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓ʷəlačiʔ N_with_PL_RED2 "" ;
+sac̓əb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}sác̓əb N_with_PL_RED2_Dial/-NL "" ;
+saʔkʷbixʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}saʔkʷbixʷ SG-SUF "" ;
+sbadil+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}badil N_with_PL_RED2 "" ;
+sbalqʷuʔabš+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}balqʷuʔabš SG-SUF "" ;
+sbiaw+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}biáw N_with_PL_RED2 "" ;
+sbuusəɬdatil+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}buusəɬdatil N_with_PL_RED2 "" ;
+sbəkʷ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəkʷ N_with_PL_RED2 "" ;
+sbəlúcid+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlúcid N_with_PL_RED2 "" ;
+scacəlqid+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}cacəlqid SG-SUF "" ;
+scapaʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}capaʔ N-MSC_with-PL_RED2 "" ;
+scəbdati+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}cəbdati N_with_PL_RED2_Dial/-NL "" ;
+scəlacəɬdatil+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}cəlacəɬdatil N_with_PL_RED2 "" ;
+scəqiʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}cəqiʔ N_with_PL_RED2 "" ;
+sc̓abt+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓abt N_with_PL_RED2 "" ;
+sc̓aliʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓aliʔ N_with_PL_RED2 "" ;
+sc̓əbəbulč+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓əbəbulč N_with_PL_RED2 "" ;
+sdaʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}daʔ N_with_PL_RED2 "" ;
+sdukʷalbixʷ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}dukʷalbixʷ SG-SUF "" ;
+sduukʷ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}duukʷ N_with_PL_RED2 "" ;
+sdəx̌alqsačiʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}dəx̌alqsačiʔ N_with_PL_RED2 "" ;
+sgʷadtəd+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}gʷadtəd N_with_PL_RED2 "" ;
+sgʷigʷədilali+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}gʷigʷədilali N_with_PL_RED2 "" ;
+sgʷigʷədiltəd+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}gʷigʷədiltəd N_with_PL_RED2 "" ;
+sgʷədayucid+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}gʷədayucid N_with_PL_RED2 "" ;
+sgʷədulč+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}gʷədulč N_with_PL_RED2 "" ;
+sgʷəlub+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}gʷəlub N_with_PL_RED2 "" ;
+sgʷəlubaɬc̓iʔ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}gʷəlubaɬc̓iʔ N_with_PL_RED2 "" ;
+shiʔwəbš+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}hiʔwəbš SG-SUF "" ;
+silulč+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}silulč N_with_PL_RED2 "" ;
+siʔab+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}siʔab N_with_PL_RED2 "" ;
+skaykay+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kaykay N_with_PL_RED2_Dial/-NL "" ;
+skəkiʔ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kəkiʔ N_with_PL_RED2 "" ;
+skʷəbšəd+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kʷə́bšəd N_with_PL_RED2 "" ;
+skʷədulč+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kʷədulč N_with_PL_RED2 "" ;
+skʷədʔulč+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kʷədʔulč N_with_PL_RED2 "" ;
+skʷəxʷic+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kʷəxʷic N_with_PL_RED2 "" ;
+sk̓ayiɬus+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ayiɬus N_with_PL_RED2 "" ;
+sk̓ʷaqʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}sk̓ʷaqʷ N_with_PL_RED2 "" ;
+sk̓ʷat̕ad+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ʷat̕ad N_with_PL_RED2_Dial/-NL "" ;
+sk̓ʷic̓i+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ʷic̓i N_with_PL_RED2 "" ;
+sk̓ʷuy+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}sk̓ʷuy N_with_PL_RED2 "" ;
+sk̓ʷətɬ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ʷətɬ N_with_PL_RED2 "" ;
+slihibus+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}lihibus N_with_PL_RED2 "" ;
+sləx̌il+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ləx̌il N_with_PL_RED2 "" ;
+spiqʷuc+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}piqʷuc N_with_PL_RED2 "" ;
+spud+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pud N_with_PL_RED2 "" ;
+spuyaləpabš+v1+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}puyaləpabš SG-SUF "" ;
+spuyaləpabš+v1+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}puyaləpabš N_with_PL_RED2 "" ;
+spədalikʷ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pədalikʷ N_with_PL_RED2 "" ;
+spəčuʔ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pəčuʔ N_with_PL_RED2 "" ;
+sp̓ac̓təd+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}p̓ac̓təd N_with_PL_RED2 "" ;
+sp̓aƛ̕aƛ̕+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}p̓aƛ̕aƛ̕ N_with_PL_RED2 "" ;
+sqa+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qa N_with_PL_RED2 "" ;
+sqaǰət+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qaǰət SG-SUF "" ;
+sqaʔkʷqidtəd+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qaʔkʷqidtəd N_with_PL_RED2 "" ;
+sqibk̓ʷ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qibk̓ʷ N_with_PL_RED2 "" ;
+sqigʷəc+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qigʷəc N_with_PL_RED2 "" ;
+sqigʷəcaɬc̓iʔ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qigʷəcaɬc̓iʔ N_with_PL_RED2 "" ;
+sqəbuʔ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qəbuʔ N_with_PL_RED2 "" ;
+sqədᶻuʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qədᶻuʔ N_with_PL_RED2 "" ;
+sqəlubs+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qəlubs N_with_PL_RED2 "" ;
+sqʷaliʔ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷaliʔ N_with_PL_RED2 "" ;
+sqʷax̌səd+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷax̌səd SG-SUF "" ;
+sqʷubayʔ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷubáyʔ N_with_PL_RED2_Dial/-NL "" ;
+sqʷədabš+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷədabš SG-SUF "" ;
+sqʷəlič+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷəlič N_with_PL_RED2 "" ;
+sq̓axʷalqʷuʔ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓axʷalqʷuʔ N_with_PL_RED2 "" ;
+sq̓aƛ̕+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓aƛ̕ N_with_PL_RED2 "" ;
+sq̓ixʷəbš+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓ixʷəbš SG-SUF "" ;
+sq̓əbiyəʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓əbiyəʔ N_with_PL_RED2_Dial/-NL "" ;
+sq̓ədᶻuʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓ədᶻuʔ N_with_PL_RED2 "" ;
+sq̓ʷalaš+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓ʷalaš N_with_PL_RED2 "" ;
+sq̓ʷəlaɬad+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓ʷəlaɬad N_with_PL_RED2 "" ;
+ssqʷaliqabš+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}sqʷaliqabš SG-SUF "" ;
+staləɬ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}taləɬ N_with_PL_RED2 "" ;
+steq̓əxʷ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}teq̓əxʷ N_with_PL_RED2 "" ;
+stiqayuʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tiqáyuʔ N_with_PL_RED2 "" ;
+stiqiw+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tiqíw N_with_PL_RED2 "" ;
+stubš+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tubš N_with_PL_RED2 "" ;
+stulc̓əʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}túlc̓əʔ N_with_PL_RED2 "" ;
+stxʷub+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}txʷub N_with_PL_RED2 "" ;
+stəbtabəl̕+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}təbtabəl̕ N_with_PL_RED2 "" ;
+stəgʷad+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}stəgʷad N_with_PL_RED2 "" ;
+stəqiw̓+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}stəqiw̓ N_with_PL_RED2 "" ;
+stəq̓əxʷ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}təq̓əxʷ N_with_PL_RED2 "" ;
+st̕ac̓adil+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕ac̓adil N_with_PL_RED2 "" ;
+st̕qəxʷ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕qəxʷ N_with_PL_RED2 "" ;
+st̕ək̓ʷəb+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕ək̓ʷəb N_with_PL_RED2 "" ;
+st̕əqxʷ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕əqxʷ N_with_PL_RED2 "" ;
+st̕əč̓asəbš+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕əč̓asəbš SG-SUF "" ;
+sup+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}sup N_with_PL_RED2 "" ;
+sup̓qs+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}sup̓qs N_with_PL_RED2 "" ;
+suq̓ʷaʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}suq̓ʷaʔ N_with_PL_RED2 "" ;
+sus+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}sus N_with_PL_RED2 "" ;
+swatixʷtəd+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}watixʷtəd N_with_PL_RED2 "" ;
+swədaʔx̌+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}wədaʔx̌ N_with_PL_RED2 "" ;
+swəwaʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}wəwaʔ N_with_PL_RED2 "" ;
+swəwaʔdis+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}wəwaʔdis N_with_PL_RED2 "" ;
+sxʷalacut+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}xʷalacut N_with_PL_RED2 "" ;
+sxʷiuk̓ʷ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}xʷiuk̓ʷ N_DIM_with_PL_12123 "" ;
+sxʷq̓ʷupabš+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}xʷq̓ʷupabš SG-SUF "" ;
+sx̌alacut+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌alacut N_with_PL_RED2 "" ;
+sx̌ayus+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ayus N_with_PL_RED2 "" ;
+sx̌aʔaʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌aʔaʔ N_with_PL_RED2 "" ;
+sx̌əlaʔs+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌əlaʔs N_with_PL_RED2 "" ;
+sx̌əp̓ab+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌əp̓ab N_with_PL_RED2 "" ;
+sx̌əčtəd+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌əčtəd N_with_PL_RED2 "" ;
+sx̌ʷiƛ̕ayʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ʷiƛ̕ayʔ N_with_PL_RED2 "" ;
+sx̌ʷiʔab+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ʷiʔab N_with_PL_RED2 "" ;
+sx̌ʷuʔx̌ʷuʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ʷuʔx̌ʷuʔ N_with_PL_RED2 "" ;
+syalt+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yalt N_with_PL_RED2 "" ;
+syayaʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yáyaʔ N_with_PL_RED2_Dial/-NL "" ;
+syayus+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yayus N_with_PL_RED2 "" ;
+syaʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yaʔ N_with_PL_RED2 "" ;
+syəcəb+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yəcəb N_with_PL_RED2 "" ;
+syəyəhub+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yəyəhub N_with_PL_RED2 "" ;
+sčatqɬəb+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čatqɬəb N-MSC_with-PL_RED2 "" ;
+sčiy̓uʔ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čiy̓uʔ N_with_PL_RED2 "" ;
+sčiʔyu+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čiʔyu N_with_PL_RED2 "" ;
+sčədadxʷ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čədádxʷ N_with-PL_RED2 "" ;
+sčətxʷəd+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čətxʷəd N-MSC_with-PL_RED2 "" ;
+sč̓abiqʷ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓abiqʷ N_with_PL_RED2 "" ;
+sč̓adᶻəp+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓adᶻəp N_with_PL_RED2 "" ;
+sč̓awəyʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓awəyʔ N_with_PL_RED2 "" ;
+sč̓istxʷ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓istxʷ N_with_PL_RED2 "" ;
+sč̓iyuyaʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓iyuyaʔ N_with_PL_RED2 "" ;
+sƛ̕alalic̓aʔ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕alalic̓aʔ N_with_PL_RED2 "" ;
+səbəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}səbəd N_with_PL_RED2 "" ;
+səli+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}həli N_with_PL_RED2 "" ;
+səpləl+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}səpləl N_with_PL_RED2 "" ;
+səxʷc̓agʷabacəd+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓agʷabacəd N_with_PL_RED2 "" ;
+səxʷc̓axʷad+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓axʷad N_with_PL_RED2 "" ;
+səxʷc̓aʔkʷ+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓aʔkʷ N_with_PL_RED2 "" ;
+səxʷc̓ix̌alikʷ+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓ix̌alikʷ N_with_PL_RED2 "" ;
+səxʷc̓əgʷulč+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}c̓əgʷulč N_with_PL_RED2 "" ;
+səxʷgʷigʷədil+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}gʷigʷədil N_DIM_with_PL_12123 "" ;
+səxʷgʷədil+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}gʷədil N_with_PL_RED2 "" ;
+səxʷkacacutulč+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kacacutulč N_with_PL_RED2 "" ;
+səxʷkʷatač+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kʷatač N_with_PL_RED2 "" ;
+səxʷluudxʷ+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}luudxʷ N_with_PL_RED2 "" ;
+səxʷpupuhigʷəd+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pupuhigʷəd N_DIM_with_PL_12123 "" ;
+səxʷp̓ac̓+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}p̓ac̓ N_with_PL_RED2 "" ;
+səxʷp̓aʔad+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}p̓aʔad N_with_PL_RED2 "" ;
+səxʷqʷiʔaac+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷiʔaac N_with_PL_RED2 "" ;
+səxʷqʷuʔqʷaʔ+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷuʔqʷaʔ N_with_PL_RED2 "" ;
+səxʷqʷuʔqʷaʔtəd+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷuʔqʷaʔtəd N_with_PL_RED2 "" ;
+səxʷqʷəcap+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qʷəcap N_with_PL_RED2 "" ;
+səxʷq̓ʷuʔgʷəsəd+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓ʷuʔgʷəsəd N_with_PL_RED2 "" ;
+səxʷsubud+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}subud N_with_PL_RED2 "" ;
+səxʷtəč̓alikʷ+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}təč̓alikʷ N_with_PL_RED2 "" ;
+səxʷyayus+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yayus N_with_PL_RED2 "" ;
+səxʷč̓aʔa+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓aʔa N_with-PL_RED2 "" ;
+səxʷč̓əɬab+v1+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓əɬab N_with_PL_RED2 "" ;
+səxʷč̓əɬab+v1+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓əɬab N_with_PL_RED2 "" ;
+səxʷšic̓əlwaʔs+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}šic̓əlwaʔs N_with_PL_RED2 "" ;
+səxʷšəɬkupi+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}šəɬkupi N_with_PL_RED2 "" ;
+səxʷƛ̕aʔapəq̓+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕aʔapəq̓ N_with_PL_RED2 "" ;
+səxʷƛ̕uqʷilali+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕uqʷilali N_with_PL_RED2 "" ;
+səxʷƛ̕ux̌ʷilali+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕ux̌ʷilali N_with_PL_RED2 "" ;
+səxʷƛ̕əladiʔalikʷ+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕əladiʔalikʷ N_with_PL_RED2 "" ;
+səxʷɬič̓id+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬič̓id N_with_PL_RED2 "" ;
+səxʷʔayilalikʷali+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔayilalikʷali N_with_PL_RED2 "" ;
+səxʷʔayilic̓aʔali+N:səxʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔayilic̓aʔali N_with_PL_RED2 "" ;
+səxʷʔuq̓ʷud+N:səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔuq̓ʷud N_with_PL_RED2 "" ;
+sɬadəyʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬadəyʔ N_with_PL_RED2 "" ;
+sɬagʷid+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬagʷid N_with_PL_RED2 "" ;
+sɬagʷidali+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬagʷidali N_with_PL_RED2 "" ;
+sɬax̌i+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬax̌i N_with_PL_RED2_Dial/-NL "" ;
+sɬixʷəɬdati+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬixʷəɬdati N_with_PL_RED2_Dial/-NL "" ;
+sɬič̓aʔkʷčup+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬič̓aʔkʷčup N_with_PL_RED2 "" ;
+sɬub+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬub N_with_PL_RED2 "" ;
+sʔacus+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔacus N_with_PL_RED2 "" ;
+sʔax̌ʷuʔ+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔax̌ʷuʔ N_with_PL_RED2 "" ;
+sʔic̓əb+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔic̓əb N_with_PL_RED2 "" ;
+sʔilalubid+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔilalubid N_with_PL_RED2 "" ;
+sʔilidgʷəs+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔilidgʷəs N_with_PL_RED2 "" ;
+sʔubəd+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔubəd N_with_PL_RED2 "" ;
+sʔukʷukʷ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔukʷukʷ N_with_PL_RED2 "" ;
+sʔəsluʔilc+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔəsluʔilc N_with_PL_RED2 "" ;
+sʔəɬəd+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔəɬəd N_with_PL_RED2 "" ;
+sʔəɬədali+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔəɬədali N_with_PL_RED2 "" ;
+sʔəɬədalʔtxʷ+N:s%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔəɬədalʔtxʷ N_with_PL_RED2 "" ;
+taktə+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}taktə N_with_PL_RED2 "" ;
+talə+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}talə N_with_PL_RED2 "" ;
+tatačulbixʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tátačulbixʷ N_with_PL_RED2 "" ;
+taw̓d+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}taw̓d N_with_PL_RED2 "" ;
+tibu+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tibu N_with_PL_RED2 "" ;
+titčulbixʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}títčulbixʷ N_with_PL_RED2 "" ;
+tklus+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tklus N_with_PL_RED2 "" ;
+tsibudᶻaɬ+N:tsi%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}budᶻaɬ SG-SUF "" ;
+tubšədad+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}túbšədàd SG-SUF "" ;
+tulqʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tulqʷ N_with_PL_RED2 "" ;
+txʷəlšucid+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}txʷəlšucid SG-SUF "" ;
+təklus+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}təklus N_with_PL_RED2 "" ;
+təkʷtəkʷəlus+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}təkʷtəkʷəlus N_with_PL_RED2 "" ;
+tətiʔəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tətiʔəd N_with_PL_RED2 "" ;
+tətupəl̕+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tətupəl̕ N_with_PL_RED2 "" ;
+təǰabac+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}təǰabac N_with_PL_RED2 "" ;
+t̕altəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕altəd N_with_PL_RED2 "" ;
+t̕aləkʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕aləkʷ N_with_PL_RED2 "" ;
+t̕aɬigʷs+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕aɬigʷs N_with_PL_RED2 "" ;
+t̕ilus+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕ilus N_with_PL_RED2 "" ;
+t̕iq̓ʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕iq̓ʷ N_with_PL_RED2 "" ;
+t̕it̕x̌əlaʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕it̕x̌əlaʔ N_with_PL_RED2 "" ;
+t̕ukʷtəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕ukʷtəd N_with_PL_RED2 "" ;
+waq̓waq̓+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}waq̓waq̓ N_with_PL_RED2 "" ;
+waq̓waq̓us+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}waq̓waq̓us N_with_PL_RED2 "" ;
+wiw̓su+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}wiw̓su SG-SUF "" ;
+wəq̓əb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}wəq̓əb N_with_PL_RED2 "" ;
+xʷax̌ʷaʔəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}xʷax̌ʷaʔəd N_with_PL_RED2 "" ;
+xʷt̕agʷtəd+N:xʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕agʷtəd N_with_PL_RED2 "" ;
+xʷyatacut+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}xʷyátacut SG-SUF "" ;
+xʷč̓iɬqs+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}xʷč̓iɬqs N_with_PL_RED2 "" ;
+xʷƛ̕alap+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}xʷƛ̕alap N_with_PL_RED2 "" ;
+xʷəlšucid+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}xʷəlšucid N_with_PL_RED2 "" ;
+x̌alalʔtxʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌alalʔtxʷ N_with_PL_RED2 "" ;
+x̌ald+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ald N_with_PL_RED2 "" ;
+x̌altəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌altəd N_with_PL_RED2 "" ;
+x̌ax̌aʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ax̌aʔ N_with_PL_RED2 "" ;
+x̌ayəbus+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ayəbus N_with_PL_RED2 "" ;
+x̌ačuʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ačuʔ N_with_PL_RED2 "" ;
+x̌aʔx̌alus+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌aʔx̌alus N_with_PL_RED2 "" ;
+x̌aʔx̌aʔəɬdat+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌aʔx̌aʔəɬdat N_with_PL_RED2 "" ;
+x̌ibx̌ib+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ibx̌ib N_with_PL_RED2 "" ;
+x̌iʔx̌isdaʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌iʔx̌isdaʔ N_with_PL_RED2 "" ;
+x̌payʔac+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌payʔac N-MSC_with-PL_RED2 "" ;
+x̌qp̓ucid+N:x̌%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qp̓ucid N_with_PL_RED2 "" ;
+x̌ədx̌əd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ədx̌əd N_with_PL_RED2 "" ;
+x̌ədx̌əx̌gʷil+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ədx̌əx̌gʷil N_with_PL_RED2 "" ;
+x̌əč+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌əč N_with_PL_RED2 "" ;
+x̌əƛ̕yačəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌əƛ̕yačəd N_with_PL_RED2 "" ;
+x̌əɬidup+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌əɬidup N_with_PL_RED2 "" ;
+x̌ʷayux̌ʷaʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ʷayux̌ʷaʔ N_with_PL_RED2 "" ;
+x̌ʷiləb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ʷiləb N_with_PL_RED2 "" ;
+x̌ʷt̕agʷxʷtəd+N:x̌ʷ%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕agʷxʷtəd N_with_PL_RED2 "" ;
+x̌ʷəlč+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ʷəlč N_with_PL_RED2 "" ;
+yayustəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yayustəd N_with_PL_RED2 "" ;
+yiyəq̓ʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yiyəq̓ʷ N_DIM_with_PL_12123 "" ;
+yəlab+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yəláb N_with_PL_RED2 "" ;
+yəl̕yəlab+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yəl̕yəláb N_with_PL_RED2 "" ;
+yəw̓yəɬdaʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yəw̓yəɬdaʔ N_with_PL_RED2 "" ;
+yəx̌ʷulaʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yəx̌ʷulaʔ N_with_PL_RED2 "" ;
+čaləs+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čaləs N_with_PL_RED2 "" ;
+čaləš+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čaləš N_with_PL_RED2 "" ;
+čidᶻ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čidᶻ N_with_PL_RED2 "" ;
+čubəabš+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čubəabš SG-SUF "" ;
+čəgʷəs+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čəgʷəš N_with_PL_RED2_Dial/-NL "" ;
+čəlis+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čəlis N_with_PL_RED2 "" ;
+čəlqʷubəʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čəlqʷubəʔ N_with_PL_RED2 "" ;
+čəxʷəluʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čəxʷəluʔ N_with_PL_RED2 "" ;
+č̓adəsqidəb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓adəsqidəb SG-SUF "" ;
+č̓awəyulč+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓awəyulč N_with_PL_RED2 "" ;
+č̓awəyʔulč+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓awəyʔulč N_with_PL_RED2 "" ;
+č̓ač̓aš+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓ač̓aš N_with_PL_RED2_Dial/-NL "" ;
+č̓itabəc+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓itabəc N_with_PL_RED2 "" ;
+č̓ič̓əlpyaqid+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓ič̓əlpyaqid N_with_PL_RED2 "" ;
+č̓t̕ilqʷəbš+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓t̕ilqʷəbš SG-SUF "" ;
+č̓əbəš+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓əbəš N_with_PL_RED2 "" ;
+č̓əƛ̕əʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓əƛ̕əʔ N_with_PL_RED2 "" ;
+č̓əɬabalʔtxʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}č̓əɬabalʔtxʷ N_with_PL_RED2 "" ;
+šukʷə+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}šukʷə N_with_PL_RED2 "" ;
+šəgʷaq+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}šəgʷaq N_with_PL_RED2 "" ;
+šəgʷaʔac+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}šəgʷaʔac N-MSC_with-PL_RED2 "" ;
+šəgʷɬ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}šəgʷɬ N_with_PL_RED2 "" ;
+ƛ̕ax̌ʷdup+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕ax̌ʷdup N_with_PL_RED2 "" ;
+ƛ̕aƛ̕ac̓apəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕aƛ̕ac̓apəd N_with_PL_RED2 "" ;
+ƛ̕aɬəb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕aɬəb N_with_PL_RED2 "" ;
+ƛ̕iq̓s+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕iq̓s N_with_PL_RED2 "" ;
+ƛ̕ux̌ʷƛ̕ux̌ʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕ux̌ʷƛ̕ux̌ʷ N_with_PL_RED2 "" ;
+ƛ̕xʷayʔ+v1+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}%{pØ%}ƛ̕xʷáyʔ N_with_PL_RED130 "" ;
+ƛ̕xʷayʔ+v1+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕xʷáyʔ N_with_PL_RED2 "" ;
+ƛ̕əlayʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ƛ̕əlayʔ N_with_PL_RED2 "" ;
+ǰəšəd+N:ǰə%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}šəd N_with_PL_RED2_Dial/-NL "" ;
+ɬaləp̓+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬaləp̓ N_with_PL_RED2 "" ;
+ɬaʔx̌+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬaʔx̌ N_with_PL_RED2 "" ;
+ɬəčəb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬəčəb N_with_PL_RED2 "" ;
+ʔaciɬtalbixʷ+v1+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔaciɬtalbixʷ N_with_PL_RED2_Dial/-SL "" ;
+ʔaciɬtalbixʷ+v1+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔaciɬtalbixʷ N_with_Distr_12323_RED5 "" ;
+ʔalš+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔalš N_with_PL_RED2 "" ;
+ʔaləxʷk̓ʷid+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔaləxʷk̓ʷid N_with_PL_RED2 "" ;
+ʔaləšək+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔaləšək N_with_PL_RED2 "" ;
+ʔalʔal+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔálʔal N_with_PL_RED2 "" ;
+ʔapəl+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔapəl N_with_PL_RED2 "" ;
+ʔibac+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔibac N_with_PL_RED2 "" ;
+ʔiišəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔiišəd N_with_PL_RED2 "" ;
+ʔikʷpipə+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔikʷpipə N_with_PL_RED2 "" ;
+ʔik̓ʷaʔdəl+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔik̓ʷaʔdəl N_with_PL_RED2 "" ;
+ʔik̓ʷpipə+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔik̓ʷpipə N_with_PL_RED2 "" ;
+ʔik̓ʷusəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔik̓ʷusəd N_with_PL_RED2 "" ;
+ʔukʷs+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔukʷs N_with_PL_RED2 "" ;
+ʔulal+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔulal N_with-PL_RED2 "" ;
+ʔəw̓alus+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔəw̓alus SG-SUF "" ;
+ʔəʔus+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔəʔus N_with_PL_RED2 "" ;
+
+
+! vim: set ft=xfst-lexc:
+!! Numerals
+!  --------
+!! Numerals in the Southern Puget Sound Salish language describe a nuerical quantity.
+
+LEXICON Numerals
+numeral+Num:numeral    Cases   ;
+
+! vim: set ft=xfst-lexc:
+!! Pronouns
+!  --------
+!! Pronouns in the Southern Puget Sound Salish language are words that may replace nouns or refer to participants in the conversation.
+
+LEXICON Pronouns
+pronoun    Cases   ;
+
+! vim: set ft=xfst-lexc:
+!! Verbs
+!  -----
+!! Verbs in the Southern Puget Sound Salish language inflect for tense.
+
+LEXICON Verbs
+verb    Persons   ;
+bəq̓təb+V:bəq̓təb V_CUTEB "" ;
+bəq̓əd+V:bəq̓əd TV_SELPED "" ;
+bəčad+V:bəčad V_KWEDAD "" ;
+bəčdub+V:bəčd V_BECHDUB "" ;
+bəƛ̕šadəb+V:bəƛ̕šadəb V_CUTEB "" ;
+bəƛ̕əd+V:bəƛ̕əd TV_SELPED "" ;
+bəɬ+V:bəɬ V_HELHED "" ;
+caq̓ad+V:caq̓ad V_KWEDAD "" ;
+cilid+V:cilid V_KWEDAD "" ;
+cut+V:cut V_HELHED "" ;
+cutab+V:cutab V_CUTEB_Dial/-NL "" ;
+cuud+V:cuud V_KWEDAD "" ;
+c̓agʷad+V:c̓agʷad V_KWEDAD "" ;
+c̓agʷatsut+V:c̓agʷatsut V_KWEDAD "" ;
+c̓agʷačiʔb+V:c̓agʷačiʔb V_HELHED "" ;
+c̓ibid+V:c̓ibid V_KWEDAD "" ;
+c̓ix̌alikʷ+V:c̓ix̌alikʷ V_KWEDAD "" ;
+c̓ix̌id+V:c̓ix̌id V_KWEDAD "" ;
+c̓əbəb+V:c̓əbəb V_CUTEB "" ;
+diʔiʔil+V:diʔiʔil V_HELHED "" ;
+dəgʷad+V:dəgʷad V_KWEDAD "" ;
+dᶻax̌ʷad+V:dᶻax̌ʷad V_KWEDAD "" ;
+dᶻubalikʷ+V:dᶻubalikʷ V_KWEDAD "" ;
+dᶻəqil+V:dᶻəqil V_HELHED "" ;
+gəqil+V:gəqil V_HELHED "" ;
+gʷiid+V:gʷiid V_KWEDAD "" ;
+gʷədil+V:gʷədil V_HELHED "" ;
+gʷəqilič+V:gʷəqilič V_HELHED "" ;
+gʷəč̓təb+V:gʷəč̓təb V_CUTEB "" ;
+gʷəč̓əb+V:gʷəč̓əb V_CUTEB "" ;
+gʷəč̓əd+V:gʷəč̓əd TV_SELPED "" ;
+gʷəƛ̕əlad+V:gʷəƛ̕əlad V_KWEDAD "" ;
+haydxʷ+V:hayd TV_HUYTXW "" ;
+huy+V:huy V_HUY "" ;
+huytxʷ+V:huyt TV_HUYTXW "" ;
+huyud+V:huyud V_KWEDAD "" ;
+huyutsut+V:huyutsut V_KWEDAD "" ;
+huyutəb+V:huyutəb V_CUTEB "" ;
+həliʔil+V:həliʔil V_HELHED "" ;
+kaw̓ɬəbid+V:kaw̓ɬəbid V_KWEDAD "" ;
+kiis+V:kiis V_KWEDAD "" ;
+kʷatač+V:kʷatač V_KWEDAD "" ;
+kʷukʷcut+V:kʷukʷcut V_HELHED "" ;
+kʷədad+V:kʷədad V_KWEDAD "" ;
+kʷədayitəb+V:kʷədayitəb V_CUTEB "" ;
+kʷədšid+V:kʷəd›šíd V_KWEDYID_Dial/-NL "" ;
+k̓ʷasəb+V:k̓ʷasəb V_CUTEB "" ;
+k̓ʷil+V:k̓ʷil V_HELHED "" ;
+k̓ʷit̕+V:k̓ʷit̕ V_KWEDAD "" ;
+k̓ʷəšəd+V:k̓ʷəšəd TV_SELPED "" ;
+k̓ʷəɬəd+V:k̓ʷəɬəd TV_SELPED "" ;
+labdub+V:labd V_BECHDUB "" ;
+labdxʷ+V:labd V_HUYTXW "" ;
+laqusəb+V:laqusəb V_CUTEB "" ;
+laʔbəd+V:laʔbəd TV_SELPED "" ;
+lič̓id+V:lič̓id V_KWEDAD "" ;
+luƛ̕il+V:luƛ̕il V_HELHED "" ;
+ləhaydxʷ+V:ləhayd TV_HUYTXW "" ;
+lək̓ʷyid+V:lək̓ʷyid V_KWEDAD "" ;
+lək̓ʷyitəb+V:lək̓ʷyitəb V_CUTEB "" ;
+lək̓ʷəd+V:lək̓ʷəd V_HELHED "" ;
+ləliʔil+V:ləliʔil V_HELHED "" ;
+ləx̌i+V:ləx̌i V_HELHED "" ;
+ləx̌ilič+V:ləx̌ilič V_HELHED "" ;
+paq̓ad+V:paq̓ad V_KWEDAD "" ;
+pədixʷalusil+V:pədixʷalusil V_HELHED "" ;
+p̓ayəq+V:p̓áyəq V_HELHED "" ;
+qələb+V:qələb V_CUTEB "" ;
+qʷalctxʷ+V:qʷalct V_HUYTXW "" ;
+qʷibid+V:qʷibid V_KWEDAD "" ;
+qʷiʔaac+V:qʷiʔaac V_HELHED "" ;
+qʷuʔqʷaʔ+V:qʷuʔqʷaʔ V_KWEDAD "" ;
+q̓ax̌ʷ+V:q̓ax̌ʷ V_HELHED "" ;
+q̓ilid+V:q̓ilid V_KWEDAD "" ;
+q̓ʷibid+V:q̓ʷibid V_KWEDAD "" ;
+q̓ʷuʔ+V:q̓ʷuʔ IV_HELHED "" ;
+q̓ʷuʔgʷəsəd+V:q̓ʷuʔgʷəsəd TV_SELPED "" ;
+q̓ʷuʔtxʷ+V:q̓ʷuʔt V_HUYTXW "" ;
+q̓ʷuʔtəb+V:q̓ʷuʔtəb V_CUTEB "" ;
+q̓ʷuʔəd+V:q̓ʷuʔəd TV_SELPED "" ;
+q̓ʷəl+V:q̓ʷəl V_KWEDAD "" ;
+q̓ʷəlb+V:q̓ʷəlb V_CUTEB "" ;
+q̓ʷəld+V:q̓ʷəld V_KWEDAD "" ;
+q̓ʷəlil+V:q̓ʷəlil V_HELHED "" ;
+saq̓ʷ+V:saq̓ʷ V_KWEDAD "" ;
+saxʷab+V:saxʷab V_CUTEB_Dial/-NL "" ;
+səlpəd+V:səlpəd TV_SELPED "" ;
+səx̌əb+V:səx̌əb V_CUTEB "" ;
+sʔabalikʷ+V:sʔabalikʷ V_KWEDAD "" ;
+tagʷš+v1+V:tàgʷš V_KWEDAD "" ;
+tagʷš+v1+V:tagʷš V_KWEDAD "" ;
+taxʷačib+v1+V:taxʷačib V_CUTEB "" ;
+taxʷačib+v1+V:taxʷačib V_HELHED "" ;
+tibicut+V:tibicut V_HELHED "" ;
+tix̌ix̌dubut+V:tix̌ix̌dubut V_HUYTXW "" ;
+tix̌ix̌dxʷ+V:tix̌ix̌d V_HUYTXW "" ;
+tuləkʷ+V:tuləkʷ V_KWEDAD "" ;
+tədᶻil+V:tədᶻil V_HELHED "" ;
+təlawil+V:təlawil V_HELHED "" ;
+təsadiʔ+v1+V:təsadiʔ V_HELHED "" ;
+təsadiʔ+v1+V:tsadiʔ V_HELHED "" ;
+tətəlawil+V:tətəlawil V_HELHED "" ;
+təyil+V:təyil V_HELHED "" ;
+təɬildxʷ+V:təɬild V_HUYTXW "" ;
+t̓iq̓ʷil+V:t̓iq̓ʷil V_HELHED "" ;
+t̓ək̓ʷəb+V:t̓ək̓ʷəb V_CUTEB "" ;
+t̕ilib+V:t̕ilib V_HELHED "" ;
+t̕it̕əb+V:t̕it̕əb V_CUTEB "" ;
+t̕uk̓ʷ+V:t̕uk̓ʷ V_HELHED "" ;
+t̕uk̓ʷtub+V:t̕uk̓ʷt V_BECHDUB "" ;
+t̕ədədaxʷ+V:t̕ədədaxʷ V_KWEDAD "" ;
+wiliq̓ʷid+V:wíliq̓ʷid V_KWEDAD "" ;
+wiliq̓ʷitəb+V:wíliq̓ʷitəb V_CUTEB "" ;
+wəliʔi+V:wəliʔi V_HELHED "" ;
+xʷak̓ʷisəb+V:xʷak̓ʷisəb V_CUTEB "" ;
+xʷəbxʷəbacəb+V:xʷəbxʷəbacəb V_CUTEB "" ;
+xʷəʔaʔxʷəʔil+V:xʷəʔaʔxʷəʔil V_HELHED "" ;
+x̌aab+V:x̌aab V_CUTEB "" ;
+x̌ac̓iǰəd+V:x̌ac̓iǰəd TV_SELPED "" ;
+x̌ahab+V:x̌ahab V_CUTEB "" ;
+x̌alad+V:x̌alad V_KWEDAD "" ;
+x̌alšid+V:x̌alšid V_KWEDAD "" ;
+x̌ayəb+V:x̌áyəb V_CUTEB "" ;
+x̌aƛ̕+V:x̌aƛ̕ V_HELHED "" ;
+x̌aƛ̕il+V:x̌áƛ̕il V_HELHED "" ;
+x̌aƛ̕tub+V:x̌aƛ̕t V_BECHDUB "" ;
+x̌aƛ̕txʷ+V:x̌aƛ̕t TV_HUYTXW "" ;
+x̌ib+V:x̌ib V_HELHED "" ;
+x̌iq̓qid+V:x̌iq̓qid V_KWEDAD "" ;
+x̌udx̌ud+V:x̌udx̌ud V_KWEDAD_Dial/-NL "" ;
+x̌udx̌udbid+V:x̌udx̌udbid V_KWEDAD_Dial/-NL "" ;
+x̌ədəd+V:x̌ədəd TV_SELPED "" ;
+x̌ək̓ʷud+V:x̌ək̓ʷud V_KWEDAD "" ;
+x̌ʷubil+V:x̌ʷubil V_HELHED "" ;
+yayus+V:yayus V_KWEDAD "" ;
+yuwiʔpačəb+V:yuwiʔpačəb V_CUTEB "" ;
+yəcəb+V:yəcəb V_CUTEB "" ;
+yəhaw̓txʷ+V:yəhaw̓t V_HUYTXW "" ;
+čil+V:čil V_HELHED "" ;
+č̓itil+V:č̓itil V_HELHED "" ;
+č̓əɬab+V:č̓əɬab V_CUTEB "" ;
+šub+V:šub V_KWEDAD "" ;
+šudxʷ+V:šudxʷ V_HUYTXW "" ;
+šulud+V:šulud V_SELPED "" ;
+šuləlwaʔs+V:šuləlwaʔs V_KWEDAD "" ;
+šəqačiʔb+V:šəqačiʔb V_KWEDAD "" ;
+šəqšəqačib+V:šəqšəqačib V_CUTEB "" ;
+ƛ̕ax̌ʷ+v1+V:ƛ̕ax̌ʷ V_KWEDAD "" ;
+ƛ̕ax̌ʷ+v1+V:ƛ̕ax̌ʷ V_HELHED "" ;
+ƛ̕iqagʷil+V:ƛ̕iqagʷil V_HELHED "" ;
+ƛ̕iqid+V:ƛ̕iqid V_KWEDAD "" ;
+ƛ̕uq̓ʷəld+V:ƛ̕uq̓ʷəld V_HELHED "" ;
+ƛ̕uʔil+V:ƛ̕uʔil V_HELHED "" ;
+ǰuʔil+V:ǰuʔil V_HELHED "" ;
+ɬalil+V:ɬalil V_HELHED "" ;
+ɬax̌il+V:ɬax̌il V_HELHED "" ;
+ɬaɬlil+V:ɬaɬlil V_HELHED "" ;
+ɬaʔačiʔb+V:ɬaʔačiʔb V_HELHED "" ;
+ɬič̓itəb+V:ɬič̓itəb V_CUTEB "" ;
+ɬič̓txʷ+V:ɬič̓t V_HUYTXW "" ;
+ɬiʔɬdahəb+V:ɬiʔɬdahəb V_CUTEB "" ;
+ɬuq̓ʷud+V:ɬuq̓ʷud V_KWEDAD "" ;
+ɬx̌ilč+V:ɬx̌ilč V_KWEDAD "" ;
+ɬəgʷil+V:ɬəgʷil V_HELHED "" ;
+ɬəgʷilbid+V:ɬəgʷilbid V_KWEDAD "" ;
+ɬəči+V:ɬəči V_HELHED "" ;
+ʔa+V:ʔa V_HELHED "" ;
+ʔababačib+V:ʔababačib V_CUTEB "" ;
+ʔabačib+V:ʔabačib V_CUTEB "" ;
+ʔabyitəb+V:ʔabyitəb V_CUTEB "" ;
+ʔabšid+V:ʔab›šid V_KWEDYID_Dial/-NL "" ;
+ʔabšədəb+V:ʔabšədəb V_CUTEB "" ;
+ʔatəbəd+V:ʔatəbəd V_SELPED "" ;
+ʔibibəš+V:ʔibibəš V_KWEDAD "" ;
+ʔibəš+V:ʔíbəš V_KWEDAD "" ;
+ʔilid+V:ʔilid V_KWEDAD "" ;
+ʔistəb+V:ʔistəb V_CUTEB "" ;
+ʔitut+V:ʔítut V_HELHED "" ;
+ʔišil+V:ʔišil V_KWEDAD "" ;
+ʔiɬšxʷ+V:ʔiɬšxʷ V_HELHED "" ;
+ʔiʔɬadəb+V:ʔìʔɬádəb V_CUTEB "" ;
+ʔiʔɬəd+V:ʔiʔɬəd TV_SELPED "" ;
+ʔukʷukʷ+V:ʔukʷukʷ V_KWEDAD "" ;
+ʔuluɬ+V:ʔuluɬ V_HELHED "" ;
+ʔuləx̌əd+V:ʔuləx̌əd V_HELHED "" ;
+ʔusils+V:ʔusils V_KWEDAD "" ;
+ʔut̕ičəb+V:ʔut̕ičəb V_CUTEB "" ;
+ʔut̕šədəb+V:ʔut̕šədəb V_CUTEB "" ;
+ʔux̌ʷ+V:ʔux̌ʷ V_KWEDAD "" ;
+ʔux̌ʷc+V:ʔux̌ʷc V_HELHED "" ;
+ʔux̌ʷtxʷ+V:ʔux̌ʷt TV_HUYTXW "" ;
+ʔux̌ʷtxʷyitəb+V:ʔux̌ʷtxʷyitəb V_CUTEB "" ;
+ʔux̌ʷtxʷšid+V:ʔux̌ʷtxʷ›šid V_KWEDYID_Dial/-NL "" ;
+ʔux̌ʷšid+V:ʔux̌ʷ›šid V_KWEDYID_Dial/-NL "" ;
+ʔəy̓dxʷ+V:ʔəy̓d TV_HUYTXW "" ;
+ʔəy̓dxʷšid+V:ʔəy̓dxʷ›šid V_KWEDYID_Dial/-NL "" ;
+ʔəy̓dxʷšitəb+V:ʔəy̓dxʷšitəb V_CUTEB_Dial/-NL "" ;
+ʔəƛɬtxʷ+V:ʔəƛɬt TV_HUYTXW "" ;
+ʔəƛ̕+V:ʔəƛ̕ V_KWEDAD "" ;
+ʔəƛ̕c+V:ʔəƛ̕c V_KWEDAD "" ;
+ʔəƛ̕txʷ+V:ʔəƛ̕t TV_HUYTXW "" ;
+ʔəɬtub+V:ʔəɬt V_BECHDUB "" ;
+ʔəɬəd+V:ʔəɬəd V_HELHED "" ;
+
+! vim: set ft=xfst-lexc:
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2020 The University of Tromsø
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@uit.no or feedback@divvun.no
+
+!! !!!Punctuation symbols
+
+LEXICON Punctuation   !!= * __@CODE@__ contains the list
+!! of punctuation symbols:
+!! * Symbols like .,: are tagged with __+CLB__
+!! * other symbols like +.& are tagged with __+PUNCT__, and
+!! * paired symbols like ()«» are tagged with __+PUNCT+LEFT__
+!!   and __+PUNCT+RIGHT__, respectively.
+
+!! The punctuation symbols are listed in the following groups:
+
+!! * Clause boundary symbols:
+   ,       CLBcontlex        ;
+   .       CLBcontlex        ;
+  ..       CLBcontlex        ;
+ ...       CLBcontlex        ;
+  %:       CLBcontlex        ;
+  %;       CLBcontlex        ;
+  %!       CLBcontlex        ;
+   |       CLBcontlex        ;
+   ?       CLBcontlex        ; ! Question mark
+   …       CLBcontlex        ;
+   …:....  CLBerrorthcontlex ; ! Four and five full stops are analysed as
+   …:..... CLBerrorthcontlex ; ! misspellings of the ellipsis sign.
+   ¿       CLBcontlex        ; ! Only seen as noise.
+   ¶       CLBcontlex        ; ! This sign is for titles, it is introduced by
+                               ! the catxml script, and may be changed if it
+                               ! interferes with real pilcrow signs.
+   ❡       CLBcontlex        ; ! This sign is for titles on html pages, added
+                               ! when jorgal apertium download pages for MT
+   ¬       CLBcontlex        ;
+   ¥       CLBcontlex        ; ! foreløpig
+!! * Single punctuation marks
+   •      PunctCont ;
+   ●      PunctCont ;
+   ·      PunctCont ;
+   ּ       PunctCont ; ! HEBREW POINT DAGESH OR MAPIQ
+   ·      PunctCont ;
+   -:∑-   PunctCont ; ! hyphen
+  --:∑-∑- PunctCont ; ! double hyphen
+   –      PunctCont ; ! endash
+   —      PunctCont ; ! emdash
+   ―      PunctCont ; ! horizontal bar
+   −      PunctCont ;
+   _      PunctCont ;
+   =      PunctCont ;
+   ≈      PunctCont ;
+   &      PunctCont ;
+  %"      PunctCont ;
+   '      PunctCont ;
+   *      PunctCont ;
+   +      PunctCont ;
+   ±      PunctCont ;
+   `      PunctCont ;
+   ´      PunctCont ;
+   /      PunctCont ;
+   \      PunctCont ;
+ +/-:+/∑- PunctCont ;
+   ~      PunctCont ;
+   ‐      PunctCont ;
+   °      PunctCont ;
+   ＂      PunctCont ;
+!! * Paired punctuation marks
+       (        PunctLeft ;
+       )        PunctRght ;
+       [        PunctLeft ;
+       ]        PunctRght ;
+       {        PunctLeft ;
+       }        PunctRght ;
+      %<:%[%<%] PunctLeft ;
+      %>:%[%>%] PunctRght ;
+       «:«7     PunctLeft ;
+       »:»7     PunctRght ;
+       ‹        PunctLeft ;
+       ›        PunctRght ;
+       “        PunctLeft ;
+       ”        PunctRght ;
+       „        PunctLeft ;
+       ‟        PunctLeft ;
+       ‘        PunctLeft ;
+       ’        PunctRght ;
+       ‚        PunctLeft ;
+       ‛        PunctLeft ;
+       ❛        PunctLeft ;
+       ❜        PunctRght ;
+       ❝        PunctLeft ;
+       ❞        PunctRght ;
+       ❟        PunctLeft ;
+       ❠        PunctLeft ;
+       ❮        PunctLeft ;
+       ❯        PunctRght ;
+       〝        PunctLeft ;
+       〞        PunctRght ;
+       〟        PunctLeft ;
+
+
+! Todo: Some symbols from non-ISO code pages do not work
+
+! +PUNCT:"\150" PunctEnd  ; ! trying to capture some hyphens
+! +PUNCT:"\151" PunctEnd  ; ! trying to capture some hyphens
+! Did not work.
+
+LEXICON CLBcontlex
+ +CLB: PunctEnd ;
+
+LEXICON CLBerrorthcontlex
+ +CLB+Err/Orth: PunctEnd ;
+
+LEXICON PunctCont
+ +PUNCT: PunctEnd ;
+
+LEXICON PunctLeft
+ +PUNCT+LEFT: PunctEnd ;
+
+LEXICON PunctRght
+ +PUNCT+RIGHT: PunctEnd ;
+
+LEXICON PunctEnd   !!= * __@CODE@__ leads to # only.
+  # ;
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@uit.no or feedback@divvun.no
+
+!! !!!Symbols
+!! Symbols are single character special signs typically denoting whole nouns. They are different from
+!! abbreviations and acronyms by not consisting of regular, alphabetic letters.
+
+!! Symbols are syntactic constituents, and thus part of the sentence analysis. That is, they are
+!! different from punctuation: punctuation express syntactic boundaries of various kinds, symbols
+!! are syntactic constituents.
+
+LEXICON Symbols !!≈ __@CODE@__ contains symbols of two types: those that inflect, and those that don't.
+
+!! Miscellaneous symbols
+
+   §    Noun_symbols_possibly_inflected    ;
+  §§    Noun_symbols_possibly_inflected    ;
+!  ¥    Noun_symbols_possibly_inflected    ;
+   $    Noun_symbols_possibly_inflected    ;
+   €    Noun_symbols_possibly_inflected    ;
+   £    Noun_symbols_possibly_inflected    ;
+  %%    Noun_symbols_possibly_inflected    ;
+   ®    Noun_symbols_never_inflected       ;
+   ©    Noun_symbols_never_inflected       ;
+   √    Noun_symbols_never_inflected       ; ! square root
+   ◊    Noun_symbols_never_inflected       ;
+   ♦    Noun_symbols_never_inflected       ;
+   ☐    Noun_symbols_never_inflected       ;
+   ⚬    Noun_symbols_never_inflected       ;
+  %#:#7 Noun_symbols_never_inflected       ;
+   №    Noun_symbols_never_inflected ;
+!  º    Noun_symbols_never_inflected       ; !Foreløpig, til dette fikset
+   ‰     Noun_symbols_never_inflected       ;
+   ●     Noun_symbols_never_inflected       ;
+   −     Noun_symbols_never_inflected       ;
+   ¬     Noun_symbols_never_inflected       ;
+   %@    Noun_symbols_never_inflected       ; ! @
+
+!! Symbols from Mari OCR reading. TODO: Remove non-symbols + merge with list above
+
+   \   Noun_symbols_never_inflected       ;
+   ¢   Noun_symbols_never_inflected       ;
+   ¦   Noun_symbols_never_inflected       ;
+   ª   Noun_symbols_never_inflected       ;
+   ×   Noun_symbols_never_inflected       ;
+   ‡   Noun_symbols_never_inflected       ;
+   ™   Noun_symbols_never_inflected       ;
+   →   Noun_symbols_never_inflected       ;
+   ■   Noun_symbols_never_inflected       ;
+   □   Noun_symbols_never_inflected       ;
+   ▲   Noun_symbols_never_inflected       ;
+   ►   Noun_symbols_never_inflected       ;
+   ▼   Noun_symbols_never_inflected       ;
+   ★   Noun_symbols_never_inflected       ;
+   ☆   Noun_symbols_never_inflected       ;
+   ☺   Noun_symbols_never_inflected       ;
+   ✓   Noun_symbols_never_inflected       ; ! check mark
+   ❖   Noun_symbols_never_inflected       ;
+
+! These symbols are private use area U+F020 - U+F0FC
+! (i.w. F000 to F0FF). These could be removed rather than analysed.
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+      Noun_symbols_never_inflected       ;
+
+
+
+!! Smileys
+ %:-) Noun_symbols_never_inflected ;
+ %:)  Noun_symbols_never_inflected ;
+ %:-| Noun_symbols_never_inflected ;
+ %:|  Noun_symbols_never_inflected ;
+ %:-( Noun_symbols_never_inflected ;
+ %:(  Noun_symbols_never_inflected ;
+
+!! Emojies
+ 😄 Noun_symbols_never_inflected ;
+ 🙂 Noun_symbols_never_inflected ;
