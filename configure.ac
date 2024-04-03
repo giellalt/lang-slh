@@ -60,7 +60,7 @@ AC_SUBST([GLANG2], [slh])
 AC_SUBST([GTLANG2], $GLANG2)
 # GLANGUAGE is the full language name as given by the ISO 639-3 file.
 # GTLANGUAGE is deprecated, defined for backwards compatibility.
-AC_SUBST([GLANGUAGE], ["Southern Puget Sound Salish"])
+AC_SUBST([GLANGUAGE], ["Southern Lushootseed"])
 AC_SUBST([GTLANGUAGE], $GLANGUAGE)
 
 ### Speller release version (usually different from the package version,

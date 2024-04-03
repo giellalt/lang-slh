@@ -1,4 +1,4 @@
-# Southern Puget Sound Salish documentation
+# Southern Lushootseed documentation
 
 [![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-slh%2Fgh-pages%2Fmaturity.json)](https://giellalt.github.io/MaturityClassification.html)
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-slh%2Fgh-pages%2Flemmacount.json)
@@ -6,7 +6,7 @@
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-slh)](https://github.com/giellalt/lang-slh/issues)
 [![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-slh/main/badge.svg)](https://github.com/giellalt/lang-slh/actions)
 
-This page documents the work on the **Southern Puget Sound Salish language model**. 
+This page documents the work on the **Southern Lushootseed language model**. 
 
 # Project documentation
 

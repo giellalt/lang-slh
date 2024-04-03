@@ -1,4 +1,4 @@
-! Divvun & Giellatekno - open source grammars for Southern Puget Sound Salish language
+! Divvun & Giellatekno - open source grammars for Southern Lushootseed language
 ! Copyright © 2015 The University of Tromsø & the Norwegian Sámi Parliament
 ! http://giellatekno.uit.no & http://divvun.no
 !
@@ -13,9 +13,9 @@
 ! giellatekno@uit.no or feedback@divvun.no
 
 ! ========================================================================== !
-! !!            !!!Southern Puget Sound Salish morphological analyser                      !
+! !!            !!!Southern Lushootseed morphological analyser                      !
 ! ========================================================================== !
-!! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Southern Puget Sound Salish LANGUAGE.
+!! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Southern Lushootseed LANGUAGE.
  
 
 Multichar_Symbols  !!≈ # Definitions for @CODE@
@@ -60,7 +60,7 @@ y̓   !!= @CODE@
 
 !! ## Analysis symbols
 !  ----------------
-!! The morphological analyses of wordforms for the Southern Puget Sound Salish
+!! The morphological analyses of wordforms for the Southern Lushootseed
 !! language are presented in this system in terms of the following symbols.
 !! (It is highly suggested to follow existing standards when adding new tags).
 
