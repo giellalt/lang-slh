@@ -17,4 +17,4 @@ slh = "TRANSLATE: A spellchecker for Southern Lushootseed, made by members of th
 system_pkg_id = "no.divvun.MacDivvun.slh"
 
 [windows]
-system_product_code = "{REPLACE_WITH_REAL_SYSTEM_PROD_CODE}_is1"
+system_product_code = "{610ECE22-C9A6-4FA9-A333-5A12EEBA6CD0}_is1"
