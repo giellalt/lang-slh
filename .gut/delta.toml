@@ -1,0 +1,10 @@
+template = ""
+rev_id = 174
+template_sha = "9918c392d55da558f8b8e9ab3c61522590a37fb3"
+
+[replacements]
+__LICENSE__ = "LGPLv3"
+__REPO__ = "lang-slh"
+__UND2C__ = "slh"
+__UNDEFINED__ = "Southern Lushootseed"
+__UND__ = "slh"
