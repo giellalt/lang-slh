@@ -195,6 +195,7 @@ y̓   !!= @CODE@
 !! source and target part-of-speech.
  +V→N +V→V +V→A
  +Der
+ +Dimin
  +Der/xxx
  +Der/Dimin !!= * @CODE@ * diminutive
  +Der/Dimin_12123 !!= * @CODE@ * diminutive pa-pasted ^Red12123
