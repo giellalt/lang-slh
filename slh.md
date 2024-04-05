@@ -372,11 +372,6 @@ The Usage extents are marked using following tags:
 * **+Use/TTS** – **only** retained in the HFST Text-To-Speech disambiguation tokeniser
 * **+Use/-TTS** – **never** retained in the HFST Text-To-Speech disambiguation tokeniser
 
-Dialect tags:
-
-* **+Dial/-NL** not north Lushootseed
-* **+Dial/-SL** not south Lushootseed
-
 The nominals are inflected in the following Case and Number
 
 Possession is marked as follows:
@@ -492,7 +487,7 @@ reduplication type 6 involves the all three letters of the three-letter reduplic
 * +Der/Red6_122123  * This is Red6 
 *  +Der/Red6_1aa1ə3  * This is Red6 sɬaaɬədəyʔ < sɬadəyʔ
 
-* +Clt  %>əxʷ
+* +Clt/Now  %>əxʷ
 
 ### Tags distinguishing different versions of the same lemma (before POS)
 * +v1
