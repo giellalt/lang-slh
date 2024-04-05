@@ -25,10 +25,9 @@ LEXICON N_with-PL_RED1_qelb
 
 
 
-LEXICON N_with_PL_RED2_Dial/-SL
-+Dial/-SL: N_with_PL_RED2 ;
 LEXICON N_with_PL_RED2_Dial/-NL
-+Dial/-NL: N_with_PL_RED2 ;
+!+Dial/-NL: N_with_PL_RED2 ;
+ N_with_PL_RED2 ;
 LEXICON N_with_PL_RED2
 : DIM_CV1toCV2C ;
 : SG-SUF ;
