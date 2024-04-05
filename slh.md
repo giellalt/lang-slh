@@ -1,6 +1,10 @@
-# Southern Lushootseed description 
+# Southern Lushootseed language model documentation
 
-All documents in one file
+All doc-comment documentation in one large file.
+
+---
+
+# src-cg3-functions.cg3.md 
 
 
 
@@ -170,7 +174,14 @@ These were the set types.
 ## HNOUN MAPPING
 
 * * *
-<small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-slh/blob/main/src/cg3/functions.cg3)</small>Adjective inflection
+
+<small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-slh/blob/main/src/cg3/functions.cg3)</small>
+
+---
+
+# src-fst-morphology-affixes-adjectives.lexc.md 
+
+Adjective inflection
 The Southern Puget Sound Salish language adjectives are inflected in much the same way as nouns and verbs.
 
 * * *
@@ -178,6 +189,8 @@ The Southern Puget Sound Salish language adjectives are inflected in much the sa
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/adjectives.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/affixes/adjectives.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-adverbs.lexc.md 
 
 Adjective inflection
 The Southern Puget Sound Salish language adverbs
@@ -187,6 +200,8 @@ The Southern Puget Sound Salish language adverbs
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/adverbs.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/affixes/adverbs.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-nouns.lexc.md 
 
 Noun inflection
 The Southern Puget Sound Salish language nouns inflect in time person aspect.
@@ -210,6 +225,8 @@ k̓ʷəčədiʔ+N+Pl: __rabbit/jänis__
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/nouns.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/affixes/nouns.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-prefixes.lexc.md 
 
 Prefixes
 Prefixes in the Southern Puget Sound Salish language are attached to the beginning of other words.
@@ -244,6 +261,8 @@ lə<bə<ləcu<gʷaadgʷad
 
 ---
 
+# src-fst-morphology-affixes-propernouns.lexc.md 
+
 Proper noun inflection
 The Southern Lushootseed language proper nouns inflect in the same cases as regular
 nouns, but perhaps with a colon (':') as separator.
@@ -254,6 +273,8 @@ nouns, but perhaps with a colon (':') as separator.
 
 ---
 
+# src-fst-morphology-affixes-symbols.lexc.md 
+
 
 # Symbol affixes
 
@@ -262,6 +283,8 @@ nouns, but perhaps with a colon (':') as separator.
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/symbols.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/affixes/symbols.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-verbs.lexc.md 
 
 Verb inflection
 The Southern Puget Sound Salish language verbs inflect time, person and aspect.
@@ -284,26 +307,193 @@ q̓ʷuʔ "gather"
 
 ---
 
+# src-fst-morphology-phonology.twolc.md 
+
 =================================== !
 The Southern Lushootseed morphophonological/twolc rules file !
 =================================== !
 
-* *primus%>s*
-* *primus00*
+The Southern Puget Sound Salish language is written in lower case only. Foreign names, however,
+are capitalized https://en.wikipedia.org/wiki/ISO_639:s vs https://iso639-3.sil.org/code/slh
 
-*  examples:*
+This transformation, accent loss, will be moved to post dict. 2022-12-25
 
-*  examples:*
+c U+0313
 
-*  examples:*
+Lushootseed is written in IPA, there are no upper-case letters
 
-*  examples:*
+place holders
+
+* %^Red1i123:0  qəlb: qiqəlb **rain showers**
+* %^Red1i13:0  2-segment to 3-segments with vowel change
+* %^Red12q13:0 
+* %^Red1213:0 
+* %^Red1iq13:0  iʔ
+* %^Red1iq123:0  iʔ biʔbədəʔs
+* %^Red12123:0  papastəd
+* %^RedPL1i1i13:0  2-segment to 3-segments with vowel change Plural
+* %^Red12323:0  works with Red3 and Red5
+
+* %^RedPL123123:0  3-segment reduplication 
+
+* %^RedPL130130:0  ƛ̕xʷay: ƛ̕xʷaƛ̕xʷay 
+
+* %^Pen:0  this combines with subsequent RmVow or perhaps RmCns
+* %^RmVOW:0  this removes previous vowel or with Pen the penultimate vowel
+* %^d2t:0  this devoices d to t specifically
+
+## Symbols that need to be escaped on the lower side (towards twolc):
+* **»7**:  Literal »
+* **«7**:  Literal «
+```
+ %[%>%]  - Literal >
+ %[%<%]  - Literal <
+```
+* **%^√:0**: at commence of root
+
+* **%-**:  hyphen
+
+Reduplications are worked with on the basis of the Lushootseed Dictionary by Dawn Bates, Thom Hess and Vi Hilbert. Seattle & London. 1994:xvii
+
+Red1
+C V1 => C V1 C V1 
+* *s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tubš*
+* *s000tu0tubš*
+* *ʔiɬ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}t̕isu*
+* *ʔiɬ000t̕i0t̕isu*
+
+C V1 => C V1 C ə  
+* *s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}tuləkʷ*
+* *s000tu0tələkʷ*
+* *%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}yubil*
+* *00yu0yəbil*
+* *%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬaɬil*
+* *00ɬa0ɬəlil*
+* *%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ʷid*
+* *00k̓ʷi0k̓ʷəd*
+
+C V1 => C V1 C   
+* *%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pastəd*
+* *00pa0p0stəd*
+* *s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}x̌ʷiƛ̕əyʔ*
+* *s000x̌ʷi0x̌ʷ0ƛ̕əyʔ*
+
+C ə => C i C   %^Red1i13:
+* *%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ʔəpus%^Red1i13*
+* *00ʔi0ʔ0pus0*
+
+C ə => C i C ə
+Red 1 qəlb: qiqəlb %^Red1i123
+* *%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qəlb%^Red1i123*
+* *00qi0qəlb0*
+
+**a:0 in inflection**
+
+**ə:0 in inflection**
+* *x̌əd»əd%>sid*
+* *x̌əd000%>cid*
+* *bəq̓əd^Pen^RmVOW^d2t>əb*
+* *bəq̓0t000>əb*
+
+sčətxʷəd+N+Der/Dimin+N+Pl __bear/karhu__
+* *s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čətxʷəd%^RedPL1i1i13*
+* *s%^√čiči0č0txʷəd0*
+
+**i:0 in inflection**
+
+**í:0 in inflection**
+
+**ʔ:0 in preceding s**
+ʔəɬəd+V+Prf+Der+Der/N+N+Sg+PxSg2: __eat/syödä__
+* *ad<s<ʔu<ʔəɬəd*
+* *ad<s<0u<ʔəɬəd*
+
+**u:0 in preceding ƛ̕**
+
+**%{pØ%}:a in reduplication**
+
+**%{p2%}:ə in reduplication**
+* *%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlups%^RedPL123123*
+* *00bəlbəlups0*
+
+**%{p2%}:u in reduplication**
+
+**%{p2%}:í in reduplication**
+
+**%{p2%}:i in reduplication**
+qəlb+N+Pl: **rain showers**
+* *%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qəlb%^Red1i123*
+* *00qi0qəlb0*
+pišpiš+N+Pl: **cat/kissa**
+* *%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}pišpiš%^RedPL123123*
+* *00pišpišpiš0*
+
+**%{p4%}:i in reduplication**
+
+**%{p2%}:a in reduplication**
+
+**%{p2%}:á in reduplication**
+
+**%{pØ%}:0**
+
+**%{p1%}:0**
+
+**%{p2%}:0**
+
+**%{p3%}:0**
+
+**%{p4%}:0**
+
+**%{p5%}:0**
+
+* *ʔu%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kʷədad%>s*
+* *ʔu000000kʷəda0%>c*
+
+**d:0 before s:c**
+* *ʔu%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}kʷədad%>cid*
+* *ʔu000000kʷəda0%>cid*
+
+**d:t before ə b**
+* *bəq̓əd^Pen^RmVOW^d2t>əb*
+* *bəq̓0t000>əb*
+
+**%{p1%}:Cx in reduplication**
+
+**%{p3%}:Cx in reduplication**
+
+**%{p5%}:Cx in reduplication**
+
+sčətxʷəd+N+Der/Dimin+N+Pl bear
+* *s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čətxʷəd%^RedPL1i1i13*
+* *s%^√čičič0txʷəd0*
+
+liquids
+
+**%{p1%}:l̕ in reduplication**
+
+**%{p1%}:y̓ in reduplication**
+
+**%{p1%}:w̓ in reduplication**
+
+**%{p1%}:ʔ in reduplication**
+
+**%{p1%}:Cx in reduplication**
+* *%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlups%^RedPL123123*
+* *00bəlbəlups0*
+
+**%{p1%}:Cx in reduplication**
+
+**%{p1%}:Cx in reduplication**
+
+**Cns:0 in reduplication 3 and 5**
 
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/phonology.twolc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/phonology.twolc)</small>
 
 ---
+
+# src-fst-morphology-root.lexc.md 
 
 
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Southern Lushootseed LANGUAGE.
@@ -669,6 +859,8 @@ word classes, or optionally from prefixes:
 
 ---
 
+# src-fst-morphology-stems-adjectives.lexc.md 
+
 Adjectives
 Adjectives in the Southern Lushootseed language describe the entities nouns refer to.
 
@@ -677,6 +869,8 @@ Adjectives in the Southern Lushootseed language describe the entities nouns refe
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/adjectives.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/adjectives.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-adpositions.lexc.md 
 
 Adpositions
 Adpositions in the Southern Puget Sound Salish language 
@@ -687,6 +881,8 @@ Adpositions in the Southern Puget Sound Salish language
 
 ---
 
+# src-fst-morphology-stems-adverbs.lexc.md 
+
 Adverbs
 Adverbs in the Southern Puget Sound Salish language are words that express time, place, degree, mode.
 
@@ -695,6 +891,8 @@ Adverbs in the Southern Puget Sound Salish language are words that express time,
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/adverbs.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/adverbs.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-conjunctors.lexc.md 
 
 Conjunctors
 Conjunctors in the Southern Puget Sound Salish language 
@@ -705,6 +903,8 @@ Conjunctors in the Southern Puget Sound Salish language
 
 ---
 
+# src-fst-morphology-stems-interjections.lexc.md 
+
 Interjections
 Interjections in the Southern Puget Sound Salish language 
 
@@ -713,6 +913,8 @@ Interjections in the Southern Puget Sound Salish language
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/interjections.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/interjections.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-nouns.lexc.md 
 
 Nouns
 Nouns in the Southern Lushootseed language refer to objects or sets of objects, qualities, states or ideas.
@@ -723,6 +925,8 @@ Nouns in the Southern Lushootseed language refer to objects or sets of objects, 
 
 ---
 
+# src-fst-morphology-stems-numerals.lexc.md 
+
 Numerals
 Numerals in the Southern Lushootseed language describe a nuerical quantity.
 
@@ -731,6 +935,8 @@ Numerals in the Southern Lushootseed language describe a nuerical quantity.
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/numerals.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/numerals.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-prefixes.lexc.md 
 
 Prefixes
 Prefixes in the Southern Lushootseed language are attatched to the left of other words.
@@ -741,6 +947,8 @@ Prefixes in the Southern Lushootseed language are attatched to the left of other
 
 ---
 
+# src-fst-morphology-stems-pronouns.lexc.md 
+
 Pronouns
 Pronouns in the Southern Lushootseed language are words that may replace nouns or refer to participants in the conversation.
 
@@ -750,6 +958,8 @@ Pronouns in the Southern Lushootseed language are words that may replace nouns o
 
 ---
 
+# src-fst-morphology-stems-verbs.lexc.md 
+
 Verbs
 Verbs in the Southern Lushootseed language inflect for tense.
 
@@ -758,6 +968,8 @@ Verbs in the Southern Lushootseed language inflect for tense.
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/verbs.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/verbs.lexc)</small>
 
 ---
+
+# src-fst-phonetics-txt2ipa.xfscript.md 
 
 
 
@@ -926,6 +1138,8 @@ retracted tongue root			_q
 
 ---
 
+# src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
+
 
 
 We describe here how abbreviations are in Southern Lushootseed are read out, e.g.
@@ -946,6 +1160,8 @@ For example:
 
 ---
 
+# src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
+
 
 
 % komma% :,      Root ;
@@ -959,6 +1175,8 @@ For example:
 <small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 ---
+
+# tools-grammarcheckers-grammarchecker.cg3.md 
 
 
 #  Southern Lushootseed  G R A M M A R   C H E C K E R
@@ -1257,7 +1475,14 @@ expression **WORD - premodifiers**.
 ### Grammarchecker sets
 
 * * *
-<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-slh/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small># Tokeniser for slh
+
+<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-slh/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>
+
+---
+
+# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
+
+# Tokeniser for slh
 
 Usage:
 ```
@@ -1319,6 +1544,8 @@ Finally we mark as a token any sequence making up a:
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](https://github.com/giellalt/lang-slh/blob/main/tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
 
 ---
+
+# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
 
 # Grammar checker tokenisation for slh
 
@@ -1383,6 +1610,8 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
+# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+
 # TTS tokenisation for smj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
@@ -1444,6 +1673,3 @@ Needs hfst-tokenise to output things differently depending on the tag they get
 * * *
 
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-tts-cggt-desc.pmscript](https://github.com/giellalt/lang-slh/blob/main/tools/tokenisers/tokeniser-tts-cggt-desc.pmscript)</small>
-
----
-
