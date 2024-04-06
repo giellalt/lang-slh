@@ -64,6 +64,7 @@ x̌ʷ
 
 ʔ
 !! Lushootseed is written in IPA, there are no upper-case letters
+%{lØ%}:0   !!= * @CODE@ in slh stem-final l tends to be lost, but it is retained before Clt/Now
 
 
 %{p5%}:b̓
@@ -429,6 +430,14 @@ Rules
 !! **@RULENAME@**
  %{pØ%}:0 <=> %{p1%}: (%{pØ%}:) _ Lts:* \[ %^RedPL130130:] [ # | %>: ] ;
 
+!Consonants
+"%{lØ%}:0" 
+!! **@RULENAME@**
+%{lØ%}:0 <=> _ # ;
+
+"%{lØ%}:l" 
+!! **@RULENAME@**
+%{lØ%}:l <=> i _ %> ə ;
 
 "%{p1%}:0"
 !! **@RULENAME@**

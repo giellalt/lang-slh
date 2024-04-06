@@ -151,6 +151,11 @@ LEXICON IV_HELHED
 !! @U.TAM-A.PRF@
 +IV: 0V_HELHED ;
 
+LEXICON V_GEQIL_0/l
+!! ʔəɬəd+V:ʔəɬəd
+! @U.TAM-A.PRF@
+:%{lØ%} 0V_HELHED ;
+
 LEXICON V_HELHED
 !! ʔəɬəd+V:ʔəɬəd
 ! @U.TAM-A.PRF@
