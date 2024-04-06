@@ -226,6 +226,8 @@ Morphophonology
 To represent phonologic variations in word forms we use the following
 symbols in the lexicon files:
 
+* %{lØ%}    in slh stem-final l tends to be lost, but it is retained before Clt/Now
+
 place holders
 * %{pØ%}  
 * %{p1%}  

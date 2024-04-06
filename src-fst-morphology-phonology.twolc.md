@@ -10,6 +10,7 @@ This transformation, accent loss, will be moved to post dict. 2022-12-25
 c U+0313
 
 Lushootseed is written in IPA, there are no upper-case letters
+* %{lØ%}:0    in slh stem-final l tends to be lost, but it is retained before Clt/Now
 
 place holders
 
@@ -124,6 +125,10 @@ pišpiš+N+Pl: **cat/kissa**
 **%{p2%}:á in reduplication**
 
 **%{pØ%}:0**
+
+**%{lØ%}:0 **
+
+**%{lØ%}:l **
 
 **%{p1%}:0**
 
