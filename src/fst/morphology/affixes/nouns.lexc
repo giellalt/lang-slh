@@ -51,14 +51,20 @@ LEXICON N_with_Distr_12323_RED5 !Der/Red5_12323
 : PL_RED5 ;
 
 LEXICON N-FEM_with-PL_RED2
-+Fem: DIM_CV1toCV2C ;
-+Fem: SG-SUF ;
-+Fem: PL_RED2 ;
+: DIM_CV1toCV2C ;
+: SG-SUF ;
+: PL_RED2 ;
+!+Fem: DIM_CV1toCV2C ;2024-04-09 leave	gender tags out, but retain in contlex
+!+Fem: SG-SUF ;
+!+Fem: PL_RED2 ;
 
 LEXICON N-MSC_with-PL_RED2
-+Msc: DIM_CV1toCV2C ;
-+Msc: SG-SUF ;
-+Msc: PL_RED2 ;
+: DIM_CV1toCV2C ;
+: SG-SUF ;
+: PL_RED2 ;
+!+Msc: DIM_CV1toCV2C ; 2024-04-09 leave gender tags out, but retain in contlex
+!+Msc: SG-SUF ;
+!+Msc: PL_RED2 ;
 
 ! Derivation
 LEXICON DIM_CV1toCV2C
