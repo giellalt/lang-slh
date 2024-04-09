@@ -1,0 +1,49 @@
+!! Pronoun inflection
+! ----------------------
+!! The Southern Puget Sound Salish language pronouns inflect 
+!! nouns, but with a colon (':') as separator.
+
+LEXICON PRON-PERS-SG1
++Pers+Sg1:   #  ;
+
+LEXICON PRON-PERS-SG2
++Pers+Sg2:   #  ;
+
+LEXICON PRON-PERS-SG3
++Pers+Sg3:   #  ;
+
+LEXICON	PRON-PERS-PL1
++Pers+Pl1:   #  ;
+
+LEXICON PRON-PERS-PL2
++Pers+Pl2:   #  ;
+
+LEXICON PRON-PERS-PL3
++Pers+Pl3:   #  ;
+
+LEXICON PRON_INTERR
++Interr: K ;
+
+LEXICON PRON_DEM
++Dem: K ;
+
+LEXICON PRON_DEM_MSC
++Dem+Msc: K ;
+LEXICON PRON_DEM_MSC_PROX
++Dem+Msc+Prox: K ;
+LEXICON PRON_DEM_MSC_DIST
++Dem+Msc+Dist: K ;
+LEXICON PRON_DEM_MSC_REM
++Dem+Msc+Rem: K ;
+
+LEXICON PRON_DEM_FEM
++Dem+Fem: K ;
+LEXICON PRON_DEM_FEM_PROX
++Dem+Fem+Prox: K ;
+LEXICON PRON_DEM_FEM_DIST
++Dem+Fem+Dist: K ;
+LEXICON PRON_DEM_FEM_REM
++Dem+Fem+Rem: K ;
+
+! vim: set ft=xfst-lexc:
+

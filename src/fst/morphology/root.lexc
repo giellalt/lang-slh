@@ -94,7 +94,7 @@ y̓   !!= @CODE@
 
 
 !! The nominals are inflected in the following Case and Number
- +Sg +Du +Pl
+ +Sg +Du +Pl +SP
  +Ess +Nom +Gen +Acc +Ill +Loc +Com 
 
 !! Possession is marked as follows:
@@ -143,6 +143,13 @@ y̓   !!= @CODE@
 
 !! Verb personal forms are:
  +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
+
+!! ## Direct Object conjugation
+ +OcSg1 !!= * @CODE@ = object conjugation first person singular
+ +OcSg2 !!= * @CODE@ = object conjugation second person singular
+ +OcSP3 !!= * @CODE@ = object conjugation third person singular or plural
+ +OcPl1 !!= * @CODE@ = object conjugation first person plural
+ +OcPl2 !!= * @CODE@ = object conjugation second person plural
 
 !! Other verb forms are
  +Inf +Ger +ConNeg +ConNegII +Neg +ImprtII +PrsPrc +PrfPrc +Sup +VGen +VAbess
@@ -296,8 +303,6 @@ y̓   !!= @CODE@
 %^√ !!≈ * **@CODE@**:  commence root
 %< !!≈ * **@CODE@**: prefix
 
-
-
 !! Morphophonology
 !  ---------------
 !! To represent phonologic variations in word forms we use the following
@@ -340,6 +345,7 @@ y̓   !!= @CODE@
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:
+
  @P.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
  @D.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
  @C.NeedNoun@       !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
