@@ -1528,6 +1528,7 @@ Unknowns are made of:
 * lower-case ASCII
 * upper-case ASCII
 * select extended latin symbols
+* slh specific symbols
 ASCII digits
 * select symbols
 * Combining diacritics as individual symbols,
