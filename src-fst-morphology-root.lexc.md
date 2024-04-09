@@ -105,6 +105,13 @@ Verb/Predicate tenses and aspect are:
 
 Verb personal forms are:
 
+## Direct Object conjugation
+*  +OcSg1  = object conjugation first person singular
+*  +OcSg2  = object conjugation second person singular
+*  +OcSP3  = object conjugation third person singular or plural
+*  +OcPl1  = object conjugation first person plural
+*  +OcPl2  = object conjugation second person plural
+
 Other verb forms are
 
 * +Symbol = independent symbols in the text stream, like £, €, ©
@@ -260,6 +267,7 @@ And following triggers to control variation
 We have manually optimised the structure of our lexicon using following
 flag diacritics to restrict morhpological combinatorics - only allow compounds
 with verbs if the verb is further derived into a noun again:
+
 |  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
 |  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
 |  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
