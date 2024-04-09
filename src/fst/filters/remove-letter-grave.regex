@@ -1,0 +1,9 @@
+# File that reduces Lushootseed enriched
+# dictionary orthogrphy to ordinary orthography
+
+
+à -> a ,
+ə̀ -> ə ,
+ì -> i ,
+ù -> u ;
+
