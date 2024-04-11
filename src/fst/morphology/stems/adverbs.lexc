@@ -53,4 +53,14 @@ yaw̓+Adv:yaw̓ ADV_TEMP "" ;
 ʔəsx̌id+Adv:ʔəsx̌id ADV_INTERR "" ;
 ʔəsčal+Adv:ʔəsčal ADV_INTERR "" ;
 
+ƛ̕ub+Aux:ƛ̕ub # "well|ought|should" ;
+xʷi+Aux+Neg:xʷi K "no|not" ;
+gʷəl+Aux+Top:gʷəl # "topic" ;
+
+ʔu+Pcle+Qst:ʔu PCLE_ "question marker";
+əw̓ə+v1+Pcle:əw̓ə PCLE_ ;
+əw̓ə+v2+Pcle:həw̓ə PCLE_ ;
+dᶻəɬ+Pcle:dᶻəɬ PCLE_ ;
+uʔxʷ+Pcle:uʔxʷ PCLE_ ;
+
 ! vim: set ft=xfst-lexc:

@@ -7,6 +7,7 @@
 +Asp/Prog	<asp_prog>
 +Asp/ProgStat	<asp_progstat>
 +Asp/Stat	<asp_stat>
++Aux	<aux>
 +CC	<cc>
 +CLB	<clb>
 +CS	<cs>
@@ -42,6 +43,7 @@
 +Mod/Subj	<mod_subj>
 +Msc	<msc>
 +N	<n>
++Neg	<neg>
 +Nom	<nom>
 +Num	<num>
 +NumNum	<numnum>
@@ -55,6 +57,7 @@
 +PUNCT	<punct>
 +Parenthetic	<parenthetic>
 +Pass	<pass>
++Pcle	<pcle>
 +Pers	<pers>
 +Pl	<pl>
 +Pl1	<pl1>
@@ -71,6 +74,7 @@
 +PxSg1	<pxsg1>
 +PxSg2	<pxsg2>
 +Qnt	<qnt>
++Qst	<qst>
 +RIGHT	<right>
 +Rem	<rem>
 +RemPst	<rempst>
@@ -83,6 +87,7 @@
 +Superl	<superl>
 +Symbol	<symbol>
 +Temp	<temp>
++Top	<top>
 +Tot	<tot>
 +Use/-GC	<use_-gc>
 +Use/-PMatch	<use_-pmatch>
