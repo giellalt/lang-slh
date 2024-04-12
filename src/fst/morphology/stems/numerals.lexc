@@ -3,6 +3,7 @@
 !! Numerals in the Southern Lushootseed language describe a nuerical quantity.
 
 LEXICON Numerals
-numeral+Num:numeral    Cases   ;
+padac+Num:padac NUM_ ;
+
 
 ! vim: set ft=xfst-lexc:
