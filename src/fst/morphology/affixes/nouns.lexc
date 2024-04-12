@@ -8,15 +8,6 @@
 ! %>əb ~ %>b
 
 
-LEXICON Cases
- +N+Sg+Nom:0   #     ;
- +N+Pl+Nom:i   #     ;
- +N+Sg+Acc:at  #     ;
- +N+Pl+Acc:iat #     ;
- +N+Sg+Loc:as  #     ;
- +N+Pl+Loc:ias #     ;
-  #:0   Nouns ; ! Normally going via a R lexicon adding compound tags.
-
 
 LEXICON N_with-PL_RED1_qelb
 !: DIM_CV1toCV2C ; What should this be?
@@ -32,8 +23,18 @@ LEXICON N_with_PL_RED2_Dial/-NL
 !+Dial/-NL: N_with_PL_RED2 ;
  N_with_PL_RED2 ;
 
+LEXICON N_with_PL_RED2_PRF/s
+@R.NPrefix.s@:@R.NPrefix.s@ N0_with_PL_RED2 ;
+
 LEXICON N_with_PL_RED2
-: DIM_CV1toCV2C ;
+@R.NPrefix.ZERO@:@R.NPrefix.ZERO@ N0_with_PL_RED2 ;
+
+LEXICON N0_with_PL_RED2
+!@R.NMZ.V2N@+Der/s+N+Sg:@R.NMZ.V2N@ N1_with_PL_RED2 ;2024-04-11
+@D.NMZ@ N1_with_PL_RED2 ;
+
+LEXICON N1_with_PL_RED2
+!2024-04-12: DIM_CV1toCV2C ;
 : SG-SUF ;
 : PL_RED2 ;
 
@@ -104,7 +105,7 @@ LEXICON PL_RED1_qelb
 LEXICON PL_RED2
 @D.PossPx@+Pl:@D.PossPx@%^RedPL123123 PRE-POSS_01 ;
 !@D.PossPx@+Pl:@D.PossPx@%^RedPL123123 # ;
-+Pl:%^RedPL123123	PRE-POSS_01 ;
+@R.PossPx@+Pl:@R.PossPx@%^RedPL123123	PRE-POSS_01 ;
 !! bəlups+N+Pl
 !!€ %{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlups%^RedPL123123
 !!€ 00bəlbəlups0
@@ -145,7 +146,7 @@ LEXICON PRE-POSS_05
 @D.TAM-A@ PRE-POSS_06 ;
 
 LEXICON PRE-POSS_06
-@R.NMZ.V2N@+Der/s+N+Sg:@R.NMZ.V2N@ POSS ;
+!@R.NMZ.V2N@+Der/s+N+Sg:@R.NMZ.V2N@ POSS ;
 @R.NMZ.V2A@+Ptc:@R.NMZ.V2A@ POSS ;
 @D.NMZ@ POSS ;
 
