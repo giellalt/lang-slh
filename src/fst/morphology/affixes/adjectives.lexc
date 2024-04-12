@@ -2,11 +2,6 @@
 !  --------------------
 !! The Southern Puget Sound Salish language adjectives are inflected in much the same way as nouns and verbs.
 
-LEXICON Comparisons
-+A+Pos:0        Cases   ;
-+A+Comp:er       Cases   ;
-+A+Superl:est      Cases   ;
-
 
 LEXICON A_with-PL_RED2
 : DIM_CV1toCV2C ;
