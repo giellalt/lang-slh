@@ -20,8 +20,9 @@ LEXICON N_with_PL_RED2_0/l ! sləx̌i sləx̌iləxʷ
 :%{lØ%} N_with_PL_RED2 ;
 
 LEXICON N_with_PL_RED2_Dial/-NL
-!+Dial/-NL: N_with_PL_RED2 ;
  N_with_PL_RED2 ;
+LEXICON N_with_PL_RED2_PRF/s_Dial/-NL
+ N_with_PL_RED2_PRF/s ;
 
 LEXICON N_with_PL_RED2_PRF/s
 @R.NPrefix.s@:@R.NPrefix.s@ N0_with_PL_RED2 ;
