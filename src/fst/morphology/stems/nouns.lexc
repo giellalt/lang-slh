@@ -3,21 +3,23 @@
 !! Nouns in the Southern Lushootseed language refer to objects or sets of objects, qualities, states or ideas.
 
 LEXICON Nouns
-noun+N:noun    Cases   ;
-bad+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bad N_with-PL_RED2 "" ;
-bayac+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bayac N_with_PL_RED2_Dial/-NL "" ;
-bešč̓əd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bešč̓əd N_with-PL_RED2 "" ;
+bidᶻ+N:bidᶻ N_with_PL_RED2 "" ;
+bad+N:bad N_with_PL_RED2 "" ;
+sbadil+N:badil N_with_PL_RED2_PRF/s "" ;
+!bad+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bad N_with-PL_RED2 "" ;
+bayac+N:bayac N_with_PL_RED2_Dial/-NL "" ;
+bəšč̓əd+N:bəšč̓əd N_with_PL_RED2 "" ;
 bibədaʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bibədaʔ N_DIM_with_PL_12123 "" ;
-bidᶻ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bidᶻ N_with_PL_RED2 "" ;
-bubx̌əd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bubx̌əd N-MSC_with-PL_RED2 "" ;
-buusi+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}buusi N_with_PL_RED2_Dial/-NL "" ;
-buʔqʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}buʔqʷ N_with_PL_RED2 "" ;
-bəc̓ac+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəc̓ac N_with_PL_RED2 "" ;
-bədəʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bə́dəʔ N_with_PL_RED2_Dial/-NL "" ;
-bəlagʷəʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlagʷəʔ N_with_PL_RED2 "" ;
-bəlubs+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlubs N_with_PL_RED2 "" ;
-bəlups+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlups N_with_PL_RED2 "" ;
-bəqsəd+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəqsəd N_with_PL_RED2 "" ;
+!bidᶻ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bidᶻ N_with_PL_RED2 "" ;
+bubx̌əd+N:bubx̌əd N-MSC_with-PL_RED2 "" ;
+buusi+N:buusi N_with_PL_RED2_Dial/-NL "" ;
+buʔqʷ+N:buʔqʷ N_with_PL_RED2 "" ;
+bəc̓ac+N:bəc̓ac N_with_PL_RED2 "" ;
+bədəʔ+N:bə́dəʔ N_with_PL_RED2_Dial/-NL "" ;
+bəlagʷəʔ+N:bəlagʷəʔ N_with_PL_RED2 "" ;
+bəlubs+N:bəlubs N_with_PL_RED2 "" ;
+bəlups+N:bəlups N_with_PL_RED2 "" ;
+bəqsəd+N:bəqsəd N_with_PL_RED2 "" ;
 bəqəlšuɬ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəqəlšuɬ SG-SUF "" ;
 bəshikʷigʷilc+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəshikʷigʷilc SG-SUF "" ;
 bəsqʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəsqʷ N_with_PL_RED2 "" ;
@@ -155,7 +157,7 @@ q̓ʷəlastəb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓ʷəlastəb N_with_PL_RED2 "" 
 q̓ʷəlačiʔ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}q̓ʷəlačiʔ N_with_PL_RED2 "" ;
 sac̓əb+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}sác̓əb N_with_PL_RED2_Dial/-NL "" ;
 saʔkʷbixʷ+N:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}saʔkʷbixʷ SG-SUF "" ;
-sbadil+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}badil N_with_PL_RED2 "" ;
+!sbadil+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}badil N_with_PL_RED2 "" ;
 sbalqʷuʔabš+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}balqʷuʔabš SG-SUF "" ;
 sbiaw+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}biáw N_with_PL_RED2 "" ;
 sbuusəɬdatil+N:s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}buusəɬdatil N_with_PL_RED2 "" ;
