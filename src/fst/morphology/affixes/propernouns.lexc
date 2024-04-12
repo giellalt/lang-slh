@@ -3,14 +3,12 @@
 !! The Southern Lushootseed language proper nouns inflect in the same cases as regular
 !! nouns, but perhaps with a colon (':') as separator.
 
-LEXICON ProperNounCases
-+N+Prop:%:   Cases  ;
-+N+Prop:%:   Cases  ;
-+N+Prop:%:   Cases  ;
-+N+Prop:%:   Cases  ;
-+N+Prop:%:   Cases  ;
-+N+Prop:%:   Cases  ;
-        -    Nouns  ; ! perhaps compounding
+LEXICON PROP_with_PL_RED2
+@U.NPrefix.ZERO@:@U.NPrefix.ZERO@ N0_with_PL_RED2 ;
+
+!LEXICON PROP_with_PL_RED2_PRF/s
+!@U.NPrefix.s@:@U.NPrefix.s@ N0_with_PL_RED2 ;
+
 
 ! vim: set ft=xfst-lexc:
 
