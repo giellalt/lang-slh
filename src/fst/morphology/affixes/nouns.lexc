@@ -16,7 +16,9 @@ LEXICON N_with-PL_RED1_qelb
 
 
 
-LEXICON N_with_PL_RED2_0/l ! sləx̌i sləx̌iləxʷ
+LEXICON N_with_PL_RED2_0/l ! 
+:%{lØ%} N_with_PL_RED2 ;
+LEXICON N_with_PL_RED2_0/l_PRF/s ! sləx̌i:ləx̌i sləx̌iləxʷ
 :%{lØ%} N_with_PL_RED2 ;
 
 LEXICON N_with_PL_RED2_Dial/-NL
