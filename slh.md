@@ -976,17 +976,6 @@ Numerals in the Southern Lushootseed language describe a nuerical quantity.
 
 ---
 
-# src-fst-morphology-stems-prefixes.lexc.md 
-
-Prefixes
-Prefixes in the Southern Lushootseed language are attatched to the left of other words.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/morphology/stems/prefixes.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/prefixes.lexc)</small>
-
----
-
 # src-fst-morphology-stems-pronouns.lexc.md 
 
 Pronouns
@@ -995,6 +984,17 @@ Pronouns in the Southern Lushootseed language are words that may replace nouns o
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/pronouns.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/pronouns.lexc)</small>
+
+---
+
+# src-fst-morphology-stems-propernouns.lexc.md 
+
+Noun inflection
+The Southern Puget Sound Salish language nouns inflect in time person aspect.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/propernouns.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/propernouns.lexc)</small>
 
 ---
 

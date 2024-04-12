@@ -23,8 +23,8 @@
                 * [interjections.lexc](src-fst-morphology-stems-interjections.lexc.html) ([src](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/interjections.lexc))
                 * [nouns.lexc](src-fst-morphology-stems-nouns.lexc.html) ([src](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/nouns.lexc))
                 * [numerals.lexc](src-fst-morphology-stems-numerals.lexc.html) ([src](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/numerals.lexc))
-                * [prefixes.lexc](src-fst-morphology-stems-prefixes.lexc.html) ([src](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/prefixes.lexc))
                 * [pronouns.lexc](src-fst-morphology-stems-pronouns.lexc.html) ([src](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/pronouns.lexc))
+                * [propernouns.lexc](src-fst-morphology-stems-propernouns.lexc.html) ([src](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/propernouns.lexc))
                 * [verbs.lexc](src-fst-morphology-stems-verbs.lexc.html) ([src](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/stems/verbs.lexc))
         * `phonetics/`
             * [txt2ipa.xfscript](src-fst-phonetics-txt2ipa.xfscript.html) ([src](https://github.com/giellalt/lang-slh/blob/main/src/fst/phonetics/txt2ipa.xfscript))
