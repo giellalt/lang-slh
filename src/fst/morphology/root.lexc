@@ -399,7 +399,6 @@ y̓   !!= @CODE@
 @C.NPrefix@ !!= * @CODE@ 
 
 
-
 !! ### VERBS
 @U.TAM-SUBJ.SUBJ@ !!= * @CODE@ gʷə%<
 @R.TAM-SUBJ.SUBJ@ !!= * @CODE@ gʷə%<
@@ -455,6 +454,7 @@ y̓   !!= @CODE@
 LEXICON Root
 !! The word forms in Southern Puget Sound Salish language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
+
 ! Adjectives  ;
  Adpositions   ;
  Adverbs       ;
