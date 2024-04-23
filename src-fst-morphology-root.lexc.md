@@ -311,10 +311,12 @@ given the proper use of these flags.
 * @C.PossPx@	    
 
 * @U.NPrefix.ZERO@  
+* @U.NPrefix.dxw@  
 * @U.NPrefix.dxws@  
 * @U.NPrefix.s@  
 * @U.NPrefix.sexw@  
 * @R.NPrefix.ZERO@  
+* @R.NPrefix.dxw@  
 * @R.NPrefix.dxws@  
 * @R.NPrefix.s@  
 * @R.NPrefix.sexw@  
