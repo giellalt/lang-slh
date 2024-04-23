@@ -28,6 +28,9 @@ LEXICON N_with_PL_RED2_PRF/s_Dial/-NL
 LEXICON N_with_PL_RED2_PRF/dxws
 @R.NPrefix.dxws@:@R.NPrefix.dxws@ N0_with_PL_RED2 ;
 
+LEXICON N_with_PL_RED2_PRF/dxw
+@R.NPrefix.dxw@:@R.NPrefix.dxw@ N0_with_PL_RED2 ;
+
 LEXICON N_with_PL_RED2_PRF/s
 @R.NPrefix.s@:@R.NPrefix.s@ N0_with_PL_RED2 ;
 
