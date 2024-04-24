@@ -3,7 +3,28 @@
 !! Numerals in the Southern Lushootseed language describe a nuerical quantity.
 
 LEXICON Numerals
+dəč̓uʔ+Num:dəč̓uʔ NUM_ "one" ;
+saliʔ+Num:saliʔ NUM_ "two" ;
+ɬixʷ+Num:ɬixʷ NUM_ "three" ;
+buus+Num:buus NUM_ "four" ;
+cəlac+Num:cəlac NUM_ "five" ;
+dᶻəlačiʔ+Num:dᶻəlačiʔ NUM_ "six" ;
+c̓ukʷs+Num:c̓ukʷs NUM_ "seven" ;
+təqačiʔ+Num:təqačiʔ NUM_ "eight" ;
+x̌ʷəl+Num:x̌ʷəl NUM_ "nine" ;
 padac+Num:padac NUM_ ;
+padac% yəxʷ% kʷi% dəč̓uʔ+Num:padac% yəxʷ% kʷi% dəč̓uʔ NUM_ "eleven" ;
+saliʔačiʔ+Num:saliʔačiʔ NUM_ "twenty" ;
+
+sɬixʷačiʔ+Num:sɬixʷačiʔ NUM_ "30" ;
+sbuusačiʔ+Num:sbuusačiʔ NUM_ "40" ;
+scəlacačiʔ+Num:scəlacačiʔ NUM_ "50" ;
+dᶻəlačiʔačiʔ+Num:dᶻəlačiʔačiʔ NUM_ "60" ;
+c̓ukʷsačiʔ+Num:c̓ukʷsačiʔ NUM_ "70" ;
+təqačiʔačiʔ+Num:təqačiʔačiʔ NUM_ "80" ;
+x̌ʷəlačiʔ+Num:x̌ʷəlačiʔ NUM_ "90" ;
+dəč̓uʔ% sbək̓ʷačiʔ+Num:dəč̓uʔ% sbək̓ʷačiʔ NUM_ "100" ;
+dəč̓uʔ% sbək̓ʷačiʔ% yəxʷ% kʷi% dəč̓uʔ+Num:dəč̓uʔ% sbək̓ʷačiʔ% yəxʷ% kʷi% dəč̓uʔ NUM_ "101" ;
 
 
 ! vim: set ft=xfst-lexc:
