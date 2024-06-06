@@ -392,15 +392,33 @@ y̓   !!= @CODE@
 @C.PossPx@	   !!= * @CODE@ 
 
 @U.NPrefix.ZERO@ !!= * @CODE@ 
+@U.NPrefix.c@ !!= * @CODE@ 
+@U.NPrefix.dexw@ !!= * @CODE@ 
 @U.NPrefix.dxw@ !!= * @CODE@ 
 @U.NPrefix.dxws@ !!= * @CODE@ 
+@U.NPrefix.je@ !!= * @CODE@ 
+@U.NPrefix.le@ !!= * @CODE@ 
 @U.NPrefix.s@ !!= * @CODE@ 
 @U.NPrefix.sexw@ !!= * @CODE@ 
+@U.NPrefix.sxw@ !!= * @CODE@ 
+@U.NPrefix.tsi@ !!= * @CODE@ 
+@U.NPrefix.xh@ !!= * @CODE@ 
+@U.NPrefix.xhw@ !!= * @CODE@ 
+@U.NPrefix.xw@ !!= * @CODE@ 
 @R.NPrefix.ZERO@ !!= * @CODE@ 
+@R.NPrefix.c@ !!= * @CODE@ 
+@R.NPrefix.dexw@ !!= * @CODE@ 
 @R.NPrefix.dxw@ !!= * @CODE@ 
 @R.NPrefix.dxws@ !!= * @CODE@ 
+@R.NPrefix.je@ !!= * @CODE@ 
+@R.NPrefix.le@ !!= * @CODE@ 
 @R.NPrefix.s@ !!= * @CODE@ 
 @R.NPrefix.sexw@ !!= * @CODE@ 
+@R.NPrefix.sxw@ !!= * @CODE@ 
+@R.NPrefix.tsi@ !!= * @CODE@ 
+@R.NPrefix.xh@ !!= * @CODE@ 
+@R.NPrefix.xhw@ !!= * @CODE@ 
+@R.NPrefix.xw@ !!= * @CODE@ 
 @D.NPrefix@ !!= * @CODE@ 
 @C.NPrefix@ !!= * @CODE@ 
 
@@ -465,7 +483,7 @@ LEXICON Root
  Adpositions   ;
  Adverbs       ;
  Conjunctors   ;
- Interjection  ;
+ Interjections  ;
  Pronouns    ;
  Numerals    ;
  Prefixes    ;! this brings us nouns, verbs, adjectives, propernouns
