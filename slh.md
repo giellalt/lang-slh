@@ -838,15 +838,33 @@ given the proper use of these flags.
 * @C.PossPx@	    
 
 * @U.NPrefix.ZERO@  
+* @U.NPrefix.c@  
+* @U.NPrefix.dexw@  
 * @U.NPrefix.dxw@  
 * @U.NPrefix.dxws@  
+* @U.NPrefix.je@  
+* @U.NPrefix.le@  
 * @U.NPrefix.s@  
 * @U.NPrefix.sexw@  
+* @U.NPrefix.sxw@  
+* @U.NPrefix.tsi@  
+* @U.NPrefix.xh@  
+* @U.NPrefix.xhw@  
+* @U.NPrefix.xw@  
 * @R.NPrefix.ZERO@  
+* @R.NPrefix.c@  
+* @R.NPrefix.dexw@  
 * @R.NPrefix.dxw@  
 * @R.NPrefix.dxws@  
+* @R.NPrefix.je@  
+* @R.NPrefix.le@  
 * @R.NPrefix.s@  
 * @R.NPrefix.sexw@  
+* @R.NPrefix.sxw@  
+* @R.NPrefix.tsi@  
+* @R.NPrefix.xh@  
+* @R.NPrefix.xhw@  
+* @R.NPrefix.xw@  
 * @D.NPrefix@  
 * @C.NPrefix@  
 
