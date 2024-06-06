@@ -3,13 +3,15 @@
 !! The Southern Puget Sound Salish language adjectives are inflected in much the same way as nouns and verbs.
 
 
-LEXICON A_with-PL_RED2
+LEXICON A_with_PL_RED2
+!LEXICON A_with-PL_RED2
 @R.NPrefix.ZERO@:@R.NPrefix.ZERO@ N0_with_PL_RED2 ;
 !: DIM_CV1toCV2C ;
 !: SG-SUF ;
 !: PL_RED2 ;
 
-LEXICON A_with-PL_RED2_PRF/s
+LEXICON A_with_PL_RED2_PRF/s
+!LEXICON A_with-PL_RED2_PRF/s
 @R.NPrefix.s@:@R.NPrefix.s@ N0_with_PL_RED2 ;
 !: DIM_CV1toCV2C ;
 !: SG-SUF ;
@@ -22,10 +24,10 @@ LEXICON A_with-PL_RED2_PRF/s
 !LEXICON DET_
 !: K ;
 
-LEXICON DET-NEUTRAL-MSC_
-K ;
-LEXICON DET-NEUTRAL-FEM_
-K ;
+!LEXICON DET-NEUTRAL-MSC_
+!K ;
+!LEXICON DET-NEUTRAL-FEM_
+!K ;
 
 ! vim: set ft=xfst-lexc:
 
