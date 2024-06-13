@@ -3,14 +3,17 @@
 !! =================================== !
 
 Alphabet
- a b c d g h i k l m n o p q r s t u v w x y z
+ a b c d g h i k l m n o p q r s t u w x y
+ 
+ e f j v z
  é ó é ò â ê ô û î ã ý
 
 
 !! The Southern Puget Sound Salish language is written in lower case only. Foreign names, however,
 !! are capitalized https://en.wikipedia.org/wiki/ISO_639:s vs https://iso639-3.sil.org/code/slh
 
- A B C D G H I K L M N O P Q R S T U V W X Y Z
+ A B C D G H I K L M N O P Q R S T U W X Y
+  E F J V Z
  Á É Ó Ú Í À È Ò Ù Ì Â Ê Ô Û Î Ã Ý
 
 !! This transformation, accent loss, will be moved to post dict. 2022-12-25
