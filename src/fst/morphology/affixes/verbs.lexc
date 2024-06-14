@@ -74,7 +74,7 @@ LEXICON V_HUY !CHECKME 2024-02-24
 
 LEXICON V_KWEDYID_Dial/-NL
 +Dial/-NL: V_KWEDYID ;
-LEXICON V_KWEDYID ! kʷədyid+V:kʷədyíd
+LEXICON V_KWEDYID ! kʷədšid+V:kʷədšíd
 +Dat: V_KWEDAD ;
 
 LEXICON V_CUTEB_Dial/-NL
@@ -144,6 +144,11 @@ LEXICON 0V_KWEDAD_06
 @R.NMZ.V2A@+Ptc:@R.NMZ.V2A@ OC1/2_s_OR_OCSP3_OR_DVN-POSS ;
 @D.NMZ@ OC1/2_s_OR_OCSP3_OR_DVN-POSS ;
 
+
+LEXICON V_BASE
+!! q̓ʷuʔ+V:q̓ʷuʔ "gather"
+!! @U.TAM-A.PRF@
+: 0V_HELHED ;
 
 LEXICON IV_HELHED
 !! q̓ʷuʔ "gather"

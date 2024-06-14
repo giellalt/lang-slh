@@ -13,6 +13,7 @@
 +CS	<cs>
 +Clt/Now	<clt_now>
 +Com	<com>
++Dat	<dat>
 +Deg	<deg>
 +Dem	<dem>
 +Der	<der>
@@ -32,7 +33,6 @@
 +Fem	<fem>
 +Gen	<gen>
 +Hab	<hab>
-+IV	<iv>
 +Ill	<ill>
 +Inf	<inf>
 +Interj	<interj>
