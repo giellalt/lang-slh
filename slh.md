@@ -319,6 +319,9 @@ kʷədad:kʷədad
 
 kʷədad:kʷədad
 
+q̓ʷuʔ+V:q̓ʷuʔ "gather"
+@U.TAM-A.PRF@
+
 q̓ʷuʔ "gather"
 @U.TAM-A.PRF@
 
