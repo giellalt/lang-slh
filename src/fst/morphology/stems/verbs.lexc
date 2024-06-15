@@ -11,7 +11,7 @@ bəčdub+V:bəčd V_BECHDUB "" ;
 bəƛ̕šadəb+V:bəƛ̕šadəb V_CUTEB "" ;
 bəƛ̕əd+V:bəƛ̕əd TV_SELPED "" ;
 caq̓ad+V:caq̓ad V_KWEDAD "" ;
-cilid+V:cilid V_KWEDAD "" ;
+cilid+V:cilid V_IN_ID "" ;
 cut+V:cut V_HELHED "" ;
 cutab+V:cutab V_CUTEB_Dial/-NL "" ;
 cuud+V:cuud V_KWEDAD "" ;
