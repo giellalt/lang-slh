@@ -206,6 +206,6 @@ yəhaw̓txʷ+V:yəhaw̓t V_HUYTXW "" ;
 ʔəƛ̕c+V:ʔəƛ̕c V_KWEDAD "" ;
 ʔəƛ̕txʷ+V:ʔəƛ̕t TV_HUYTXW "" ;
 ʔəɬtub+V:ʔəɬt V_BECHDUB "" ;
-ʔəɬəd+V:ʔəɬəd V_HELHED "" ;
+ʔəɬəd+V:ʔəɬəd V_SELPED "" ;
 
 ! vim: set ft=xfst-lexc:
