@@ -3,9 +3,10 @@
 !! =================================== !
 
 Alphabet
- a b c d g h i k l m n o p q r s t u w x y
- 
- e f j v z
+ a b c d ə g h i k l m n p q s t u w x y
+
+ ú ù í ì á à
+ e f j o r v z
  é ó é ò â ê ô û î ã ý
 
 
@@ -68,7 +69,7 @@ x̌ʷ
 ʔ
 !! Lushootseed is written in IPA, there are no upper-case letters
 %{lØ%}:0   !!= * @CODE@ in slh stem-final l tends to be lost, but it is retained before Clt/Now
-
+%{lØ%}:l
 
 %{p5%}:b̓
 %{p5%}:c̓
@@ -440,11 +441,19 @@ Rules
 !Consonants
 "%{lØ%}:0" 
 !! **@RULENAME@**
-%{lØ%}:0 <=> _ # ;
+%{lØ%}:0 <=> _ [#| %- ] ;
+
+!! təlawi+V: **run/juosta**
+!!€ təlawi{lØ}
+!!€ təlawi0
 
 "%{lØ%}:l" 
 !! **@RULENAME@**
-%{lØ%}:l <=> i _ %> ə ;
+%{lØ%}:l <=> i _ %>  ;
+
+!! təlawi+V+Vnoun+PxSg3: **run/juosta**
+!!€ s<təlawi{lØ}>s
+!!€ s<təlawil>s
 
 "%{p1%}:0"
 !! **@RULENAME@**
