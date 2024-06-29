@@ -13,6 +13,7 @@
 +CS	<cs>
 +Clt/Now	<clt_now>
 +Com	<com>
++Dat	<dat>
 +Deg	<deg>
 +Dem	<dem>
 +Der	<der>
@@ -25,6 +26,7 @@
 +Der/Dimin_1iq13	<der_dimin_1iq13>
 +Der/Red2_3L	<der_red2_3l>
 +Der/s	<der_s>
++Dial/-NL	<dial_-nl>
 +Dimin	<dimin>
 +Dist	<dist>
 +Err/Orth	<err_orth>
