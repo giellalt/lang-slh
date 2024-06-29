@@ -28,7 +28,8 @@ cədiɬ+Pron:cədiɬ PRON-PERS-SG3 "(independent and emphatic)" ;
 caadiɬ+Pron:caadiɬ PRON-PERS-PL3 "(independent and emphatic)" ;
 
 LEXICON PRON-DEM
-tiiɬ+Pron:tiʔiɬ PRON_DEM_MSC_DIST ;
+tiiɬ+v1+Pron:tiiɬ PRON_DEM_MSC_DIST ;
+tiiɬ+v2+Pron:tiʔiɬ PRON_DEM_MSC_DIST ;
 tiiɬ+Pron:tsiiɬ PRON_DEM_FEM_DIST ;
 kʷi+v1+Pron:kʷi PRON_DEM_MSC_REM ;
 kʷi+v2+Pron:kʷə PRON_DEM_MSC_REM ;!paradigmatic
