@@ -467,7 +467,15 @@ pišpiš+N+Pl: **cat/kissa**
 
 **%{lØ%}:0 **
 
+təlawi+V: **run/juosta**
+* *təlawi{lØ}*
+* *təlawi0*
+
 **%{lØ%}:l **
+
+təlawi+V+Vnoun+PxSg3: **run/juosta**
+* *s<təlawi{lØ}>s*
+* *s<təlawil>s*
 
 **%{p1%}:0**
 
@@ -594,6 +602,13 @@ Types of adverbs also include
 The Usage extents are marked using following tags:
 * **+Use/TTS** – **only** retained in the HFST Text-To-Speech disambiguation tokeniser
 * **+Use/-TTS** – **never** retained in the HFST Text-To-Speech disambiguation tokeniser
+
+* +URL * For tagging URLs
+
+Dialect tags:
+
+* **+Dial/-NL** not North Lushootseed
+* **+Dial/-SL** not South Lushootseed
 
 The nominals are inflected in the following Case and Number
 
@@ -758,6 +773,7 @@ Note: These high +v... number are in use for one word only:
 * **%-**:  hyphen
 * **%^√**:  commence root
 * **%<**: prefix
+* **%>**: suffix
 
 Morphophonology
 To represent phonologic variations in word forms we use the following

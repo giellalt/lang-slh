@@ -128,7 +128,15 @@ pišpiš+N+Pl: **cat/kissa**
 
 **%{lØ%}:0 **
 
+təlawi+V: **run/juosta**
+* *təlawi{lØ}*
+* *təlawi0*
+
 **%{lØ%}:l **
+
+təlawi+V+Vnoun+PxSg3: **run/juosta**
+* *s<təlawi{lØ}>s*
+* *s<təlawil>s*
 
 **%{p1%}:0**
 
