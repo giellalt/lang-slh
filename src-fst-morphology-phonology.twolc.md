@@ -9,7 +9,7 @@ This transformation, accent loss, will be moved to post dict. 2022-12-25
 
 c U+0313
 
-Lushootseed is written in IPA, there are no upper-case letters
+Southern Lushootseed is written in IPA, there are no upper-case letters
 * %{lØ%}:0    in slh stem-final l tends to be lost, but it is retained before Clt/Now
 
 place holders
@@ -59,7 +59,7 @@ C V1 => C V1 C ə
 * *00yu0yəbil*
 * *%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}ɬaɬil*
 * *00ɬa0ɬəlil*
-* *%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ʷid*
+* *%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ʷəd*
 * *00k̓ʷi0k̓ʷəd*
 
 C V1 => C V1 C   
@@ -164,7 +164,6 @@ təlawi+V+Vnoun+PxSg3: **run/juosta**
 **%{p3%}:Cx in reduplication**
 
 **%{p5%}:Cx in reduplication**
-
 sčətxʷəd+N+Der/Dimin+N+Pl bear
 * *s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}čətxʷəd%^RedPL1i1i13*
 * *s%^√čičič0txʷəd0*
