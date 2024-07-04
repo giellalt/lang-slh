@@ -152,7 +152,7 @@ Makefile
 Makefile.in
 build
 bygg
-generated*
 test-suite.log
-.deps
+generated*
 .generated
+#
