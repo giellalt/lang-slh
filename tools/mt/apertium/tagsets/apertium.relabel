@@ -1,4 +1,4 @@
-+A	<a>
++A	<adj>
 +Acc	<acc>
 +Adv	<adv>
 +Anew	<anew>
@@ -8,9 +8,9 @@
 +Asp/ProgStat	<asp_progstat>
 +Asp/Stat	<asp_stat>
 +Aux	<aux>
-+CC	<cc>
++CC	<cnjcoo>
 +CLB	<clb>
-+CS	<cs>
++CS	<cnjsub>
 +Clt/Now	<clt_now>
 +Com	<com>
 +Dat	<dat>
