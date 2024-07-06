@@ -153,6 +153,11 @@ LEXICON V_BASE
 !! @U.TAM-A.PRF@
 : 0V_HELHED ;
 
+LEXICON V_CAU
+!! ʔux̌ʷc+V:ʔux̌ʷc "go after"
+!! @U.TAM-A.PRF@
++Cau: 0V_HELHED ;
+
 LEXICON IV_HELHED
 !! q̓ʷuʔ "gather"
 !!! ʔəɬəd+V:ʔəɬəd
