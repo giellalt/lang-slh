@@ -126,6 +126,8 @@ Other verb forms are
 Special symbols are classified with:
 
 The verbs are syntactically split according to transitivity:
+generally verbs of motion, e.g., 'go after smth' ʔux̌ʷc
+ʔabšid
 
 Special multiword units are analysed with:
 

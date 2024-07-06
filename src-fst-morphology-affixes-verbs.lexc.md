@@ -11,6 +11,9 @@ kʷədad:kʷədad
 q̓ʷuʔ+V:q̓ʷuʔ "gather"
 @U.TAM-A.PRF@
 
+ʔux̌ʷc+V:ʔux̌ʷc "go after"
+@U.TAM-A.PRF@
+
 q̓ʷuʔ "gather"
 @U.TAM-A.PRF@
 
