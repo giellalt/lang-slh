@@ -69,7 +69,7 @@ x̌ʷ
 ʔ
 !! Southern Lushootseed is written in IPA, there are no upper-case letters
 %{lØ%}:0   !!= * @CODE@ in slh stem-final l tends to be lost, but it is retained before Clt/Now
-%{lØ%}:l
+! remove this from expected 2024-07-06 %{lØ%}:l
 
 
 %{p5%}:b
