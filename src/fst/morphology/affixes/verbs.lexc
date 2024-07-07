@@ -167,7 +167,12 @@ LEXICON IV_HELHED
 LEXICON V_GEQIL_0/l !!gəqi:gəqi
 !! ʔəɬəd+V:ʔəɬəd
 ! @U.TAM-A.PRF@
-:%{lØ%} 0V_HELHED ;
+:%>%{lØ%} 0V_HELHED ;
+
+LEXICON IV_GEQIL_0/l !!gəqi:gəqi
+!! ʔəɬəd+V:ʔəɬəd
+! @U.TAM-A.PRF@
+:%>%{lØ%} 0V_HELHED ;
 
 LEXICON V_HELHED
 !! ʔəɬəd+V:ʔəɬəd
@@ -271,6 +276,7 @@ LEXICON OCPL2
 !+ScSg2:%>əxʷ
 !+ScSP3:%>əs
 !+ScPl1:%>aɬi
+!+ScPl2:%>ələp
 
 LEXICON DVN-POSS
 !@R.TAM@ K ;

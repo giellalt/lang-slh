@@ -479,19 +479,19 @@ Rules
 !Consonants
 "%{lØ%}:0" 
 !! **@RULENAME@**
-%{lØ%}:0 <=> _ [#| %- ] ;
+%{lØ%}:0 <=> %> _ :0* [#| %- ] ;
 
 !! təlawi+V: **run/juosta**
-!!€ təlawi{lØ}
-!!€ təlawi0
+!!€ təlawi>{lØ}
+!!€ təlawi>0
 
 "%{lØ%}:l" 
 !! **@RULENAME@**
-%{lØ%}:l <=> i _ %>  ;
+%{lØ%}:l <=> i %> _ :0* %>  ;
 
 !! təlawi+V+Vnoun+PxSg3: **run/juosta**
-!!€ s<təlawi{lØ}>s
-!!€ s<təlawil>s
+!!€ s<təlawi>{lØ}>s
+!!€ s<təlawi>l>s
 
 
 "%{p1%}:0"
