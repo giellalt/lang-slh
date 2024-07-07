@@ -332,6 +332,8 @@ q̓ʷuʔ "gather"
 
 ʔəɬəd+V:ʔəɬəd
 
+ʔəɬəd+V:ʔəɬəd
+
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/verbs.lexc](https://github.com/giellalt/lang-slh/blob/main/src/fst/morphology/affixes/verbs.lexc)</small>
@@ -471,14 +473,14 @@ pišpiš+N+Pl: **cat/kissa**
 **%{lØ%}:0 **
 
 təlawi+V: **run/juosta**
-* *təlawi{lØ}*
-* *təlawi0*
+* *təlawi>{lØ}*
+* *təlawi>0*
 
 **%{lØ%}:l **
 
 təlawi+V+Vnoun+PxSg3: **run/juosta**
-* *s<təlawi{lØ}>s*
-* *s<təlawil>s*
+* *s<təlawi>{lØ}>s*
+* *s<təlawi>l>s*
 
 **%{p1%}:0**
 
