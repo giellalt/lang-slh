@@ -1,4 +1,4 @@
-+A	<adj>
++A	<a>
 +Acc	<acc>
 +Adv	<adv>
 +Anew	<anew>
@@ -8,9 +8,9 @@
 +Asp/ProgStat	<asp_progstat>
 +Asp/Stat	<asp_stat>
 +Aux	<aux>
-+CC	<cnjcoo>
++CC	<cc>
 +CLB	<clb>
-+CS	<cnjsub>
++CS	<cs>
 +Cau	<cau>
 +Clt/Now	<clt_now>
 +Com	<com>
@@ -38,7 +38,7 @@
 +Hab	<hab>
 +Ill	<ill>
 +Inf	<inf>
-+Interj	<ij>
++Interj	<interj>
 +Interr	<interr>
 +Irr	<irr>
 +LEFT	<left>
@@ -50,11 +50,11 @@
 +Nom	<nom>
 +Num	<num>
 +NumNum	<numnum>
-+OcPl1	<o_pl1>
-+OcPl2	<o_pl2>
-+OcSP3	<o_sp3>
-+OcSg1	<o_sg1>
-+OcSg2	<o_sg2>
++OcPl1	<ocpl1>
++OcPl2	<ocpl2>
++OcSP3	<ocsp3>
++OcSg1	<ocsg1>
++OcSg2	<ocsg2>
 +Orth/IPA	<orth_ipa>
 +Orth/Strd	<orth_strd>
 +PUNCT	<punct>
@@ -98,7 +98,7 @@
 +Use/MT	<use_mt>
 +Use/PMatch	<use_pmatch>
 +Use/TTS	<use_tts>
-+V	<vblex>
++V	<v>
 +Vnoun	<vnoun>
 +v1	<v1>
 +v2	<v2>
