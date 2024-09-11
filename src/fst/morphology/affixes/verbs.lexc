@@ -158,11 +158,11 @@ LEXICON V_CAU
 !! @U.TAM-A.PRF@
 +Cau: 0V_HELHED ;
 
-LEXICON IV_HELHED
-!! q̓ʷuʔ "gather"
-!!! ʔəɬəd+V:ʔəɬəd
-!! @U.TAM-A.PRF@
-+IV: 0V_HELHED ;
+!LEXICON IV_HELHED 2024-09-11
+!!! q̓ʷuʔ "gather"
+!!!! ʔəɬəd+V:ʔəɬəd
+!!! @U.TAM-A.PRF@
+!+IV: 0V_HELHED ;
 
 LEXICON V_GEQIL_0/l !!gəqi:gəqi
 !! ʔəɬəd+V:ʔəɬəd
