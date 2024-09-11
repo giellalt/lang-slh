@@ -14,9 +14,6 @@ q̓ʷuʔ+V:q̓ʷuʔ "gather"
 ʔux̌ʷc+V:ʔux̌ʷc "go after"
 @U.TAM-A.PRF@
 
-q̓ʷuʔ "gather"
-@U.TAM-A.PRF@
-
 ʔəɬəd+V:ʔəɬəd
 
 ʔəɬəd+V:ʔəɬəd
