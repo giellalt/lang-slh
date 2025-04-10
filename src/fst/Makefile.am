@@ -43,6 +43,8 @@ CUSTOM_FSTS=
 ########################################################
 #### Add language-specific transducer targets here: ####
 
+#################################################
+#### Add language-specific build rules here: ####
 
 .generated/analyser-gt-desc.%: .generated/analyser-gt-desc.tmp.% \
 										filters/remove-letter-acute.%			   \
@@ -164,7 +166,6 @@ $(foreach fst,hfst xfst foma,$(eval $(call giella_generators,$(fst))))
 				 save stack $@\n\
 				 quit\n" | $(XFST_TOOL)
 
-
 ### Split multichar letters early, to avoid repetitive code. Multichar ###
 ### letters must be split on both sides, and then the alphabet pruned, ###
 ### for hfst-tokenise to work without issues.						   ###
@@ -180,7 +181,7 @@ $(foreach fst,hfst xfst foma,$(eval $(call giella_generators,$(fst))))
 				 $(AM_V_HPRUNE)$(HFST_PRUNE_ALPHABET) -i $@.tmp -o $@
 				 $(AM_V_at)rm -f $@.tmp
 
-# Xfst and Foma version:
+# Foma version:
 .generated/analyser-raw-gt-desc.%: .generated/analyser-raw-gt-desc.tmp.% \
 										orthography/split-composed-chars.compose.%
 		$(AM_V_XFST_TOOL)$(PRINTF) "read regex			  \
@@ -190,10 +191,6 @@ $(foreach fst,hfst xfst foma,$(eval $(call giella_generators,$(fst))))
 						;\n\
 				 save stack $@\n\
 				 quit\n" | $(XFST_TOOL)
-
-
-#################################################
-#### Add language-specific build rules here: ####
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
