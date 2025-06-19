@@ -306,6 +306,7 @@ given the proper use of these flags.
 
 ###  NOUNS
 
+* @U.PossPx.ZERO@  
 * @U.PossPx.SP3@  
 * @U.PossPx.Sg1@  
 * @U.PossPx.Sg2@  
@@ -352,32 +353,40 @@ given the proper use of these flags.
 * @C.NPrefix@  
 
 ### VERBS
+* @U.TAM-SUBJ.ZERO@  
 * @U.TAM-SUBJ.SUBJ@  gʷə%<
 * @R.TAM-SUBJ.SUBJ@  gʷə%<
 * @D.TAM-SUBJ@  gʷə%<
 
+* @U.TAM-HAB.ZERO@	  
 * @U.TAM-HAB.IRR@	  ɬu%< also FUT
 * @R.TAM-HAB.IRR@	  ɬu%< also FUT
 * @U.TAM-HAB.HAB@	  ƛ̕u%<
 * @R.TAM-HAB.HAB@	  ƛ̕u%<
 * @D.TAM-HAB@	  ƛ̕u%<
 
+* @U.TAM-RE.ZERO@   
 * @U.TAM-RE.RE@   bə
 * @R.TAM-RE.RE@   bə Anew, re-
 * @D.TAM-RE.RE@   bə
 
+* @U.NMZ.ZERO@   
 * @U.NMZ.V2N@   s%^√
 * @R.NMZ.V2N@   s%^√
 * @U.NMZ.V2A@   dəxʷ
 * @R.NMZ.V2A@   dəxʷ
 * @D.NMZ@       s%^√ dəxʷ
 
+* @U.TAM-T.ZERO@	  
+* @N.TAM-T.REM@	  tu%<
 * @U.TAM-T.REM@	  tu%<
 * @R.TAM-T.REM@	  tu%<
 * @D.TAM-T@	  tu%<
 
 * @N.TAM-A@	  ʔu%<
 * @D.TAM-A@	  ʔu%<
+* @U.TAM-A.ZERO@	  
+* @R.TAM-A.ZERO@	  
 * @U.TAM-A.PFV@	  ʔu%<
 * @R.TAM-A.PFV@	  ʔu%<
 * @U.TAM-A.CONT@	  ləcu%<
