@@ -386,6 +386,7 @@ y̓   !!= @CODE@
 
 !! ###  NOUNS
 
+@U.PossPx.ZERO@ !!= * @CODE@ 
 @U.PossPx.SP3@ !!= * @CODE@ 
 @U.PossPx.Sg1@ !!= * @CODE@ 
 @U.PossPx.Sg2@ !!= * @CODE@ 
@@ -433,32 +434,40 @@ y̓   !!= @CODE@
 
 
 !! ### VERBS
+@U.TAM-SUBJ.ZERO@ !!= * @CODE@ 
 @U.TAM-SUBJ.SUBJ@ !!= * @CODE@ gʷə%<
 @R.TAM-SUBJ.SUBJ@ !!= * @CODE@ gʷə%<
 @D.TAM-SUBJ@ !!= * @CODE@ gʷə%<
 
+@U.TAM-HAB.ZERO@	 !!= * @CODE@ 
 @U.TAM-HAB.IRR@	 !!= * @CODE@ ɬu%< also FUT
 @R.TAM-HAB.IRR@	 !!= * @CODE@ ɬu%< also FUT
 @U.TAM-HAB.HAB@	 !!= * @CODE@ ƛ̕u%<
 @R.TAM-HAB.HAB@	 !!= * @CODE@ ƛ̕u%<
 @D.TAM-HAB@	 !!= * @CODE@ ƛ̕u%<
 
+@U.TAM-RE.ZERO@  !!= * @CODE@ 
 @U.TAM-RE.RE@  !!= * @CODE@ bə
 @R.TAM-RE.RE@  !!= * @CODE@ bə Anew, re-
 @D.TAM-RE.RE@  !!= * @CODE@ bə
 
+@U.NMZ.ZERO@  !!= * @CODE@ 
 @U.NMZ.V2N@  !!= * @CODE@ s%^√
 @R.NMZ.V2N@  !!= * @CODE@ s%^√
 @U.NMZ.V2A@  !!= * @CODE@ dəxʷ
 @R.NMZ.V2A@  !!= * @CODE@ dəxʷ
 @D.NMZ@      !!= * @CODE@ s%^√ dəxʷ
 
+@U.TAM-T.ZERO@	 !!= * @CODE@ 
+@N.TAM-T.REM@	 !!= * @CODE@ tu%<
 @U.TAM-T.REM@	 !!= * @CODE@ tu%<
 @R.TAM-T.REM@	 !!= * @CODE@ tu%<
 @D.TAM-T@	 !!= * @CODE@ tu%<
 
 @N.TAM-A@	 !!= * @CODE@ ʔu%<
 @D.TAM-A@	 !!= * @CODE@ ʔu%<
+@U.TAM-A.ZERO@	 !!= * @CODE@ 
+@R.TAM-A.ZERO@	 !!= * @CODE@ 
 @U.TAM-A.PFV@	 !!= * @CODE@ ʔu%<
 @R.TAM-A.PFV@	 !!= * @CODE@ ʔu%<
 @U.TAM-A.CONT@	 !!= * @CODE@ ləcu%<
