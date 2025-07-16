@@ -19,8 +19,7 @@ CLEAN_FILES+=
 ##################################################################
 #### Build rules - add targets and their build rules below:
 
-# We want to make semantic tags optional for the apertium-targeted analyser:
-# We want to rename the POS tags in front of derivations:
+# We want to eliminate flags in the apertium-targeted analyser:
 analyser-mt-gt-desc.hfst: analyser-mt-gt-desc.tmp.hfst \
 			$(top_builddir)/src/fst/filters/remove-letter-acute.hfst           \
 			$(top_builddir)/src/fst/filters/remove-letter-grave.hfst 
