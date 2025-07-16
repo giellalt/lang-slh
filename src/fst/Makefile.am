@@ -47,10 +47,10 @@ CUSTOM_FSTS=
 #### Add language-specific build rules here: ####
 
 .generated/analyser-gt-desc.%: .generated/analyser-gt-desc.tmp.% \
-										filters/remove-letter-acute.%			   \
-										filters/remove-letter-grave.%
+								filters/remove-letter-acute.%			   \
+								filters/remove-letter-grave.%
 		$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-						 @\"$<\"										 \
+						 @\"$<\"							 \
 						.o. @\"filters/remove-letter-acute.$*\" \
 						.o. @\"filters/remove-letter-grave.$*\" \
 						;\n\
