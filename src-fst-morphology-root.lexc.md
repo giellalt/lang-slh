@@ -401,8 +401,10 @@ given the proper use of these flags.
 * @U.TAM.NO@  
 * @R.TAM.NO@  
 
+* @U.OBJ.ZERO@   	 
 * @U.OBJ.1@	  
 * @U.OBJ.2@	  
+* @U.OBJ.3@	  
 
 * @D.OBJ.1@	  
 * @D.OBJ.2@	  

@@ -7,7 +7,7 @@ All doc-comment documentation in one large file.
 # src-cg3-disambiguator.cg3.md 
 
 
-S O U T H   S Á M I   D I S A M B I G U A T O R          
+S O U T H E R N   L U S H O O T S E E D   D I S A M B I G U A T O R          
 
 # Delimiters 
 
@@ -54,6 +54,8 @@ MAINV
 
 * BOUNDARY SETS
 
+make common nouns set by subtraction <slh>
+
 # Disambiguation #
 
 ## @NO CODE@
@@ -73,6 +75,8 @@ Possessive suffix
 Short Pronouns
 
 Proper nouns
+
+<slh>
 
 Trivialia
 
@@ -1287,8 +1291,10 @@ given the proper use of these flags.
 * @U.TAM.NO@  
 * @R.TAM.NO@  
 
+* @U.OBJ.ZERO@   	 
 * @U.OBJ.1@	  
 * @U.OBJ.2@	  
+* @U.OBJ.3@	  
 
 * @D.OBJ.1@	  
 * @D.OBJ.2@	  
