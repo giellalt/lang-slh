@@ -12,16 +12,6 @@
 ! +Mid:%>əb
 !
 
-LEXICON Persons
-+V+Inf:0    #   ;
-+V+Sg1:en   #   ;
-+V+Sg2:et   #   ;
-+V+Sg3:e    #   ;
-+V+Pl1:ien  #   ;
-+V+Pl2:iet  #   ;
-+V+Pl3:iet  #   ;
-
-
 !LEXICON COP_
 !+Cop:	# ;
 
@@ -151,6 +141,8 @@ LEXICON 0V_KWEDAD_06
 @U.NMZ.V2A@+Ptc:@U.NMZ.V2A@ OC1/2_s_OR_OCSP3_OR_DVN-POSS ;
 @U.NMZ.ZERO@ OC1/2_s_OR_OCSP3_OR_DVN-POSS ;
 
+LEXICON AO_BASE ! Agent-oriented
+@U.OBJ.ZERO@ 0V_HELHED ;
 
 LEXICON V_BASE
 !! q̓ʷuʔ+V:q̓ʷuʔ "gather"
@@ -266,10 +258,10 @@ LEXICON OCSG2_cid
 @U.OBJ.2@+OcSg2:@U.OBJ.2@%>cid DVN-POSS ;
 
 LEXICON OCSP3
-+OcSP3: DVN-POSS ;
+@U.OBJ.3@+OcSP3:@U.OBJ.3@ DVN-POSS ;
 
 LEXICON INDOCSP3
-+OcSP3:%>xʷ DVN-POSS ;!CHECKME
+@U.OBJ.3@+OcSP3:@U.OBJ.3@%>xʷ DVN-POSS ;!CHECKME
 
 LEXICON OCPL1
 @U.OBJ.1@+OcPl1:@U.OBJ.1@%>uɬ DVN-POSS ;
