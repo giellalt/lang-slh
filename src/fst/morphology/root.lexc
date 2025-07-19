@@ -133,7 +133,7 @@ y̓   !!= @CODE@
 +Asp/Prog !!= * @CODE@ * progressive aspect lə%<
 +Asp/Stat !!= * @CODE@ * stative aspect ʔəs%< , (beck: as%<)
 +Asp/ProgStat !!= * @CODE@ * progressive stative aspect lə%<ʔəs%<
-+Asp/Cont !!= * @CODE@ * ləcu 
++Asp/Cont !!= * @CODE@ * ləcu (asp_prog + asp_pfv)
 
 +Dat 	  !!= * @CODE@ * verbal derivation -yid/šid
 +Der/Dat
@@ -148,7 +148,7 @@ y̓   !!= @CODE@
 +Qst         !!= * @CODE@ *   Question Particle: ʔu
 
 !! Verb personal forms are:
- +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
+ +Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3
 
 !! ## Direct Object conjugation
  +OcSg1 !!= * @CODE@ = object conjugation first person singular
@@ -415,6 +415,7 @@ y̓   !!= @CODE@
 @U.NPrefix.xh@ !!= * @CODE@ 
 @U.NPrefix.xhw@ !!= * @CODE@ 
 @U.NPrefix.xw@ !!= * @CODE@ 
+
 @R.NPrefix.ZERO@ !!= * @CODE@ 
 @R.NPrefix.c@ !!= * @CODE@ 
 @R.NPrefix.dexw@ !!= * @CODE@ 
@@ -439,7 +440,7 @@ y̓   !!= @CODE@
 @R.TAM-SUBJ.SUBJ@ !!= * @CODE@ gʷə%<
 @D.TAM-SUBJ@ !!= * @CODE@ gʷə%<
 
-@U.TAM-HAB.ZERO@	 !!= * @CODE@ 
+@U.TAM-HAB.ZERO@ !!= * @CODE@ 
 @U.TAM-HAB.IRR@	 !!= * @CODE@ ɬu%< also FUT
 @R.TAM-HAB.IRR@	 !!= * @CODE@ ɬu%< also FUT
 @U.TAM-HAB.HAB@	 !!= * @CODE@ ƛ̕u%<
@@ -447,8 +448,8 @@ y̓   !!= @CODE@
 @D.TAM-HAB@	 !!= * @CODE@ ƛ̕u%<
 
 @U.TAM-RE.ZERO@  !!= * @CODE@ 
-@U.TAM-RE.RE@  !!= * @CODE@ bə
-@R.TAM-RE.RE@  !!= * @CODE@ bə Anew, re-
+@U.TAM-RE.RE@  !!= * @CODE@ bə Anew, re-
+@R.TAM-RE.RE@  !!= * @CODE@ bə
 @D.TAM-RE.RE@  !!= * @CODE@ bə
 
 @U.NMZ.ZERO@  !!= * @CODE@ 
