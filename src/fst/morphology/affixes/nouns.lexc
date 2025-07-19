@@ -109,9 +109,9 @@ LEXICON N_MSC_with_PL_RED2
 !+Msc: PL_RED2 ;
 
 LEXICON N_MSC_with_PL_RED2_PRF/s
-@U.NPrefix.s@:@U.NPrefix.s@ DIM_CV1toCV2C ;
-@U.NPrefix.s@:@U.NPrefix.s@ SG-SUF ;
-@U.NPrefix.s@:@U.NPrefix.s@ PL_RED2 ;
+@U.NPrefix.s@ DIM_CV1toCV2C ;
+@U.NPrefix.s@ SG-SUF ;
+@U.NPrefix.s@ PL_RED2 ;
 !+Msc: DIM_CV1toCV2C ; 2024-04-09 leave gender tags out, but retain in contlex
 !+Msc: SG-SUF ;
 !+Msc: PL_RED2 ;
