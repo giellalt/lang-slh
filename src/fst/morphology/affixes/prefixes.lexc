@@ -328,7 +328,7 @@ L7_ ;!2025-06-19 seven-steps before stem
 
 !!Begin
 LEXICON L7_
-@U.TAM-SUBJ.SUBJ@:@U.TAM-SUBJ.SUBJ@gʷə%< L6_ ;
+@U.TAM-SUBJ.SUBJ@:@U.TAM-SUBJ.SUBJ@gʷə%< L6_ ; !sbj = subjunctive
 @U.TAM-SUBJ.ZERO@                        L6_ ;
 
 !@U.TAM-SUBJ.SUBJ@@U.TAM-HAB.ZERO@:@U.TAM-SUBJ.SUBJ@@U.TAM-HAB.ZERO@gʷə%< L5_ ;
@@ -340,7 +340,7 @@ LEXICON L7_
 
 LEXICON L6_
 @U.TAM-HAB.HAB@:@U.TAM-HAB.HAB@ƛ̕u%< L5_ ;
-@U.TAM-HAB.IRR@:@U.TAM-HAB.IRR@ɬu%< L4_ ;
+@U.TAM-HAB.IRR@:@U.TAM-HAB.IRR@ɬu%< L4_ ;! qəlb 'rain': ɬuqəlb 'rain in the future' is this a noun, too? _intention to_
 @U.TAM-HAB.ZERO@  L5_ ;
 
 LEXICON L5_
@@ -348,7 +348,7 @@ LEXICON L5_
 @U.TAM-T.ZERO@ L4_ ;
 
 LEXICON L4_
-@U.TAM-RE.RE@:@U.TAM-RE.RE@bə L3_ ;
+@U.TAM-RE.RE@:@U.TAM-RE.RE@bə%< L3_ ;
 @U.TAM-RE.ZERO@ L3_ ;
 
 LEXICON L3_
@@ -360,13 +360,13 @@ LEXICON L3_
 @U.PossPx.SP3@ L2_ ;
  
 LEXICON L2_
-@U.NMZ.V2N@:@U.NMZ.V2N@s%< L1_ ;
+@U.NMZ.V2N@:@U.NMZ.V2N@s%< L1_ ; !Need to mark this with flags 2021-06-30
 @U.NMZ.V2A@:@U.NMZ.V2A@dəxʷ%< L1_ ; 
 
 @U.NMZ.ZERO@  L1_ ;
 @U.TAM-A.CONT@:@U.TAM-A.CONT@ləcu%< VERBS_OR_NOUNS ;
 @U.TAM-A.PROGSTAT@:@U.TAM-A.PROGSTAT@ləs%< VERBS_OR_NOUNS ;
-@U.TAM-A.PROG@:@U.TAM-A.PROG@lə%< VERBS_OR_NOUNS ;
+@U.TAM-A.PROG@:@U.TAM-A.PROG@lə%< VERBS_OR_NOUNS ;!non-circumscribed, progressive
 @U.NMZ.V2N@@U.TAM-A.PROG@:@U.NMZ.V2N@@U.TAM-A.PROG@s%<ə%< VERBS_OR_NOUNS ;
 @U.NMZ.V2A@@U.TAM-A.PROG@:@U.NMZ.V2A@@U.TAM-A.PROG@dəxʷ%<ə%< VERBS_OR_NOUNS ; 
 
@@ -382,9 +382,9 @@ LEXICON L2_
 
 LEXICON L1_
 @U.TAM-A.ZERO@:@U.TAM-A.ZERO@ VERBS_OR_NOUNS ;
-@U.TAM-A.STAT@:@U.TAM-A.STAT@ʔəs%< VERBS_OR_NOUNS ;
-@U.TAM-A.STAT@:@U.TAM-A.STAT@ʔas%< VERBS_OR_NOUNS ;
-@U.TAM-A.PFV@:@U.TAM-A.PFV@ʔu%< VERBS_OR_NOUNS ; 
+@U.TAM-A.STAT@:@U.TAM-A.STAT@ʔəs%< VERBS_OR_NOUNS ; !ongoing state
+@U.TAM-A.STAT@:@U.TAM-A.STAT@ʔas%< VERBS_OR_NOUNS ; !ongoing state
+@U.TAM-A.PFV@:@U.TAM-A.PFV@ʔu%< VERBS_OR_NOUNS ; ! qəlb 'rain': ʔuqəlb 'raining' doesn't sound perfect to me
 
 !!END
 
