@@ -482,9 +482,10 @@ y̓   !!= @CODE@
 @U.TAM.NO@ !!= * @CODE@ 
 @R.TAM.NO@ !!= * @CODE@ 
 
-
+@U.OBJ.ZERO@   	 !!= * @CODE@
 @U.OBJ.1@	 !!= * @CODE@ 
 @U.OBJ.2@	 !!= * @CODE@ 
+@U.OBJ.3@	 !!= * @CODE@ 
 
 @D.OBJ.1@	 !!= * @CODE@ 
 @D.OBJ.2@	 !!= * @CODE@ 
