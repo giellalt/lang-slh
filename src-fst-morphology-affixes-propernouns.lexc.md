@@ -1,6 +1,6 @@
 Proper noun inflection
-The Southern Lushootseed language proper nouns inflect in the same cases as regular
-nouns, but perhaps with a colon (':') as separator.
+The Southern Lushootseed language proper nouns inflect in the same cases as common
+nouns, but perhaps with a colon (':') as separator.CHECKME 2025-07-18
 
 * * *
 

@@ -634,8 +634,8 @@ nouns, but with a colon (':') as separator.
 # src-fst-morphology-affixes-propernouns.lexc.md 
 
 Proper noun inflection
-The Southern Lushootseed language proper nouns inflect in the same cases as regular
-nouns, but perhaps with a colon (':') as separator.
+The Southern Lushootseed language proper nouns inflect in the same cases as common
+nouns, but perhaps with a colon (':') as separator.CHECKME 2025-07-18
 
 * * *
 
@@ -984,7 +984,7 @@ Verb/Predicate tenses and aspect are:
 * +Asp/Prog  * progressive aspect lə%<
 * +Asp/Stat  * stative aspect ʔəs%< , (beck: as%<)
 * +Asp/ProgStat  * progressive stative aspect lə%<ʔəs%<
-* +Asp/Cont  * ləcu 
+* +Asp/Cont  * ləcu (asp_prog + asp_pfv)
 
 * +Dat 	   * verbal derivation -yid/šid
 
@@ -1221,6 +1221,7 @@ given the proper use of these flags.
 * @U.NPrefix.xh@  
 * @U.NPrefix.xhw@  
 * @U.NPrefix.xw@  
+
 * @R.NPrefix.ZERO@  
 * @R.NPrefix.c@  
 * @R.NPrefix.dexw@  
@@ -1244,7 +1245,7 @@ given the proper use of these flags.
 * @R.TAM-SUBJ.SUBJ@  gʷə%<
 * @D.TAM-SUBJ@  gʷə%<
 
-* @U.TAM-HAB.ZERO@	  
+* @U.TAM-HAB.ZERO@  
 * @U.TAM-HAB.IRR@	  ɬu%< also FUT
 * @R.TAM-HAB.IRR@	  ɬu%< also FUT
 * @U.TAM-HAB.HAB@	  ƛ̕u%<
@@ -1252,8 +1253,8 @@ given the proper use of these flags.
 * @D.TAM-HAB@	  ƛ̕u%<
 
 * @U.TAM-RE.ZERO@   
-* @U.TAM-RE.RE@   bə
-* @R.TAM-RE.RE@   bə Anew, re-
+* @U.TAM-RE.RE@   bə Anew, re-
+* @R.TAM-RE.RE@   bə
 * @D.TAM-RE.RE@   bə
 
 * @U.NMZ.ZERO@   
