@@ -3,7 +3,6 @@
 !! Verbs in the Southern Lushootseed language inflect for tense.
 
 LEXICON Verbs
-verb    Persons   ;
 bəq̓təb+V:bəq̓təb V_CUTEB "" ;
 bəq̓əd+V:bəq̓əd TV_SELPED "" ;
 bəčad+V:bəčad V_KWEDAD "" ;
@@ -142,7 +141,7 @@ yuwiʔpačəb+V:yuwiʔpačəb V_CUTEB "" ;
 yəcəb+V:yəcəb V_CUTEB "" ;
 yəhaw̓txʷ+V:yəhaw̓t V_HUYTXW "" ;
 čil+V:čil V_HELHED "" ;
-č̓aʔa+V:č̓aʔa V_BASE "" ;
+č̓aʔa+V:č̓aʔa AO_BASE "" ;
 č̓iti+V:č̓iti IV_GEQIL_0/l "" ;
 č̓əɬab+V:č̓əɬab V_CUTEB "" ;
 šub+V:šub V_KWEDAD "" ;
@@ -171,7 +170,7 @@ yəhaw̓txʷ+V:yəhaw̓t V_HUYTXW "" ;
 ɬəgʷi+V:ɬəgʷi IV_GEQIL_0/l "" ;
 ɬəgʷilbid+V:ɬəgʷilbid V_KWEDAD "" ;
 ɬəči+V:ɬəči V_HELHED "" ;
-ʔa+V:ʔa V_BASE "" ;
+ʔa+V:ʔa AO_BASE "" ;
 ʔababačib+V:ʔababačib V_CUTEB "" ;
 ʔabačib+V:ʔabačib V_CUTEB "" ;
 ʔabšid+V:ʔab»šid V_KWEDYID_Dial/-NL "" ;
@@ -179,7 +178,7 @@ yəhaw̓txʷ+V:yəhaw̓t V_HUYTXW "" ;
 ʔabšədəb+V:ʔabšədəb V_CUTEB "" ;
 ʔatəbəd+V:ʔatəbəd V_SELPED "" ;
 ʔibibəš+V:ʔibibəš V_KWEDAD "" ;
-ʔibəš+V:ʔíbəš V_BASE "" ;
+ʔibəš+V:ʔíbəš AO_BASE "" ;
 ʔilid+V:ʔilid V_IN_ID "" ;
 ʔistəb+V:ʔistəb V_CUTEB "" ;
 ʔitut+V:ʔítut V_HELHED "" ;
