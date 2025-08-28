@@ -144,6 +144,11 @@ LEXICON 0V_KWEDAD_06
 LEXICON AO_BASE ! Agent-oriented
 @U.OBJ.ZERO@ 0V_HELHED ;
 
+LEXICON BO_BASE ! Beneficiary-oriented
+ 0V_HELHED ;
+LEXICON BO_BASE_NG !
++Use/NG: 0V_HELHED ;
+
 LEXICON V_BASE
 !! q̓ʷuʔ+V:q̓ʷuʔ "gather"
 !! @U.TAM-A.PRF@
