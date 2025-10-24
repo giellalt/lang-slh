@@ -4,14 +4,14 @@ All doc-comment documentation in one large file.
 
 ---
 
-# src-cg3-disambiguator.cg3.md 
+## src-cg3-disambiguator.cg3.md 
 
 
 S O U T H E R N   L U S H O O T S E E D   D I S A M B I G U A T O R          
 
-# Delimiters 
+## Delimiters 
 
-## Tags and sets 
+### Tags and sets 
 
 * BOS/EOS
 
@@ -56,15 +56,15 @@ MAINV
 
 make common nouns set by subtraction <slh>
 
-# Disambiguation #
+## Disambiguation #
 
-## @NO CODE@
+### @NO CODE@
 
 Rule for adding Sem/Date as a tag to readings which looks like dates
 
-## @NO CODE@
+### @NO CODE@
 
-## Cycle 0
+### Cycle 0
 
 Removing non-lexicalised forms when lexicalised 
 
@@ -84,43 +84,43 @@ Verbs
 
 Imperative
 
-## CC- and CS-Mapping
+### CC- and CS-Mapping
 
-## CNP mapping
+### CNP mapping
 
 Mapping CNP to CC and CS.
 
-## CVP Mapping
+### CVP Mapping
 
 Mapping @CVP to all CS
 
-## PrfPrc
+### PrfPrc
 
 Select PrfPrc if DerNomAct
 
-## Person
+### Person
 
 leah Prs Sg2 = Pl3
 
 Select Inf If Infv
 
-## Span sentences
+### Span sentences
 
-### Nomen
+#### Nomen
 
 REmove Px if not family
 
 Remove Prop Attr if not 1 Prop 
 
-### Verb or Noun
+#### Verb or Noun
 
-## CC and CS or Adv
+### CC and CS or Adv
 
-## Adj or Adv
+### Adj or Adv
 
-## Grammatisk ord eller N eller A
+### Grammatisk ord eller N eller A
 
-## N or V
+### N or V
 
 Ger or Der/NomAct
 
@@ -148,7 +148,7 @@ Adverb context prefers Adv
 
 Verb person vs. Inf -- moved here in order to have the pronouns disambiguated first.
 
-# Proper nouns
+## Proper nouns
 
 Rule set taken from sme
 
@@ -160,7 +160,7 @@ Substituting Prop tags
 
 ---
 
-# src-cg3-functions.cg3.md 
+## src-cg3-functions.cg3.md 
 
 
 
@@ -199,7 +199,7 @@ part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
 These were the set types.
 
-## HABITIVE MAPPING
+### HABITIVE MAPPING
 
 * **hab1** 
 
@@ -318,16 +318,16 @@ These were the set types.
 
 * **<opredAAcc** (@<OPRED) for A Acc; if an other accusative to the left, and a transtive verb to the left of it. OR: if a transitive verb to the left, and an accusative to the left of it.
 
-### sma object
+#### sma object
 
 * **<advlEss** (@<ADVL) for ESS-ADVL if; FMAINV to the left
 * **<spredEss** (@<SPRED) for N Ess if; FMAINV to the left is intransitive or bargat
 
-## SUBJ MAPPING - leftovers
+### SUBJ MAPPING - leftovers
 
-## OBJ MAPPING - leftovers
+### OBJ MAPPING - leftovers
 
-## HNOUN MAPPING
+### HNOUN MAPPING
 
 * * *
 
@@ -335,7 +335,7 @@ These were the set types.
 
 ---
 
-# src-fst-morphology-affixes-adjectives.lexc.md 
+## src-fst-morphology-affixes-adjectives.lexc.md 
 
 Adjective inflection
 The Southern Puget Sound Salish language adjectives are inflected in much the same way as nouns and verbs.
@@ -346,7 +346,7 @@ The Southern Puget Sound Salish language adjectives are inflected in much the sa
 
 ---
 
-# src-fst-morphology-affixes-adpositions.lexc.md 
+## src-fst-morphology-affixes-adpositions.lexc.md 
 
 Adpositions
 The Southern Puget Sound Salish adpositions
@@ -357,7 +357,7 @@ The Southern Puget Sound Salish adpositions
 
 ---
 
-# src-fst-morphology-affixes-adverbs.lexc.md 
+## src-fst-morphology-affixes-adverbs.lexc.md 
 
 Adjective inflection
 The Southern Puget Sound Salish language adverbs
@@ -368,7 +368,7 @@ The Southern Puget Sound Salish language adverbs
 
 ---
 
-# src-fst-morphology-affixes-nouns.lexc.md 
+## src-fst-morphology-affixes-nouns.lexc.md 
 
 Noun inflection
 The Southern Puget Sound Salish language nouns inflect in time person aspect.
@@ -393,7 +393,7 @@ k̓ʷəčədiʔ+N+Pl: __rabbit/jänis__
 
 ---
 
-# src-fst-morphology-affixes-prefixes.lexc.md 
+## src-fst-morphology-affixes-prefixes.lexc.md 
 
 Prefixes
 Prefixes in the Southern Puget Sound Salish language are attached to the beginning of other words.
@@ -623,7 +623,7 @@ lə<bə<ləcu<gʷaadgʷad
 
 ---
 
-# src-fst-morphology-affixes-pronouns.lexc.md 
+## src-fst-morphology-affixes-pronouns.lexc.md 
 
 Pronoun inflection
 The Southern Puget Sound Salish language pronouns inflect 
@@ -635,7 +635,7 @@ nouns, but with a colon (':') as separator.
 
 ---
 
-# src-fst-morphology-affixes-propernouns.lexc.md 
+## src-fst-morphology-affixes-propernouns.lexc.md 
 
 Proper noun inflection
 The Southern Lushootseed language proper nouns inflect in the same cases as common
@@ -647,10 +647,10 @@ nouns, but perhaps with a colon (':') as separator.CHECKME 2025-07-18
 
 ---
 
-# src-fst-morphology-affixes-symbols.lexc.md 
+## src-fst-morphology-affixes-symbols.lexc.md 
 
 
-# Symbol affixes
+## Symbol affixes
 
 * * *
 
@@ -658,7 +658,7 @@ nouns, but perhaps with a colon (':') as separator.CHECKME 2025-07-18
 
 ---
 
-# src-fst-morphology-affixes-verbs.lexc.md 
+## src-fst-morphology-affixes-verbs.lexc.md 
 
 Verb inflection
 The Southern Puget Sound Salish language verbs inflect time, person and aspect.
@@ -688,7 +688,7 @@ q̓ʷuʔ+V:q̓ʷuʔ "gather"
 
 ---
 
-# src-fst-morphology-phonology.twolc.md 
+## src-fst-morphology-phonology.twolc.md 
 
 =================================== !
 The Southern Lushootseed morphophonological/twolc rules file !
@@ -724,7 +724,7 @@ place holders
 * %^RmVOW:0  this removes previous vowel or with Pen the penultimate vowel
 * %^d2t:0  this devoices d to t specifically
 
-## Symbols that need to be escaped on the lower side (towards twolc):
+### Symbols that need to be escaped on the lower side (towards twolc):
 * **»7**:  Literal »
 * **«7**:  Literal «
 ```
@@ -886,13 +886,13 @@ liquids
 
 ---
 
-# src-fst-morphology-root.lexc.md 
+## src-fst-morphology-root.lexc.md 
 
 
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Southern Lushootseed LANGUAGE.
 
-# Definitions for Multichar_Symbols
-## Letters
+## Definitions for Multichar_Symbols
+### Letters
 b̓    
 c̓    
 č     
@@ -930,7 +930,7 @@ y̓
 ə́    used in coding of dictionary
 ə̀   used in coding of dictionary
 
-## Analysis symbols
+### Analysis symbols
 The morphological analyses of wordforms for the Southern Lushootseed
 language are presented in this system in terms of the following symbols.
 (It is highly suggested to follow existing standards when adding new tags).
@@ -1002,7 +1002,7 @@ Verb/Predicate tenses and aspect are:
 
 Verb personal forms are:
 
-## Direct Object conjugation
+### Direct Object conjugation
 *  +OcSg1  = object conjugation first person singular
 *  +OcSg2  = object conjugation second person singular
 *  +OcSP3  = object conjugation third person singular or plural
@@ -1088,7 +1088,7 @@ reduplication type 6 involves the all three letters of the three-letter reduplic
 
 * +Clt/Now  %>əxʷ
 
-### Tags distinguishing different versions of the same lemma (before POS)
+#### Tags distinguishing different versions of the same lemma (before POS)
 * +v1
 * +v2
 * +v3
@@ -1116,7 +1116,7 @@ reduplication type 6 involves the all three letters of the three-letter reduplic
 
 Note: These high +v... number are in use for one word only:
 
-## Symbols that need to be escaped on the lower side (towards twolc):
+### Symbols that need to be escaped on the lower side (towards twolc):
 * **»7**:  Literal »
 * **«7**:  Literal «
 ```
@@ -1163,7 +1163,7 @@ And following triggers to control variation
 * %^RmVOW  this removes previous vowel or with Pen the penultimate vowel
 * %^d2t  this devoices d to t specifically
 
-## Flag diacritics
+### Flag diacritics
 We have manually optimised the structure of our lexicon using following
 flag diacritics to restrict morhpological combinatorics - only allow compounds
 with verbs if the verb is further derived into a noun again:
@@ -1192,9 +1192,9 @@ given the proper use of these flags.
 |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
 |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
 
-### SPELLRELAX
+#### SPELLRELAX
 
-###  NOUNS
+####  NOUNS
 
 * @U.PossPx.ZERO@  
 * @U.PossPx.SP3@  
@@ -1243,7 +1243,7 @@ given the proper use of these flags.
 * @D.NPrefix@  
 * @C.NPrefix@  
 
-### VERBS
+#### VERBS
 * @U.TAM-SUBJ.ZERO@  
 * @U.TAM-SUBJ.SUBJ@  gʷə%<
 * @R.TAM-SUBJ.SUBJ@  gʷə%<
@@ -1316,7 +1316,7 @@ word classes, or optionally from prefixes:
 
 ---
 
-# src-fst-morphology-stems-adjectives.lexc.md 
+## src-fst-morphology-stems-adjectives.lexc.md 
 
 Adjectives
 Adjectives in the Southern Lushootseed language describe the entities nouns refer to.
@@ -1327,7 +1327,7 @@ Adjectives in the Southern Lushootseed language describe the entities nouns refe
 
 ---
 
-# src-fst-morphology-stems-adpositions.lexc.md 
+## src-fst-morphology-stems-adpositions.lexc.md 
 
 Adpositions
 Adpositions in the Southern Puget Sound Salish language 
@@ -1338,7 +1338,7 @@ Adpositions in the Southern Puget Sound Salish language
 
 ---
 
-# src-fst-morphology-stems-adverbs.lexc.md 
+## src-fst-morphology-stems-adverbs.lexc.md 
 
 Adverbs
 Adverbs in the Southern Puget Sound Salish language are words that express time, place, degree, mode.
@@ -1349,7 +1349,7 @@ Adverbs in the Southern Puget Sound Salish language are words that express time,
 
 ---
 
-# src-fst-morphology-stems-conjunctors.lexc.md 
+## src-fst-morphology-stems-conjunctors.lexc.md 
 
 Conjunctors
 Conjunctors in the Southern Puget Sound Salish language 
@@ -1360,7 +1360,7 @@ Conjunctors in the Southern Puget Sound Salish language
 
 ---
 
-# src-fst-morphology-stems-interjections.lexc.md 
+## src-fst-morphology-stems-interjections.lexc.md 
 
 Interjections
 Interjections in the Southern Puget Sound Salish language 
@@ -1371,7 +1371,7 @@ Interjections in the Southern Puget Sound Salish language
 
 ---
 
-# src-fst-morphology-stems-nouns.lexc.md 
+## src-fst-morphology-stems-nouns.lexc.md 
 
 Nouns
 Nouns in the Southern Lushootseed language refer to objects or sets of objects, qualities, states or ideas.
@@ -1382,7 +1382,7 @@ Nouns in the Southern Lushootseed language refer to objects or sets of objects, 
 
 ---
 
-# src-fst-morphology-stems-numerals.lexc.md 
+## src-fst-morphology-stems-numerals.lexc.md 
 
 Numerals
 Numerals in the Southern Lushootseed language describe a nuerical quantity.
@@ -1393,7 +1393,7 @@ Numerals in the Southern Lushootseed language describe a nuerical quantity.
 
 ---
 
-# src-fst-morphology-stems-pronouns.lexc.md 
+## src-fst-morphology-stems-pronouns.lexc.md 
 
 Pronouns
 Pronouns in the Southern Lushootseed language are words that may replace nouns or refer to participants in the conversation.
@@ -1404,7 +1404,7 @@ Pronouns in the Southern Lushootseed language are words that may replace nouns o
 
 ---
 
-# src-fst-morphology-stems-propernouns.lexc.md 
+## src-fst-morphology-stems-propernouns.lexc.md 
 
 Noun inflection
 The Southern Puget Sound Salish language nouns inflect in time person aspect.
@@ -1415,7 +1415,7 @@ The Southern Puget Sound Salish language nouns inflect in time person aspect.
 
 ---
 
-# src-fst-morphology-stems-verbs.lexc.md 
+## src-fst-morphology-stems-verbs.lexc.md 
 
 Verbs
 Verbs in the Southern Lushootseed language inflect for tense.
@@ -1426,7 +1426,7 @@ Verbs in the Southern Lushootseed language inflect for tense.
 
 ---
 
-# src-fst-phonetics-txt2ipa.xfscript.md 
+## src-fst-phonetics-txt2ipa.xfscript.md 
 
 
 
@@ -1595,7 +1595,7 @@ retracted tongue root			_q
 
 ---
 
-# src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
+## src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
 
 
 
@@ -1617,7 +1617,7 @@ For example:
 
 ---
 
-# src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
+## src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
 
 
 
@@ -1633,26 +1633,26 @@ Check this
 
 ---
 
-# tools-grammarcheckers-grammarchecker.cg3.md 
+## tools-grammarcheckers-grammarchecker.cg3.md 
 
 
-#  Southern Lushootseed  G R A M M A R   C H E C K E R
+##  Southern Lushootseed  G R A M M A R   C H E C K E R
 
-# DELIMITERS
+## DELIMITERS
 
-# TAGS AND SETS
+## TAGS AND SETS
 
-## Tags
+### Tags
 
 This section lists all the tags inherited from the fst, and used as tags
 in the syntactic analysis. The next section, **Sets**, contains sets defined
 on the basis of the tags listed here, those set names are not visible in the output.
 
-### Beginning and end of sentence
+#### Beginning and end of sentence
 BOS
 EOS
 
-### Parts of speech tags
+#### Parts of speech tags
 
 N
 A
@@ -1679,7 +1679,7 @@ PUNCT
 COMMA
 ¶
 
-### Tags for POS sub-categories
+#### Tags for POS sub-categories
 
 Pers
 Dem
@@ -1695,7 +1695,7 @@ Allegro
 Arab
 Romertall
 
-### Tags for morphosyntactic properties
+#### Tags for morphosyntactic properties
 
 Nom
 Acc
@@ -1758,7 +1758,7 @@ VAbess
 
 Err/Orth
 
-### Semantic tags
+#### Semantic tags
 
 Sem/Act
 Sem/Ani
@@ -1791,7 +1791,7 @@ PROP-SUR
 
 TIME-N-SET
 
-###  Syntactic tags
+####  Syntactic tags
 
 @+FAUXV
 @+FMAINV
@@ -1861,22 +1861,22 @@ OBJ>-OTHERS
 SYN-V
 @X
 
-## Sets containing sets of lists and tags
+### Sets containing sets of lists and tags
 
 This part of the file lists a large number of sets based partly upon the tags defined above, and
 partly upon lexemes drawn from the lexicon.
 See the sourcefile itself to inspect the sets, what follows here is an overview of the set types.
 
-### Sets for Single-word sets
+#### Sets for Single-word sets
 
 INITIAL
 
-### Sets for word or not
+#### Sets for word or not
 
 WORD
 NOT-COMMA
 
-### Case sets
+#### Case sets
 
 ADLVCASE
 
@@ -1887,11 +1887,11 @@ NOT-NOM
 NOT-GEN
 NOT-ACC
 
-### Verb sets
+#### Verb sets
 
 NOT-V
 
-### Sets for finiteness and mood
+#### Sets for finiteness and mood
 
 REAL-NEG
 
@@ -1899,7 +1899,7 @@ MOOD-V
 
 NOT-PRFPRC
 
-### Sets for person
+#### Sets for person
 
 SG1-V
 SG2-V
@@ -1911,25 +1911,25 @@ PL1-V
 PL2-V
 PL3-V
 
-### Pronoun sets
+#### Pronoun sets
 
-### Adjectival sets and their complements
+#### Adjectival sets and their complements
 
-### Adverbial sets and their complements
+#### Adverbial sets and their complements
 
-### Sets of elements with common syntactic behaviour
+#### Sets of elements with common syntactic behaviour
 
-### NP sets defined according to their morphosyntactic features
+#### NP sets defined according to their morphosyntactic features
 
-### The PRE-NP-HEAD family of sets
+#### The PRE-NP-HEAD family of sets
 
 These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-### Border sets and their complements
+#### Border sets and their complements
 
-### Grammarchecker sets
+#### Grammarchecker sets
 
 * * *
 
@@ -1937,9 +1937,9 @@ expression **WORD - premodifiers**.
 
 ---
 
-# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
 
-# Tokeniser for slh
+## Tokeniser for slh
 
 Usage:
 ```
@@ -1984,7 +1984,7 @@ ASCII digits
 so far:
 * U+F0B7 for "x in box"
 
-## Unknown handling
+### Unknown handling
 Unknowns are tagged ?? and treated specially with `hfst-tokenise`
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
@@ -2003,9 +2003,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
 
-# Grammar checker tokenisation for slh
+## Grammar checker tokenisation for slh
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
@@ -2068,9 +2068,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
 
-# TTS tokenisation for smj
+## TTS tokenisation for smj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
