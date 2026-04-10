@@ -17,9 +17,9 @@ LEXICON N_with_PL_RED1_qelb
 
 
 LEXICON N_with_PL_RED2_0/l ! 
-:%{lØ%} N_with_PL_RED2 ;
+:{lØ} N_with_PL_RED2 ;
 LEXICON N_with_PL_RED2_0/l_PRF/s ! sləx̌i:ləx̌i sləx̌iləxʷ
-:%{lØ%} N_with_PL_RED2 ;
+:{lØ} N_with_PL_RED2 ;
 
 !LEXICON N_with_PL_RED2_Dial/-NL
 ! N_with_PL_RED2 ;
@@ -156,7 +156,7 @@ LEXICON PL_RED1_qelb
 @U.PossPx.ZERO@+Pl:@U.PossPx.ZERO@%^Red1i123   # ;
 +Pl:%^Red2CV2CiCV        PRE-POSS_01 ;
 !! qəlb+N+Pl: **rain showers**
-!!€ %{p5%}%{p4%}%{p3%}%{p2%}%{p1%}qəlb%^Red1i123
+!!€ {p5}{p4}{p3}{p2}{p1}qəlb%^Red1i123
 !!€ 00qi0qəlb0
 
 LEXICON PL_RED2
@@ -164,12 +164,12 @@ LEXICON PL_RED2
 !@U.PossPx.ZERO@+Pl:@U.PossPx.ZERO@%^RedPL123123 # ;
 !20250619!@R.PossPx@+Pl:@R.PossPx@%^RedPL123123	PRE-POSS_01 ;
 !! bəlups+N+Pl
-!!€ %{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlups%^RedPL123123
+!!€ {p5}{p4}{p3}{p2}{p1}bəlups%^RedPL123123
 !!€ 00bəlbəlups0
-!!$ %{p5%}%{p4%}%{p3%}%{p2%}%{p1%}bəlups%^RedPL123123
+!!$ {p5}{p4}{p3}{p2}{p1}bəlups%^RedPL123123
 !!$ 00000bəlups0
 !! k̓ʷəčədiʔ+N+Pl: __rabbit/jänis__
-!!€ %{p5%}%{p4%}%{p3%}%{p2%}%{p1%}k̓ʷəčədiʔ%^RedPL123123
+!!€ {p5}{p4}{p3}{p2}{p1}k̓ʷəčədiʔ%^RedPL123123
 !!€ 00k̓ʷəčk̓ʷəčədiʔ0
 !!$ k̓ʷəčədiʔ: k̓ʷəčədiʔ+N+Pl
 

@@ -285,7 +285,7 @@ L7_ ;!2025-06-19 seven-steps before stem
 !2025-06-19! DVNouns_01 ;
 !2025-06-19!
 !2025-06-19!LEXICON Prefixes_01c
-!2025-06-19!@U.NPrefix.ZERO@:@U.NPrefix.ZERO@%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ; 
+!2025-06-19!@U.NPrefix.ZERO@:@U.NPrefix.ZERO@{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ; 
 !2025-06-19!!NOUNS_PREFIX_PREP ; !should this have @U.NPrefix.ZERO@ 2025-06-16
 !2025-06-19!
 !2025-06-19!
@@ -390,22 +390,22 @@ LEXICON L1_
 
 
 LEXICON VERBS_OR_NOUNS
-:%{p5%}%{p4%}%{p3%}%{p2%}%{p1%}  Verbs ;
+:{p5}{p4}{p3}{p2}{p1}  Verbs ;
 
-@U.NPrefix.ZERO@:@U.NPrefix.ZERO@%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
-@U.NPrefix.c@:@U.NPrefix.c@c%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
-@U.NPrefix.dexw@:@U.NPrefix.dexw@dəxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
-@U.NPrefix.dxw@:@U.NPrefix.dxw@dxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
-@U.NPrefix.dxws@:@U.NPrefix.dxws@dxʷs%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
-@U.NPrefix.je@:@U.NPrefix.je@ǰə%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
-@U.NPrefix.le@:@U.NPrefix.le@lə%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
-@U.NPrefix.s@:@U.NPrefix.s@s%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
-@U.NPrefix.sexw@:@U.NPrefix.sexw@səxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
-@U.NPrefix.sxw@:@U.NPrefix.sxw@sxʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
-@U.NPrefix.tsi@:@U.NPrefix.tsi@tsi%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
-@U.NPrefix.xh@:@U.NPrefix.xh@x̌%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
-@U.NPrefix.xhw@:@U.NPrefix.xhw@x̌ʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
-@U.NPrefix.xw@:@U.NPrefix.xw@xʷ%^√%{p5%}%{p4%}%{p3%}%{p2%}%{p1%} NOUNS_PREFIX_PREP ;
+@U.NPrefix.ZERO@:@U.NPrefix.ZERO@{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
+@U.NPrefix.c@:@U.NPrefix.c@c%^√{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
+@U.NPrefix.dexw@:@U.NPrefix.dexw@dəxʷ%^√{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
+@U.NPrefix.dxw@:@U.NPrefix.dxw@dxʷ%^√{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
+@U.NPrefix.dxws@:@U.NPrefix.dxws@dxʷs%^√{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
+@U.NPrefix.je@:@U.NPrefix.je@ǰə%^√{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
+@U.NPrefix.le@:@U.NPrefix.le@lə%^√{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
+@U.NPrefix.s@:@U.NPrefix.s@s%^√{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
+@U.NPrefix.sexw@:@U.NPrefix.sexw@səxʷ%^√{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
+@U.NPrefix.sxw@:@U.NPrefix.sxw@sxʷ%^√{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
+@U.NPrefix.tsi@:@U.NPrefix.tsi@tsi%^√{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
+@U.NPrefix.xh@:@U.NPrefix.xh@x̌%^√{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
+@U.NPrefix.xhw@:@U.NPrefix.xhw@x̌ʷ%^√{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
+@U.NPrefix.xw@:@U.NPrefix.xw@xʷ%^√{p5}{p4}{p3}{p2}{p1} NOUNS_PREFIX_PREP ;
 
 LEXICON NOUNS_PREFIX_PREP
  Nouns ;
