@@ -1,7 +1,7 @@
 !! Noun inflection
 !  ---------------
 !! The Southern Puget Sound Salish language nouns inflect in time person aspect.
-! s%<ɬalil%>tu%>b%>s%>əxʷ
+! s<ɬalil>tu>b>s>əxʷ
 ! VNoun+come.ashore+V+Caus+Mid+Px3+Now
 ! np+come·ashore+[caus]+[md]+3s+now
 ! %>tu ~ %>t
@@ -78,14 +78,14 @@ LEXICON N1_with_PL_RED2
 : PL_RED2 ;
 
 LEXICON N_with_PL_RED130
-!%^RedPL130130
-: SG-SUF ;
-@U.PossPx.ZERO@+Pl:@U.PossPx.ZERO@%^RedPL130130 PRE-POSS_01 ;
-+Pl:%^RedPL130130	PRE-POSS_01 ;
+!@U.REDUPL.130130@
+@U.REDUPL.ZERO@  SG-SUF ;
+@U.PossPx.ZERO@@U.REDUPL.130130@+Pl:@U.PossPx.ZERO@@U.REDUPL.130130@ PRE-POSS_01 ;
+@U.REDUPL.130130@+Pl:@U.REDUPL.130130@	PRE-POSS_01 ;
 
 
 LEXICON N_with_Distr_12323_RED5 !Der/Red5_12323
-!%^Red12323
+!@U.REDUPL.12323@
 !: DIM_CV1toCV2C ;
 : SG-SUF ;
 : PL_RED5 ;
@@ -118,33 +118,33 @@ LEXICON N_MSC_with_PL_RED2_PRF/s
 
 ! Derivation
 LEXICON DIM_CV1toCV2C
-+Der+Der/Dimin_1i13+N:%^Red1i13 SG-SUF ; !+Der/Red1_1i13
-!20250619!@R.PossPx@+Der+Der/Dimin_1i13+N:@R.PossPx@%^Red1i13 SG-SUF ; !+Der/Red1_1i13
-+Err/Orth+Der+Der/Dimin_1iq13+N:%^Red1iq13 SG-SUF ; !+Der/Red1_1iq13
-!20250619!@R.PossPx@+Err/Orth+Der+Der/Dimin_1iq13+N:@R.PossPx@%^Red1iq13 SG-SUF ; !+Der/Red1_1iq13
+@U.REDUPL.1i13@+Der+Der/Dimin_1i13+N:@U.REDUPL.1i13@ SG-SUF ; !+Der/Red1_1i13
+!20250619!@R.PossPx@@U.REDUPL.1i13@+Der+Der/Dimin_1i13+N:@R.PossPx@@U.REDUPL.1i13@ SG-SUF ; !+Der/Red1_1i13
+@U.REDUPL.1iq13@+Err/Orth+Der+Der/Dimin_1iq13+N:@U.REDUPL.1iq13@ SG-SUF ; !+Der/Red1_1iq13
+!20250619!@R.PossPx@@U.REDUPL.1iq13@+Err/Orth+Der+Der/Dimin_1iq13+N:@R.PossPx@@U.REDUPL.1iq13@ SG-SUF ; !+Der/Red1_1iq13
 
-+Err/Orth+Der+Der/Dimin_1iq123+N:%^Red1iq123 SG-SUF ; !+Der/Red1_1iq123
-!20250619!@R.PossPx@+Err/Orth+Der+Der/Dimin_1iq123+N:@R.PossPx@%^Red1iq123 SG-SUF ; !+Der/Red1_1iq123
+@U.REDUPL.1iq123@+Err/Orth+Der+Der/Dimin_1iq123+N:@U.REDUPL.1iq123@ SG-SUF ; !+Der/Red1_1iq123
+!20250619!@R.PossPx@@U.REDUPL.1iq123@+Err/Orth+Der+Der/Dimin_1iq123+N:@R.PossPx@@U.REDUPL.1iq123@ SG-SUF ; !+Der/Red1_1iq123
 
-+Err/Orth+Der+Der/Dimin_1i123+N:%^Red1i123 SG-SUF ; !+Der/Red1_1i123
-!20250619!@R.PossPx@+Err/Orth+Der+Der/Dimin_1i123+N:@R.PossPx@%^Red1i123 SG-SUF ; !+Der/Red1_1i123
-+Err/Orth+Der+Der/Dimin_12123+N:%^Red12123 SG-SUF ; !+Der/Red1_12123
-!20250619!@R.PossPx@+Err/Orth+Der+Der/Dimin_12123+N:@R.PossPx@%^Red12123 SG-SUF ; !+Der/Red1_12123
+@U.REDUPL.1i123@+Err/Orth+Der+Der/Dimin_1i123+N:@U.REDUPL.1i123@ SG-SUF ; !+Der/Red1_1i123
+!20250619!@R.PossPx@@U.REDUPL.1i123@+Err/Orth+Der+Der/Dimin_1i123+N:@R.PossPx@@U.REDUPL.1i123@ SG-SUF ; !+Der/Red1_1i123
+@U.REDUPL.12123@+Err/Orth+Der+Der/Dimin_12123+N:@U.REDUPL.12123@ SG-SUF ; !+Der/Red1_12123
+!20250619!@R.PossPx@@U.REDUPL.12123@+Err/Orth+Der+Der/Dimin_12123+N:@R.PossPx@@U.REDUPL.12123@ SG-SUF ; !+Der/Red1_12123
 
-+Der+Der/Dimin_1i1i13+N+Pl:%^RedPL1i1i13 PRE-POSS_01 ;! +Der/Red1_1i13_Distr_1212
-!20250619!@R.PossPx@+Der+Der/Dimin_1i1i13+N+Pl:@R.PossPx@%^RedPL1i1i13 PRE-POSS_01 ;! +Der/Red1_1i13_Distr_1212
+@U.REDUPL.PL1i1i13@+Der+Der/Dimin_1i1i13+N+Pl:@U.REDUPL.PL1i1i13@ PRE-POSS_01 ;! +Der/Red1_1i13_Distr_1212
+!20250619!@R.PossPx@@U.REDUPL.PL1i1i13@+Der+Der/Dimin_1i1i13+N+Pl:@R.PossPx@@U.REDUPL.PL1i1i13@ PRE-POSS_01 ;! +Der/Red1_1i13_Distr_1212
 
 LEXICON N_DIM_with_PL_12123_PRF/s !bibədaʔ, bibibədaʔ
-@U.NPrefix.s@+Dimin:@U.NPrefix.s@ SG-SUF ;
-@U.NPrefix.s@+Dimin+Pl:@U.NPrefix.s@%^Red12123 PRE-POSS_01 ;
+@U.NPrefix.s@@U.REDUPL.ZERO@+Dimin:@U.NPrefix.s@@U.REDUPL.ZERO@  SG-SUF ;
+@U.NPrefix.s@@U.REDUPL.12123@+Dimin+Pl:@U.NPrefix.s@@U.REDUPL.12123@ PRE-POSS_01 ;
 
 LEXICON N_DIM_with_PL_12123_PRF/sexw !bibədaʔ, bibibədaʔ
-@U.NPrefix.sexw@+Dimin:@U.NPrefix.sexw@ SG-SUF ;
-@U.NPrefix.sexw@+Dimin+Pl:@U.NPrefix.sexw@%^Red12123 PRE-POSS_01 ;
+@U.NPrefix.sexw@@U.REDUPL.ZERO@+Dimin:@U.NPrefix.sexw@@U.REDUPL.ZERO@ SG-SUF ;
+@U.NPrefix.sexw@@U.REDUPL.12123@+Dimin+Pl:@U.NPrefix.sexw@@U.REDUPL.12123@ PRE-POSS_01 ;
 
 LEXICON N_DIM_with_PL_12123 !bibədaʔ, bibibədaʔ
-+Dimin: SG-SUF ;
-+Dimin+Pl:%^Red12123 PRE-POSS_01 ;
+@U.REDUPL.ZERO@+Dimin:@U.REDUPL.ZERO@ SG-SUF ;
+@U.REDUPL.12123@+Dimin+Pl:@U.REDUPL.12123@ PRE-POSS_01 ;
 
 ! Declension
 LEXICON SG-SUF
@@ -153,30 +153,30 @@ LEXICON SG-SUF
 
 
 LEXICON PL_RED1_qelb
-@U.PossPx.ZERO@+Pl:@U.PossPx.ZERO@%^Red1i123   # ;
-+Pl:%^Red2CV2CiCV        PRE-POSS_01 ;
+@U.PossPx.ZERO@@U.REDUPL.1i123@+Pl:@U.PossPx.ZERO@@U.REDUPL.1i123@   # ;
+@U.REDUPL.2CV2CiCV@+Pl:@U.REDUPL.2CV2CiCV@        PRE-POSS_01 ;
 !! qəlb+N+Pl: **rain showers**
-!!€ {p5}{p4}{p3}{p2}{p1}qəlb%^Red1i123
-!!€ 00qi0qəlb0
+!!€ ^Red1i123{p6}{p5}{p4}{p3}{p2}{p1}qəlb
+!!€ 000qi0qəlb
 
 LEXICON PL_RED2
-+Pl:%^RedPL123123 PRE-POSS_01 ;
-!@U.PossPx.ZERO@+Pl:@U.PossPx.ZERO@%^RedPL123123 # ;
-!20250619!@R.PossPx@+Pl:@R.PossPx@%^RedPL123123	PRE-POSS_01 ;
+@U.REDUPL.PL123123@+Pl:@U.REDUPL.PL123123@ PRE-POSS_01 ;
+!@U.PossPx.ZERO@@U.REDUPL.PL123123@+Pl:@U.PossPx.ZERO@@U.REDUPL.PL123123@ # ;
+!20250619!@R.PossPx@@U.REDUPL.PL123123@+Pl:@R.PossPx@@U.REDUPL.PL123123@	PRE-POSS_01 ;
 !! bəlups+N+Pl
-!!€ {p5}{p4}{p3}{p2}{p1}bəlups%^RedPL123123
-!!€ 00bəlbəlups0
-!!$ {p5}{p4}{p3}{p2}{p1}bəlups%^RedPL123123
-!!$ 00000bəlups0
+!!€ ^RedPL123123{p6}{p5}{p4}{p3}{p2}{p1}bəlups
+!!€ 000bəlbəlups
+!!$ ^RedPL123123{p6}{p5}{p4}{p3}{p2}{p1}bəlups
+!!$ 000000bəlups
 !! k̓ʷəčədiʔ+N+Pl: __rabbit/jänis__
-!!€ {p5}{p4}{p3}{p2}{p1}k̓ʷəčədiʔ%^RedPL123123
-!!€ 00k̓ʷəčk̓ʷəčədiʔ0
+!!€ ^RedPL123123{p6}{p5}{p4}{p3}{p2}{p1}k̓ʷəčədiʔ
+!!€ 000k̓ʷəčk̓ʷəčədiʔ
 !!$ k̓ʷəčədiʔ: k̓ʷəčədiʔ+N+Pl
 
 LEXICON PL_RED5
 !ʔaciɬtalbixʷ:ʔacaciɬtalbixʷ
-+Pl:%^Red12323 PRE-POSS_01 ;
-!20250619!@R.PossPx@+Pl:@R.PossPx@%^Red12323	PRE-POSS_01 ;
+@U.REDUPL.12323@+Pl:@U.REDUPL.12323@ PRE-POSS_01 ;
+!20250619!@R.PossPx@@U.REDUPL.12323@+Pl:@R.PossPx@@U.REDUPL.12323@	PRE-POSS_01 ;
 
 LEXICON PRE-POSS_01
 @U.TAM-SUBJ.SUBJ@+Mod/Subj:@U.TAM-SUBJ.SUBJ@ PRE-POSS_02 ;
