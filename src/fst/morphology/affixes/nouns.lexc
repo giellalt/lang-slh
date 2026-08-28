@@ -11,7 +11,7 @@
 LEXICON N_with_PL_RED1_qelb
 !LEXICON N_with-PL_RED1_qelb
 !: DIM_CV1toCV2C ; What should this be?
-: SG-SUF ;
+@U.REDUPL.ZERO@:@U.REDUPL.ZERO@ SG-SUF ;
 : PL_RED1_qelb ;
 
 
@@ -74,7 +74,7 @@ LEXICON N0_with_PL_RED2
 
 LEXICON N1_with_PL_RED2
 !2024-04-12: DIM_CV1toCV2C ;
-: SG-SUF ;
+@U.REDUPL.ZERO@:@U.REDUPL.ZERO@ SG-SUF ;
 : PL_RED2 ;
 
 LEXICON N_with_PL_RED130
@@ -87,22 +87,22 @@ LEXICON N_with_PL_RED130
 LEXICON N_with_Distr_12323_RED5 !Der/Red5_12323
 !@U.REDUPL.12323@
 !: DIM_CV1toCV2C ;
-: SG-SUF ;
+@U.REDUPL.ZERO@:@U.REDUPL.ZERO@ SG-SUF ;
 : PL_RED5 ;
 
 LEXICON N_FEM_with_PL_RED2
 !LEXICON N-FEM_with-PL_RED2
-: DIM_CV1toCV2C ;
-: SG-SUF ;
-: PL_RED2 ;
 !+Fem: DIM_CV1toCV2C ;2024-04-09 leave	gender tags out, but retain in contlex
 !+Fem: SG-SUF ;
 !+Fem: PL_RED2 ;
+: DIM_CV1toCV2C ;
+@U.REDUPL.ZERO@:@U.REDUPL.ZERO@ SG-SUF ;
+: PL_RED2 ;
 
 LEXICON N_MSC_with_PL_RED2
 !LEXICON N-MSC_with-PL_RED2
-: DIM_CV1toCV2C ;
-: SG-SUF ;
+@U.NPrefix.s@ DIM_CV1toCV2C ;
+@U.REDUPL.ZERO@:@U.REDUPL.ZERO@ SG-SUF ;
 : PL_RED2 ;
 !+Msc: DIM_CV1toCV2C ; 2024-04-09 leave gender tags out, but retain in contlex
 !+Msc: SG-SUF ;
@@ -110,7 +110,7 @@ LEXICON N_MSC_with_PL_RED2
 
 LEXICON N_MSC_with_PL_RED2_PRF/s
 @U.NPrefix.s@ DIM_CV1toCV2C ;
-@U.NPrefix.s@ SG-SUF ;
+@U.NPrefix.s@@U.REDUPL.ZERO@:@U.NPrefix.s@@U.REDUPL.ZERO@ SG-SUF ;
 @U.NPrefix.s@ PL_RED2 ;
 !+Msc: DIM_CV1toCV2C ; 2024-04-09 leave gender tags out, but retain in contlex
 !+Msc: SG-SUF ;
@@ -119,20 +119,15 @@ LEXICON N_MSC_with_PL_RED2_PRF/s
 ! Derivation
 LEXICON DIM_CV1toCV2C
 @U.REDUPL.1i13@+Der+Der/Dimin_1i13+N:@U.REDUPL.1i13@ SG-SUF ; !+Der/Red1_1i13
-!20250619!@R.PossPx@@U.REDUPL.1i13@+Der+Der/Dimin_1i13+N:@R.PossPx@@U.REDUPL.1i13@ SG-SUF ; !+Der/Red1_1i13
 @U.REDUPL.1iq13@+Err/Orth+Der+Der/Dimin_1iq13+N:@U.REDUPL.1iq13@ SG-SUF ; !+Der/Red1_1iq13
-!20250619!@R.PossPx@@U.REDUPL.1iq13@+Err/Orth+Der+Der/Dimin_1iq13+N:@R.PossPx@@U.REDUPL.1iq13@ SG-SUF ; !+Der/Red1_1iq13
 
 @U.REDUPL.1iq123@+Err/Orth+Der+Der/Dimin_1iq123+N:@U.REDUPL.1iq123@ SG-SUF ; !+Der/Red1_1iq123
-!20250619!@R.PossPx@@U.REDUPL.1iq123@+Err/Orth+Der+Der/Dimin_1iq123+N:@R.PossPx@@U.REDUPL.1iq123@ SG-SUF ; !+Der/Red1_1iq123
 
 @U.REDUPL.1i123@+Err/Orth+Der+Der/Dimin_1i123+N:@U.REDUPL.1i123@ SG-SUF ; !+Der/Red1_1i123
-!20250619!@R.PossPx@@U.REDUPL.1i123@+Err/Orth+Der+Der/Dimin_1i123+N:@R.PossPx@@U.REDUPL.1i123@ SG-SUF ; !+Der/Red1_1i123
+
 @U.REDUPL.12123@+Err/Orth+Der+Der/Dimin_12123+N:@U.REDUPL.12123@ SG-SUF ; !+Der/Red1_12123
-!20250619!@R.PossPx@@U.REDUPL.12123@+Err/Orth+Der+Der/Dimin_12123+N:@R.PossPx@@U.REDUPL.12123@ SG-SUF ; !+Der/Red1_12123
 
 @U.REDUPL.PL1i1i13@+Der+Der/Dimin_1i1i13+N+Pl:@U.REDUPL.PL1i1i13@ PRE-POSS_01 ;! +Der/Red1_1i13_Distr_1212
-!20250619!@R.PossPx@@U.REDUPL.PL1i1i13@+Der+Der/Dimin_1i1i13+N+Pl:@R.PossPx@@U.REDUPL.PL1i1i13@ PRE-POSS_01 ;! +Der/Red1_1i13_Distr_1212
 
 LEXICON N_DIM_with_PL_12123_PRF/s !bibədaʔ, bibibədaʔ
 @U.NPrefix.s@@U.REDUPL.ZERO@+Dimin:@U.NPrefix.s@@U.REDUPL.ZERO@  SG-SUF ;
@@ -156,21 +151,19 @@ LEXICON PL_RED1_qelb
 @U.PossPx.ZERO@@U.REDUPL.1i123@+Pl:@U.PossPx.ZERO@@U.REDUPL.1i123@   # ;
 @U.REDUPL.2CV2CiCV@+Pl:@U.REDUPL.2CV2CiCV@        PRE-POSS_01 ;
 !! qəlb+N+Pl: **rain showers**
-!!€ ^Red1i123{p6}{p5}{p4}{p3}{p2}{p1}qəlb
-!!€ 000qi0qəlb
+!!€ ^Red1i123{p6}{p5}{p4}{p3}{p2}{p1}{pØ}qəlb
+!!€ 0000qi00qəlb
 
-LEXICON PL_RED2
+LEXICON PL_RED2 !! where reduplication happens
 @U.REDUPL.PL123123@+Pl:@U.REDUPL.PL123123@ PRE-POSS_01 ;
-!@U.PossPx.ZERO@@U.REDUPL.PL123123@+Pl:@U.PossPx.ZERO@@U.REDUPL.PL123123@ # ;
-!20250619!@R.PossPx@@U.REDUPL.PL123123@+Pl:@R.PossPx@@U.REDUPL.PL123123@	PRE-POSS_01 ;
 !! bəlups+N+Pl
-!!€ ^RedPL123123{p6}{p5}{p4}{p3}{p2}{p1}bəlups
-!!€ 000bəlbəlups
-!!$ ^RedPL123123{p6}{p5}{p4}{p3}{p2}{p1}bəlups
-!!$ 000000bəlups
+!!€ ^RedPL123123{p6}{p5}{p4}{p3}{p2}{p1}{pØ}bəlups
+!!€ 0000bəl0bəlups
+!!$ ^RedPL123123{p6}{p5}{p4}{p3}{p2}{p1}{pØ}bəlups
+!!$ 0000000bəlups
 !! k̓ʷəčədiʔ+N+Pl: __rabbit/jänis__
-!!€ ^RedPL123123{p6}{p5}{p4}{p3}{p2}{p1}k̓ʷəčədiʔ
-!!€ 000k̓ʷəčk̓ʷəčədiʔ
+!!€ ^RedPL123123{p6}{p5}{p4}{p3}{p2}{p1}{pØ}k̓ʷəčədiʔ
+!!€ 0000k̓ʷəč0k̓ʷəčədiʔ
 !!$ k̓ʷəčədiʔ: k̓ʷəčədiʔ+N+Pl
 
 LEXICON PL_RED5
