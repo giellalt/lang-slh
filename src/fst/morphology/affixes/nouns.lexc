@@ -99,22 +99,22 @@ LEXICON N_FEM_with_PL_RED2
 @U.REDUPL.ZERO@:@U.REDUPL.ZERO@ SG-SUF ;
 : PL_RED2 ;
 
-LEXICON N_MSC_with_PL_RED2
-!LEXICON N-MSC_with-PL_RED2
-@U.NPrefix.s@ DIM_CV1toCV2C ;
-@U.REDUPL.ZERO@:@U.REDUPL.ZERO@ SG-SUF ;
-: PL_RED2 ;
-!+Msc: DIM_CV1toCV2C ; 2024-04-09 leave gender tags out, but retain in contlex
-!+Msc: SG-SUF ;
-!+Msc: PL_RED2 ;
+!LEXICON N_MSC_with_PL_RED2
+!!LEXICON N-MSC_with-PL_RED2
+!@U.NPrefix.s@ DIM_CV1toCV2C ;
+!@U.REDUPL.ZERO@:@U.REDUPL.ZERO@ SG-SUF ;
+!: PL_RED2 ;
+!!+Msc: DIM_CV1toCV2C ; 2024-04-09 leave gender tags out, but retain in contlex
+!!+Msc: SG-SUF ;
+!!+Msc: PL_RED2 ;
 
-LEXICON N_MSC_with_PL_RED2_PRF/s
-@U.NPrefix.s@ DIM_CV1toCV2C ;
-@U.NPrefix.s@@U.REDUPL.ZERO@:@U.NPrefix.s@@U.REDUPL.ZERO@ SG-SUF ;
-@U.NPrefix.s@ PL_RED2 ;
-!+Msc: DIM_CV1toCV2C ; 2024-04-09 leave gender tags out, but retain in contlex
-!+Msc: SG-SUF ;
-!+Msc: PL_RED2 ;
+!LEXICON N_MSC_with_PL_RED2_PRF/s
+!@U.NPrefix.s@ DIM_CV1toCV2C ;
+!@U.NPrefix.s@@U.REDUPL.ZERO@:@U.NPrefix.s@@U.REDUPL.ZERO@ SG-SUF ;
+!@U.NPrefix.s@ PL_RED2 ;
+!!+Msc: DIM_CV1toCV2C ; 2024-04-09 leave gender tags out, but retain in contlex
+!!+Msc: SG-SUF ;
+!!+Msc: PL_RED2 ;
 
 ! Derivation
 LEXICON DIM_CV1toCV2C
