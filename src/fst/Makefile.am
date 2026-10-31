@@ -55,15 +55,6 @@ CUSTOM_FSTS=
 						.o. @\"filters/remove-letter-grave.$*\" \
 						;\n\
 				 $(INVERT_HFST)\
-				 twosided flag-diacritics\n\
-				 eliminate flag NMZ\n\
-				 eliminate flag NPrefix\n\
-				 eliminate flag PossPx\n\
-				 eliminate flag TAM-A\n\
-				 eliminate flag TAM-HAB\n\
-				 eliminate flag TAM-RE\n\
-				 eliminate flag TAM-SUBJ\n\
-				 eliminate flag TAM-T\n\
 				 save stack $@\n\
 				 quit\n" | $(XFST_TOOL)
 
@@ -90,15 +81,6 @@ CUSTOM_FSTS=
 						.o. @\"filters/remove-letter-acute.$*\"				   \
 						.o. @\"filters/remove-letter-grave.$*\"				   \
 						;\n\
-				 twosided flag-diacritics\n\
-				 eliminate flag NMZ\n\
-				 eliminate flag NPrefix\n\
-				 eliminate flag PossPx\n\
-				 eliminate flag TAM-A\n\
-				 eliminate flag TAM-HAB\n\
-				 eliminate flag TAM-RE\n\
-				 eliminate flag TAM-SUBJ\n\
-				 eliminate flag TAM-T\n\
 				 $(INVERT_HFST)\
 				 save stack $@\n\
 				 quit\n" | $(XFST_TOOL)
@@ -133,15 +115,6 @@ CUSTOM_FSTS=
 				.o. @\"filters/remove-letter-grave.hfst\"			   \
 				;\n\
 		invert net\n\
-				 twosided flag-diacritics\n\
-				 eliminate flag NMZ\n\
-				 eliminate flag NPrefix\n\
-				 eliminate flag PossPx\n\
-				 eliminate flag TAM-A\n\
-				 eliminate flag TAM-HAB\n\
-				 eliminate flag TAM-RE\n\
-				 eliminate flag TAM-SUBJ\n\
-				 eliminate flag TAM-T\n\
 		save stack $@\n\
 		quit\n" | $(HFST_XFST) -p $(MORE_VERBOSITY)
 
@@ -163,15 +136,6 @@ CUSTOM_FSTS=
 						.o. @\"filters/remove-letter-grave.$*\"				 \
 						;\n\
 				 $(INVERT_HFST)\
-				 twosided flag-diacritics\n\
-				 eliminate flag NMZ\n\
-				 eliminate flag NPrefix\n\
-				 eliminate flag PossPx\n\
-				 eliminate flag TAM-A\n\
-				 eliminate flag TAM-HAB\n\
-				 eliminate flag TAM-RE\n\
-				 eliminate flag TAM-SUBJ\n\
-				 eliminate flag TAM-T\n\
 				 save stack $@\n\
 				 quit\n" | $(XFST_TOOL)
 
@@ -186,15 +150,6 @@ define giella_generators
 						.o. @\"filters/remove-letter-grave.$(1)\"			   \
 						;\n\
 				 $$(INVERT_XFST)$$(INVERT_FOMA)\
-				 twosided flag-diacritics\n\
-				 eliminate flag NMZ\n\
-				 eliminate flag NPrefix\n\
-				 eliminate flag PossPx\n\
-				 eliminate flag TAM-A\n\
-				 eliminate flag TAM-HAB\n\
-				 eliminate flag TAM-RE\n\
-				 eliminate flag TAM-SUBJ\n\
-				 eliminate flag TAM-T\n\
 				 save stack $$@\n\
 				 quit\n" | $$(XFST_TOOL)
 endef
@@ -207,15 +162,6 @@ $(foreach fst,hfst xfst foma,$(eval $(call giella_generators,$(fst))))
 						 @\"$<\"										 \
 						;\n\
 				 $(INVERT_XFST)$(INVERT_FOMA)\
-				 twosided flag-diacritics\n\
-				 eliminate flag NMZ\n\
-				 eliminate flag NPrefix\n\
-				 eliminate flag PossPx\n\
-				 eliminate flag TAM-A\n\
-				 eliminate flag TAM-HAB\n\
-				 eliminate flag TAM-RE\n\
-				 eliminate flag TAM-SUBJ\n\
-				 eliminate flag TAM-T\n\
 				 save stack $@\n\
 				 quit\n" | $(XFST_TOOL)
 
