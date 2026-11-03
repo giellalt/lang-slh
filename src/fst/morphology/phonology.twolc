@@ -340,7 +340,7 @@ E3:ə
 
 Sets
 
- Vow = a e i o u y ə
+ Vow = a e i o u y ə ə́ ə̀
        á é ó ú í à è ò ù ì â ê ô û î ã ý ;
 
  CnsNoGlotOrD = b c f g h j k l m n p q r s t v w x y z 
@@ -608,10 +608,10 @@ d:t <=>	[ə:|»|i:|a:|u:] _ %^Pen: %^RmVOW: %^d2t: %> ə b  ;
 
 "%{p3%}:Cx in reduplication"
 !! **@RULENAME@**
- %{p3%}:Cx <=> [%^RedPL123123:|%^RedPL130130:]  %{p6%}: %{p5%}: %{p4%}: _ %{p2%}: %{p1%}: (%{pØ%}:) Cx (Vow:) Cns [ Lts | » ]* ;
-               %^Red12323:  %{p6%}: %{p5%}: %{p4%}: _ %{p2%}: %{p1%}: (%{pØ%}:) Cx: Vow: Cns [ Lts | » ]* ;
-               [ %^Red1i13:|%^RedPL1i1i13:|%^Red1iq13:|%^Red1iq123:]  %{p6%}: %{p5%}: %{p4%}: _ %{p2%}: %{p1%}: (%{pØ%}:) Cx Vow: Cns [ Lts | » ]* ;
-               [ %^Red1i123:|%^Red12123:]  %{p6%}: %{p5%}: %{p4%}: _%{p2%}: %{p1%}: (%{pØ%}:) Cx Vow Cns [ Lts | » ]* ;
+ %{p3%}:Cx <=> [%^RedPL123123:|%^RedPL130130:]  (%{p6%}: %{p5%}: %{p4%}:) _ %{p2%}: %{p1%}: (%{pØ%}:) Cx (Vow:) Cns [ Lts | » ]* ;
+               %^Red12323:  (%{p6%}: %{p5%}: %{p4%}:) _ %{p2%}: %{p1%}: (%{pØ%}:) Cx: Vow: Cns [ Lts | » ]* ;
+               [ %^Red1i13:|%^RedPL1i1i13:|%^Red1iq13:|%^Red1iq123:]  (%{p6%}: %{p5%}: %{p4%}:) _ %{p2%}: %{p1%}: (%{pØ%}:) Cx Vow: Cns [ Lts | » ]* ;
+               [ %^Red1i123:|%^Red12123:]  (%{p6%}: %{p5%}: %{p4%}:) _%{p2%}: %{p1%}: (%{pØ%}:) Cx Vow Cns [ Lts | » ]* ;
            where Cx in (kʷ b̓ ǰ n̓ n m̓ m p p̓ b t t̕ d dᶻ c c̓ č č̓ s š l l̕ ɬ ƛ̕  y w y̓ w̓ k k̓ k̓ʷ g gʷ h xʷ q q̓ qʷ q̓ʷ x̌ x̌ʷ ʔ) ;
 !2019-03-04           where Cx in (p p̓ b t t̕ d dᶻ c c̓ č č̓ s š l l̕ ɬ ƛ̕ y w y̓ w̓ k k̓ k̓ʷ gʷ h xʷ q q̓ qʷ q̓ʷ x̌ x̌ʷ ʔ) ;
 
