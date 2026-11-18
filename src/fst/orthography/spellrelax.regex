@@ -6,6 +6,7 @@
 # lexical side (->) input 
 
 ə (->) e, # where simplified for one variant
+ƛ̕ (->) ƛ', # LATIN SMALL LETTER LAMBDA WITH STROKE U+019B with U+0315 allows U+019B with apostrophe U+0027 
 ɬ (->) ł, # LATIN SMALL LETTER L WITH BELT U+026C allows LATIN SMALL LETTER L WITH STROKE U+0142
 ɬ (->) ɫ, # Latin small letter L with belt 026C written with Latin small letter L with middle tilde 026B
 č (->) {č}, # decomposed
